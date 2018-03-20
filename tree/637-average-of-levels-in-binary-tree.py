@@ -1,6 +1,8 @@
 # Solution 1: same as solution 1 of C++ file
 # note: use python3
 def averageOfLevels(self, root):
+    if root is None:
+        return []
     averages = []
     level = [root]
     while level:
