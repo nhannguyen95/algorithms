@@ -47,3 +47,45 @@ public:
         return root;
     }
 };
+
+// Solution 3: iterative with no duplicates
+// O(N) in time
+// This is a BFS algorithm, so the maximum size of the queue
+// is the number of nodes at level with has most nodes.
+// => Complexity?
+// In the worst case: the tree is full binary tree,
+// so O(N/2) = O(N) in space (the queue contains all leaf nodes)
+class Solution {
+public:
+    TreeNode* sortedArrayToBST(vector<int>& nums) {
+        // Base case
+        if (nums.size() == 0) return NULL;
+
+        TreeNode* root = new TreeNode(0);  // 0 as a place holder
+
+        queue<TreeNode*> qNodes({root});
+        queue<int> qPairs({0, (int)nums.size() - 1});
+
+        while(!qPairs.empty()) {
+            int lo = qPairs.front(); qPairs.pop();
+            int hi = qPairs.front(); qPairs.pop();
+            int mi = lo + (hi - lo) / 2;
+            TreeNode* node = qNodes.front(); qNodes.pop();
+            node->val = nums[mi];
+
+            if (lo <= mi - 1) {
+                qPairs.push(lo);
+                qPairs.push(mi - 1);
+                qNodes.push(node->left = new TreeNode(0));
+            }
+            if (mi + 1 <= hi) {
+                qPairs.push(mi + 1);
+                qPairs.push(hi);
+                qNodes.push(node->right = new TreeNode(0));
+            }
+        }
+
+        return root;
+    }
+
+};
