@@ -1,7 +1,7 @@
 // Solution 1: heap
 // Original: http://vn.spoj.com/problems/KMIN/
 // N = size(nums2)
-// Time complexity: O(N) + O(KlogK)
+// Time complexity: O(N) + O(KlogN)
 // Space complexity: O(N)
 class Solution {
 public:
