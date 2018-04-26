@@ -1,3 +1,5 @@
+# Solution 1: using hash table
+# O(N1 + min(N1, N2)) in space
 class Solution:
     def intersection(self, nums1, nums2):
         set1 = set(nums1)  # O(N1)
