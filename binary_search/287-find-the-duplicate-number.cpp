@@ -13,4 +13,23 @@ public:
     }
 };
 
-# Solution 2:
+# Solution 2: The tortoise and hare algorithm
+# https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) {
+        int rua = 0;
+        int tho = 0;
+        do {
+            rua = nums[rua];
+            tho = nums[nums[tho]];
+        } while(rua != tho);
+        
+        tho = 0;
+        while(rua != tho) {
+            rua = nums[rua];
+            tho = nums[tho];
+        }
+        return rua;
+    }
+};
