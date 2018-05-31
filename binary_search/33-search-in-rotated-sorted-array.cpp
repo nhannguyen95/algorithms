@@ -1,3 +1,5 @@
+// Solution 1:
+// O(logN) in time, O(1) in space
 class Solution {
 public:
     int search(vector<int>& nums, int target) {
