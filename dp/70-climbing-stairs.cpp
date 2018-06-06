@@ -28,3 +28,37 @@ public:
         return cur;
     }
 };
+
+// Solution 3: matrix multiplication
+// O(logN) in time & space
+typedef vector<vector<int>> mat;
+    
+mat operator*(const mat & m1, const mat & m2) {
+    mat p;
+    p.assign(2, vector<int>(2, 1));
+    p[0][0] = m1[0][0]*m2[0][0] + m1[0][1]*m2[1][0];
+    p[0][1] = m1[0][0]*m2[0][1] + m1[0][1]*m2[1][1];
+    p[1][0] = m1[1][0]*m2[0][0] + m1[1][1]*m2[1][0];
+    p[1][1] = m1[1][0]*m2[0][1] + m1[1][1]*m2[1][1];
+    return p;
+}
+    
+class Solution {
+public:
+    
+    mat matPow(const mat & m, int n) {
+        if (n == 1) return m;
+        mat t = matPow(m, n/2);
+        if (n % 2 == 0) return t * t;
+        return t * t * m;
+    }
+    
+    int climbStairs(int n) {
+        if (n == 1) return 1;
+        mat base;
+        base.assign(2, vector<int>(2, 1));
+        base[0][0] = 0;
+        base = matPow(base, n-1);
+        return base[0][1] + base[1][1];
+    }
+};
