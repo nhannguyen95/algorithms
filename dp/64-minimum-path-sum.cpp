@@ -19,7 +19,7 @@ public:
     }
 };
 
-// Solution 2: Bottom Up DP O(N) space complexity
+// Solution 2: Bottom Up DP O(2N) space complexity
 // O(N^2) time complexity
 class Solution {
 public:
@@ -39,5 +39,26 @@ public:
             pre = cur;
         }
         return pre[m];
+    }
+};
+
+// Solution 3: Bottom Up DP O(N) space complexity
+// O(N^2) time complexity
+class Solution {
+public:
+    int minPathSum(vector<vector<int>>& grid) {
+        int n = grid.size();
+        if (n == 0) return 0;
+        int m = grid[0].size();
+        if (m == 0) return 0;
+        
+        vector<int> f(m+1, INT_MAX);
+        for(int i = 1; i <= n; i++) {
+            for(int j = 1; j <= m; j++) {
+                if (i == 1 && j == 1) f[j] = grid[i-1][j-1];
+                else f[j] = grid[i-1][j-1] + min(f[j-1], f[j]);
+            }
+        }
+        return f[m];
     }
 };
