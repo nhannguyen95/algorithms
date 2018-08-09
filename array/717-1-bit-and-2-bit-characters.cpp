@@ -19,3 +19,16 @@ public:
         return endsWith(bits, bits.size()-1, 0);
     }
 };
+
+// Solution 2: I overthought! This problem is fucking simple
+// O(N) in time, O(1) in space
+class Solution {
+public:
+    bool isOneBitCharacter(vector<int>& bits) {
+        int i = 0;
+        while (i < bits.size() - 1) {
+            i += bits[i] + 1;
+        }
+        return i == bits.size() - 1;
+    }
+};
