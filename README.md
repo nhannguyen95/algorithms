@@ -1,11 +1,14 @@
 **Leetcode**
-- [ ] Array.
-- [ ] Binary search.
-- [ ] Dynamic programming.
-- [ ] Heap.
-- [ ] Linked list.
-- [ ] Tree.
-- [ ] Database.
+- Array.
+- Binary search.
+- Dynamic programming.
+- Heap.
+- Linked list.
+- Tree.
+- Database.
+
+**Geeksforgeeks
+- [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
 
 **[Data structure](https://github.com/nhannguyen95/interview-preparation/tree/master/data-structure-implementation)**
 - [x] Implement stack using array: [code](https://github.com/nhannguyen95/interview-preparation/blob/master/data-structure-implementation/stack-using-array.cpp).
