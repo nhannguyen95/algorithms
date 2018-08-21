@@ -7,7 +7,7 @@
 - Tree.
 - Database.
 
-**Geeksforgeeks
+**Geeksforgeeks**
 - [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
 
 **[Data structure](https://github.com/nhannguyen95/interview-preparation/tree/master/data-structure-implementation)**
