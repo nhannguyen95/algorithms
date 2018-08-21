@@ -14,5 +14,5 @@
 - [x] Implement queue using linked list: [code](https://github.com/nhannguyen95/interview-preparation/blob/master/data-structure-implementation/queue-using-linked-list.cpp).
 - [x] Stack with push, pop and min operate in O(1): [code](https://github.com/nhannguyen95/interview-preparation/blob/master/data-structure-implementation/stack-min-o1.cpp)
 
-**Handy algorithm**:
-- [Exponential search](https://en.wikipedia.org/wiki/Exponential_search)
+**Handy algorithms**:
+- [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
