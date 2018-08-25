@@ -16,7 +16,7 @@ void twoWayPartitioningFor(vector<int>& nums) {
 
 void twoWayPartitioningWhile(vector<int> & nums) {
 	int lo = 0, hi = nums.size() - 1;
-	while(lo < hi) {
+	while(lo <= hi) {
 		// nums[0..lo-1] = 0s
 		// nums[lo..hi] = unknown (not processed yet)
 		// nums[hi+1..N] = 1s
