@@ -41,6 +41,7 @@ int main() {
 	// Eg: 0 0 0 1 1 1
 
 	// Toggle these 2
+	// O(N) in time, O(1) in space
 	twoWayPartitioningFor(nums);    // For style
 	// twoWayPartitioningWhile(nums);  // While style
 
