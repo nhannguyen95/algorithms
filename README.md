@@ -9,6 +9,7 @@
 
 **Geeksforgeeks**
 - [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
+- [Array](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/array).
 
 **[Data structure](https://github.com/nhannguyen95/interview-preparation/tree/master/data-structure-implementation)**
 - [x] Implement stack using array: [code](https://github.com/nhannguyen95/interview-preparation/blob/master/data-structure-implementation/stack-using-array.cpp).
