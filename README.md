@@ -1,3 +1,5 @@
+## Get my hands dirty
+
 **Leetcode**
 - Array.
 - Binary search.
@@ -24,3 +26,5 @@
 - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
 - [Dutch national flag algorithm](http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/): [2-ways.cpp](https://github.com/nhannguyen95/interview-preparation/blob/master/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
 - Split string: [code](https://github.com/nhannguyen95/interview-preparation/blob/master/handy-algorithms/split-string.cpp).
+
+## Resources
