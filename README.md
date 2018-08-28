@@ -28,3 +28,6 @@
 - Split string: [code](https://github.com/nhannguyen95/interview-preparation/blob/master/handy-algorithms/split-string.cpp).
 
 ## Resources
+
+**System design**:
+- [HiredInTech's system design course](https://www.hiredintech.com/classrooms/system-design).
