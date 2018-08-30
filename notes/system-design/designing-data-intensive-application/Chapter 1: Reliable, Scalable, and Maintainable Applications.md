@@ -13,3 +13,5 @@ What it means for something to be reliable or unreliable?
 - Its performance is good enough for the required use case, under the expected load and data volume.
 - The system prevents any unauthorized access and abuse.
 => Continuing to work correctly, even when things go wrong.
+
+It is impossible to reduce the probability of a fault to zero; therefore it is usually best to design fault-tolerance mechanisms that prevent faults from causing failures.
