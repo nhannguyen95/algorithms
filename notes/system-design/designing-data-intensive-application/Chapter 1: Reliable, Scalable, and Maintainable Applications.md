@@ -27,4 +27,5 @@ Load parameters (load factors) can be (depends on the architecture of your syste
   - New tweets: 4.6k/sec on average, > 12k/sec at peak.
   - User can view tweets posted by the people they follow: 300k requests/sec.
 - Two ways of implementing:
-  - d
+  - A user posts a new tweet, this tweet is insearted to a global collection of tweets. When a user requests their home timeline, find all tweets posted by users that he follows, and merge and sort them by time.
+  > test
