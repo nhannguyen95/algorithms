@@ -15,3 +15,16 @@ What it means for something to be reliable or unreliable?
 => Continuing to work correctly, even when things go wrong.
 
 It is impossible to reduce the probability of a fault to zero; therefore it is usually best to design fault-tolerance mechanisms that prevent faults from causing failures.
+
+Load parameters (load factors) can be (depends on the architecture of your system):
+- Requests per second (to a webserver).
+- The ratio of reads to writes in a database.
+- The number of simultaneously active users in a chat room.
+- The hit rate on a cache.
+
+**Twitter timeline problem**:
+- According to data published in November 2012:
+  - New tweets: 4.6k/sec on average, > 12k/sec at peak.
+  - User can view tweets posted by the people they follow: 300k requests/sec.
+- Two ways of implementing:
+  - d
