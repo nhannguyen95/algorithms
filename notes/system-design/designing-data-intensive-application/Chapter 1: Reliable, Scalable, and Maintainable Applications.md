@@ -24,8 +24,10 @@ Load parameters (load factors) can be (depends on the architecture of your syste
 
 **Twitter timeline problem**:
 - According to data published in November 2012:
-  - New tweets: 4.6k/sec on average, > 12k/sec at peak.
-  - User can view tweets posted by the people they follow: 300k requests/sec.
+  - New tweets (write): 4.6k requests/sec on average, > 12k requests/sec at peak.
+  - User can view tweets posted by the people they follow (read): 300k requests/sec.
 - Two ways of implementing:
-  - A user posts a new tweet, this tweet is insearted to a global collection of tweets. When a user requests their home timeline, find all tweets posted by users that he follows, and merge and sort them by time.
-  > test
+  - A user posts a new tweet, this tweet is insearted to a global collection of tweets (write). When a user requests their home timeline, find all tweets posted by users that he follows, and merge and sort them by time.
+  > Downside: the load of home timeline queries is huge!. writes << reads.
+  - Having a cache for each user's home timeline (like a mailbox). When a user posts a tweet, insert this tweet to the home timeline caches of all of his followers (write). The request to home (read) is now cheap, because its result has been computed ahead of time.
+  > Downside: Posting a tweet now requires a lot of extra work. On avarage, a tweet is sent to about 75 followers, so 4.6 tweets/sec become 4.6 * 75 = 345k writes/sec to homeline caches. Not mention to the fact that the number of followers per user varies widely, and some users have over 30 million followers. This means 1 new tweets may result in 30M writes to homeline!
