@@ -30,4 +30,5 @@
 ## Resources
 
 **System design**:
-- [HiredInTech's system design course](https://www.hiredintech.com/classrooms/system-design).
+- [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
+- [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
