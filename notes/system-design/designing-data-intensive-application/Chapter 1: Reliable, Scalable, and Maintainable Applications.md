@@ -6,3 +6,10 @@ As the system grows (in data volume, traffic volume, or complexity), there shoul
 
 **Maintainability**
 Over time, many different people will work on the system (engineering and oper‐ ations, both maintaining current behavior and adapting the system to new use cases).
+
+What it means for something to be reliable or unreliable?
+- Performs the function that the user expected.
+- Tolerate the user making mistakes or using the software in unexpected ways.
+- Its performance is good enough for the required use case, under the expected load and data volume.
+- The system prevents any unauthorized access and abuse.
+=> Continuing to work correctly, even when things go wrong.
