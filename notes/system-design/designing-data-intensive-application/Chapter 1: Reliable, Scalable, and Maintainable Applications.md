@@ -31,3 +31,6 @@ Load parameters (load factors) can be (depends on the architecture of your syste
   > Downside: the load of home timeline queries is huge!. writes << reads.
   - Having a cache for each user's home timeline (like a mailbox). When a user posts a tweet, insert this tweet to the home timeline caches of all of his followers (write). The request to home (read) is now cheap, because its result has been computed ahead of time.
   > Downside: Posting a tweet now requires a lot of extra work. On avarage, a tweet is sent to about 75 followers, so 4.6 tweets/sec become 4.6 * 75 = 345k writes/sec to homeline caches. Not mention to the fact that the number of followers per user varies widely, and some users have over 30 million followers. This means 1 new tweets may result in 30M writes to homeline!
+ - Twitter is now moving to a hybrid of both approaches. Less follower: use 1st approach, many followers: use 2nd approach (the result is merged with the homeline cache).
+ - The distribution of followers per user is a key load parameter for discussing scalability, since it determines the _fan-out_ load.
+ 
