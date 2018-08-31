@@ -6,3 +6,10 @@ _Note: the following process of answering system design interviews is the inters
 - _[Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)_.
 
 _and is synthesized by me._
+
+
+### Step: Requirements
+
+- Functional requirements.
+- Non-functional requirements.
+- Extended requirements.
