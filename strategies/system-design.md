@@ -5,7 +5,7 @@ _Note: the following process of answering system design interviews is the inters
 - _[Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design)._
 - _[Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512)_.
 
-_and is synthesized by me._
+_and is compiled by me._
 
 
 ### Step: Requirements
