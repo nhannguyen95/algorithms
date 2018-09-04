@@ -1,6 +1,6 @@
 ## Get my hands dirty
 
-**Leetcode**
+**[Leetcode](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode)**
 - Array.
 - Binary search.
 - Dynamic programming.
@@ -8,6 +8,7 @@
 - Linked list.
 - Tree.
 - Database.
+- [Bit manipulation](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode/bit-manipulation).
 
 **Geeksforgeeks**
 - [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
