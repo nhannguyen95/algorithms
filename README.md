@@ -32,6 +32,7 @@
 
 **Algorithm**:
 - Book: Cracking the coding interview - Gayle Laakmann McDowell.
+- [Book: Hacker's Delight (2nd Edition) - Henry S. Warren](https://www.amazon.com/Hackers-Delight-2nd-Henry-Warren/dp/0321842685/ref=sr_1_1?ie=UTF8&qid=1536056482&sr=8-1&keywords=Hacker%27s++Delight).
 
 **System design**:
 - [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
