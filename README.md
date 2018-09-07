@@ -45,7 +45,7 @@
 - [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
 
 **Others**:
-  - [https://techdevguide.withgoogle.com/](https://techdevguide.withgoogle.com/)
+  - [Tech Dev Guide With Google](https://techdevguide.withgoogle.com/)
   - [List of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
   - [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
