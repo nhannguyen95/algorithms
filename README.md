@@ -46,6 +46,8 @@
 
 **Others**:
   - [https://techdevguide.withgoogle.com/](https://techdevguide.withgoogle.com/)
+  - [List of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
+  - [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
 
 ## [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
 
