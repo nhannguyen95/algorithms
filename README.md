@@ -1,3 +1,7 @@
+## What to prepare?
+
+
+
 ## Get my hands dirty
 
 **[Leetcode](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode)**
@@ -39,6 +43,9 @@
 - [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
 - [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
 - [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
+
+**Others**:
+  - [https://techdevguide.withgoogle.com/](https://techdevguide.withgoogle.com/)
 
 ## [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
 
