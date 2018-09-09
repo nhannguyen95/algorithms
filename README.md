@@ -1,9 +1,58 @@
 # What to prepare?
 
 ## Algorithms
-
+  - [ ] Recursion
+  - [ ] Divide and Conquer
+  - [ ] Greedy
+  - [ ] Dynamic Programming
+  - [ ] Sorting:
+    - [ ] Bubble sort
+    - [ ] Insertion sort
+    - [ ] Selection sort
+    - [ ] Merge sort
+    - [ ] Quick sort
+    - [ ] Counting sort
+    - [ ] Radix sort
+    - [ ] Heap sort
+  - [ ] Searching
+    - [ ] Binary search
+  - [ ] Probability and basic Number Theory
+  - [ ] Graph:
+    - [ ] BFS
+    - [ ] DFS
+  - [ ] Network flow
+  
+  
 ## Data structures
+  - [ ] Array
+  - [ ] Strings
+  - [ ] Linked List - Single and Doubly
+  - [ ] Stack
+  - [ ] Queues
+  - [ ] Binary Tree
+  - [ ] Binary Search Tree
+  - [ ] Heaps
+  - [ ] Tree
+  - [ ] Graph
+  - [ ] Hash Table
+  - [ ] Hash Map
+  - [ ] Tries
+  - [ ] Segment Tree (IT - Interval Tree)
+  - [ ] Binary Indexed Tree (BIT)
+  - [ ] AVL Tree
+  - [ ] B+ Tree
 
+## Others
+  - [ ] Big-O
+  - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
+  - [ ] Scalability Issues, RPCs, Rate limiter
+  - [ ] Concurrency
+  - [ ] API Design
+  - [ ] OOP Concepts
+  - [ ] Databases - SQL, NoSQL, Writing simple Queries, Transactions, ACID
+  - [ ] Linux Commands
+  - [ ] (Scaleable) Distributed Systems and Cloud Computing
+  - [ ] Design Pattern
 
 # Practices
 
@@ -38,20 +87,38 @@
 # Resources
 
 **Algorithm**:
-- Book: Cracking the coding interview - Gayle Laakmann McDowell.
-- Book: Competitive Programming 3.
-- [Book: Hacker's Delight (2nd Edition) - Henry S. Warren](https://www.amazon.com/Hackers-Delight-2nd-Henry-Warren/dp/0321842685/ref=sr_1_1?ie=UTF8&qid=1536056482&sr=8-1&keywords=Hacker%27s++Delight) has some nice bit-hacking algorithms.
+- [ ] Book: Cracking the coding interview - Gayle Laakmann McDowell.
+- [ ] Book: Competitive Programming 3.
+- [ ] [Book: Hacker's Delight (2nd Edition) - Henry S. Warren](https://www.amazon.com/Hackers-Delight-2nd-Henry-Warren/dp/0321842685/ref=sr_1_1?ie=UTF8&qid=1536056482&sr=8-1&keywords=Hacker%27s++Delight) has some nice bit-hacking algorithms.
 
 **System design**:
-- [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
-- [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
-- [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
+- [ ] [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
+- [ ] [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
+- [ ] [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
 
 **Others**:
-  - [Tech Dev Guide With Google](https://techdevguide.withgoogle.com/)
-  - [List of algorithms](https://en.wikipedia.org/wiki/List_of_algorithms)
-  - [List of data structures](https://en.wikipedia.org/wiki/List_of_data_structures)
+  - [ ] [Tech Dev Guide With Google](https://techdevguide.withgoogle.com/)
+  - [ ] [The Complete Guide to Google Interview Preparation](http://blog.gainlo.co/index.php/category/google-interview-preparation/)
+  - [Project Euler](https://projecteuler.net/)
+  - [CareerCup](https://www.careercup.com/)
+  - [Pramp](https://www.pramp.com/)
+  - [InterviewCake](http://www.interviewcake.com/)
+  - [Gainlo Blog](http://blog.gainlo.co/)
+  - [ ] [Programming Interviews Exposed](https://www.amazon.in/Programming-Interviews-Exposed-Secrets-Landing/dp/8126539119)
+  - [ ] [Elements of Programming Interview](https://www.amazon.in/Elements-Programming-Interviews-Adnan-Aziz/dp/9382359443/)
 
-## [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
+# [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
 
 - [System design](https://github.com/nhannguyen95/interview-preparation/blob/master/strategies/system-design.md).
+
+# Advices:
+
+- _"The truth is that you are never going to feel fully prepared."_
+
+- _"Majority candidates know what DFS/BFS is. What makes a difference is to have a deep understanding of those concepts."
+
+- _"You should be clear about the definition of those basic data structures/algorithms. Most people did a good job in this part, but not perfect. For instance, a lot of people are confused about dynamic programming and recursion."_
+
+- _"Try to compare relevant data structures/algorithms and understand their pros and cons. A good example is BFS and DFS."_
+
+- Which algorithm is better in what case?
