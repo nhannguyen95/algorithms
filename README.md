@@ -45,6 +45,7 @@
 ## Others
   - [ ] Big-O
   - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
+  - [ ] Computer Architecture
   - [ ] Scalability Issues, RPCs, Rate limiter
   - [ ] Concurrency
   - [ ] API Design
@@ -91,10 +92,13 @@
 - [ ] Book: Competitive Programming 3.
 - [ ] [Book: Hacker's Delight (2nd Edition) - Henry S. Warren](https://www.amazon.com/Hackers-Delight-2nd-Henry-Warren/dp/0321842685/ref=sr_1_1?ie=UTF8&qid=1536056482&sr=8-1&keywords=Hacker%27s++Delight) has some nice bit-hacking algorithms.
 
-**System design**:
+**System Design**:
 - [ ] [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
 - [ ] [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
 - [ ] [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
+
+**Computer Architecture**
+- [Computer Organization and Design MIPS Edition: The Hardware/Software Interface](https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0124077269/ref=sr_1_1?s=books&ie=UTF8&qid=1536553502&sr=1-1&keywords=Computer+Organization+and+Design+MIPS+Edition)
 
 **Others**:
   - [ ] [Tech Dev Guide With Google](https://techdevguide.withgoogle.com/)
