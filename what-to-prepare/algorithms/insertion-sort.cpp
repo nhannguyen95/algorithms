@@ -14,6 +14,7 @@ Insertion sort is one of the fastest for sorting small arrays (N = 7..50), why?
     (while insertion sort is very simple):
     - Recursive calls
     - Partition: need to split N to two (N/2), and so on...
+    - There are some swaps need to be taken care in each partition..
   - Compare to Selection sort, Bubble sort: probably faster because fewer scans,
     iterations..
     
