@@ -7,7 +7,7 @@
   - [ ] Dynamic Programming
   - [ ] Sorting:
     - [ ] Bubble sort
-    - [ ] Insertion sort
+    - [x] [Insertion sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/insertion-sort.cpp)
     - [ ] Selection sort
     - [ ] Merge sort
     - [ ] Quick sort
