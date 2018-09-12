@@ -1,6 +1,11 @@
 /* Insertion sort (tested) 
 
-Time complexity:
+Time complexity: 
+  - T(N): the running time of the algorithm on an input of n values
+    T(N) = aN^2 + b 
+    => order of growth = N^2
+    => running time of Θ(N^2)
+    and: aN^2 + b ∈ Θ(N^2)
   - Best case: the array is already sorted, O(N)
   - Average: O(N^2)
   - Worst case: the array sorted in reverse order, O(N^2)
