@@ -34,7 +34,7 @@ Read more: https://nhannguyen95.github.io/merge-sort/
 #include <vector>
 using namespace std;
 
-// ---------------MERGE SORT---------------
+// ----------MERGE SORT (TOP DOWN)---------
 
 void merge(vector<int>& arr, int l, int m, int r) {
   // Merge 2 sorted sub arrays into tmp array.
@@ -65,6 +65,24 @@ void mergeSort(vector<int>& arr, int l, int r) {
 
 void mergeSort(vector<int>& arr) {
   mergeSort(arr, 0, (int)arr.size() - 1);
+}
+
+// ---------MERGE SORT (BOTTOM UP)---------
+// Can be optimized to O(1) space complexity
+
+void mergeSortBottomUp(vector<int>& arr) {
+  int n = (int)arr.size();
+  for(int width = 1; width < n; width *= 2) {
+    // `arr` contains consecutives sub arrays of 
+    // length `width` that are already sorted.
+
+    // Now we sort 2 consecutives sub arrays of 
+    // length `width` to obtain a sorted sub arrays
+    // of length `2*width`.
+    for(int i = 0; i < n; i += 2*width) {
+      merge(arr, i, min(i + width - 1, n - 1), min(i + 2*width - 1, n - 1));
+    }
+  }
 }
 
 // ----------------------------------------
