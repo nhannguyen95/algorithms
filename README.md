@@ -9,7 +9,7 @@
     - [ ] Bubble sort
     - [x] [Insertion sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/insertion-sort.cpp)
     - [x] [Selection sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/selection-sort.cpp)
-    - [ ] Merge sort
+    - [ ] [Merge sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/merge-sort.cpp)
     - [ ] Quick sort
     - [ ] Counting sort
     - [ ] Radix sort
