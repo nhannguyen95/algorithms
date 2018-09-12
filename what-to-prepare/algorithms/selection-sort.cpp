@@ -5,15 +5,23 @@ Time complexity:
   
 Space complexity: O(1)
 
-NOT stable: because when we swap the current smallest element with
-A[i], we kind of change the position of A[i], this makes A[i] lose
-its relative position compared to other "A[i]".
+NOT stable: 
+  - Because when we swap the current smallest element with
+    A[i], we kind of change the position of A[i], this makes A[i] lose
+    its relative position compared to other "A[i]".
+  - We can squeeze the swap process by using linked-list to 
+    make the algorithm stable (i.e. instead of swap with A[i], we
+    insert the value in between A[i-1] and A[i].
 
 Compare to Insertion sort:
   - Advantage: on average case, let's say [0, i) is sorted. Insertion
     sort takes (i/2) swaps, while Selection sort takes (n - i) comparisions
     => so on average, IS performs half as many comparisions as SS.
   - Disadvantage: IS performs many writes (due to the swaps) than SS.
+  
+Compare to Bubble sort and Gnome sort: always faster.
+
+
 
 Read more: https://nhannguyen95.github.io/selection-sort/
 
