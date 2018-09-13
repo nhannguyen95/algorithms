@@ -43,7 +43,7 @@
   - [ ] B+ Tree
 
 ## Others
-  - [ ] Big-O
+  - [ ] [Big O Notation](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/big-o-notation.md)
   - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - [ ] Computer Architecture
   - [ ] Scalability Issues, RPCs, Rate limiter
