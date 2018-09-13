@@ -23,6 +23,9 @@ Insertion sort is one of the fastest for sorting small arrays (N = 7..50), why?
   - Compare to Selection sort, Bubble sort: probably faster because fewer scans,
     iterations..
     
+i < j, A[i] > A[j] => (i, j) is an inversion of A.
+Number of swaps in IS (when sort A) = number of inversion of A.
+Prove: Hint: call I(i) = number of j | j < i and A[j] > A[j]
 
 Read more: https://nhannguyen95.github.io/insertion-sort/
 
