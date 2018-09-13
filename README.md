@@ -6,7 +6,7 @@
   - [ ] Greedy
   - [ ] Dynamic Programming
   - [ ] Sorting:
-    - [ ] [Bubble sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/bubble-sort.cpp)
+    - [x] [Bubble sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/bubble-sort.cpp)
     - [x] [Insertion sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/insertion-sort.cpp)
     - [x] [Selection sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/selection-sort.cpp)
     - [ ] [Merge sort](https://github.com/nhannguyen95/interview-preparation/blob/master/what-to-prepare/algorithms/merge-sort.cpp)
