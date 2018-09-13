@@ -1,5 +1,23 @@
 /* Bubble sort (tested) 
 
+Time complexity:
+  - Best case: already sorted array, O(N)
+  - Average & Worst case: O(N^2)
+
+Space complexity: O(1)
+
+Stable: Swapping 2 consecutive different elements doesn't change
+their relative position to same key elements.
+
+BS is impratical and too slow.
+
+BS and IS all have the advantage over other algorithms: the ability
+to detect that the list is sorted efficiently is built into the algorithm.
+
+We iterate and swap the array from left to right:
+  - An element whose correct position is in the right will move quickly.
+  - An element whose correct position is in the left will move slower.
+
 Read more: https://nhannguyen95.github.io/bubble-sort/
 */
 
