@@ -21,8 +21,11 @@
     - [ ] BFS
     - [ ] DFS
   - [ ] Network flow
-  
-  
+
+## Classic problems
+
+  - [x] [Maximum subarray problem](what-to-prepare/classic-problems/maximum-subarray.cpp)
+
 ## Data structures
   - [ ] Array
   - [ ] Strings
