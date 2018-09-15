@@ -14,6 +14,12 @@ Then _T(n)_ has the following asymptotic bounds:
 
 ---
 
+Solving the equality `T(n) = aT(n/b) + f(n)` gives us the tight bound for _T(n)_, i.e. _T(n)_ = Θ(_g(n)_).
+
+Solving the inequality `T(n) ≤ aT(n/b) + f(n)` (or `≥`) gives us the upper bound O (or lower bound Ω).
+
+---
+
 **Understanding master theorem**:
 
 Basically in all 3 cases, the result is determined by the larger of the 2 functions _f(n)_ and _n<sup>log<sub>b</sub>a</sup>_.
