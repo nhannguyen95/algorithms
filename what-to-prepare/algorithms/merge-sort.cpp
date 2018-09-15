@@ -23,6 +23,7 @@ Time complexity and Space complexity: read more
 
 Stable
 
+Not in-place
 
 Read more: https://nhannguyen95.github.io/merge-sort/
 

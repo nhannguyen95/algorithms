@@ -14,6 +14,8 @@ Space complexity: O(1)
 
 Stable: keep the relative position of elements with equal keys.
 
+In-place
+
 Insertion sort is one of the fastest for sorting small arrays (N = 7..50), why?
   - Compare to Merge sort, Quick sort: they have some extra overhead,
     (while insertion sort is very simple):

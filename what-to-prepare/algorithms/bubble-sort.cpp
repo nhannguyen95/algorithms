@@ -10,6 +10,8 @@ Space complexity: O(1)
 Stable: Swapping 2 consecutive different elements doesn't change
 their relative position to same key elements.
 
+In-place
+
 BS is impratical and too slow.
 
 BS and IS all have the advantage over other algorithms: the ability
