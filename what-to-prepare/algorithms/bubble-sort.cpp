@@ -1,8 +1,9 @@
-/* Bubble sort (tested) 
+/* Bubble sort (tested)
 
 Time complexity:
-  - Best case: already sorted array, O(N)
-  - Average & Worst case: O(N^2)
+  - In all cases, we can say O(N^2), since this provides a upper bound.
+  - Best case: already sorted array O(N), Θ(N) for more exactly
+  - Average & Worst case: Θ(N^2),
 
 Space complexity: O(1)
 
@@ -48,7 +49,7 @@ void bubbleSort(vector<int>& arr) {
 // ----------OPTIMIZED BUBBLE SORT---------
 // Idea: At k-th iteration, there are not neccessarily
 // only k (largest) elements placed at their correct position
-// (at the end of the array), but maybe more, maybe we have 
+// (at the end of the array), but maybe more, maybe we have
 // k' elements at their corrected position.
 
 // k' is at the last swap at current iteration.
@@ -74,9 +75,9 @@ void printArray(const vector<int> & arr) {
 }
 
 int main() {
-  vector<int> arr({3,2,1}); 
+  vector<int> arr({3,2,1});
   bubbleSort(arr);
   printArray(arr);
-  
+
   return 0;
 }

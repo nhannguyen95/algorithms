@@ -1,9 +1,9 @@
-/* Merge sort (tested) 
+/* Merge sort (tested)
 
 Time complexity and Space complexity: read more
 (Recurrence Equation: công thức truy hồi)
 
-  - O(NlogN) time (in worst case)
+  - Θ(NlogN) time (in worst case)
   T(n) = C (if right == left => n = 1)
         = 2 T(n/2)
    T(n) = 2 T(n/2) + n = 2(2 T(n/4) + n/2) + n = 2^2 T (n / 2^2) + 2n
@@ -11,8 +11,8 @@ Time complexity and Space complexity: read more
         = 2^3 T(n / 2^3) + 3n  ...
         = 2^logn T(n / 2^logn) + nlogn
         = Cn + nlogn
-   => O(N) = NlogN in time
-  
+   => T(N) = Θ(NlogN) in time
+
    - O(N) space:
    S(n) = 1 (if right == left => n = 1)
    S(n) = S(n/2) + n = S(n/2^2) + n + n/2 = S(n/2^3) + n + n/2 + n/2^2 ..
@@ -73,10 +73,10 @@ void mergeSort(vector<int>& arr) {
 void mergeSortBottomUp(vector<int>& arr) {
   int n = (int)arr.size();
   for(int width = 1; width < n; width *= 2) {
-    // `arr` contains consecutives sub arrays of 
+    // `arr` contains consecutives sub arrays of
     // length `width` that are already sorted.
 
-    // Now we sort 2 consecutives sub arrays of 
+    // Now we sort 2 consecutives sub arrays of
     // length `width` to obtain a sorted sub arrays
     // of length `2*width`.
     for(int i = 0; i < n; i += 2*width) {
@@ -93,9 +93,9 @@ void printArray(const vector<int> & arr) {
 }
 
 int main() {
-  vector<int> arr({3,2,1}); 
+  vector<int> arr({3,2,1});
   mergeSort(arr);
-  
+
   printArray(arr);
 
   return 0;
