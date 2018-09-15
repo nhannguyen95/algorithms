@@ -2,7 +2,8 @@
 
 ## Algorithms
   - [ ] Recursion
-  - [ ] Divide and Conquer
+  - [ ] Divide and Conquer:
+    - [ ] Strassen's algorithm for matrix multiplication, Θ(n<sup>2.81</sup>)
   - [ ] Greedy
   - [ ] Dynamic Programming
   - [ ] Sorting:
@@ -47,6 +48,7 @@
 
 ## Others
   - [ ] [Big O Notation](what-to-prepare/big-o-notation.md)
+  - [ ] [Master Theorem](what-to-prepare/master-theorem.md)
   - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - [ ] Computer Architecture
   - [ ] Scalability Issues, RPCs, Rate limiter
