@@ -2,11 +2,10 @@
 
 ## Algorithms
   - [ ] Recursion
-  - [ ] Divide and Conquer:
-    - [ ] Strassen's algorithm for matrix multiplication, Θ(n<sup>2.81</sup>)
+  - [ ] Divide and Conquer
   - [ ] Greedy
   - [ ] Dynamic Programming
-  - [ ] Sorting:
+  - [ ] [Sorting](what-to-prepare/algorithms/sorting.md):
     - [x] [Bubble sort](what-to-prepare/algorithms/bubble-sort.cpp)
     - [x] [Insertion sort](what-to-prepare/algorithms/insertion-sort.cpp)
     - [x] [Selection sort](what-to-prepare/algorithms/selection-sort.cpp)
@@ -14,7 +13,7 @@
     - [ ] Quick sort
     - [ ] Counting sort
     - [ ] Radix sort
-    - [ ] Heap sort
+    - [ ] [Heap sort](what-to-prepare/algorithms/heap-sort.cpp)
   - [ ] Searching
     - [ ] Binary search
   - [ ] Probability and basic Number Theory
@@ -33,7 +32,7 @@
   - [ ] Linked List - Single and Doubly
   - [ ] Stack
   - [ ] Queues
-  - [ ] Binary Tree
+  - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
   - [ ] Binary Search Tree
   - [ ] Heaps
   - [ ] Tree
