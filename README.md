@@ -34,7 +34,7 @@
   - [ ] Queues
   - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
   - [ ] Binary Search Tree
-  - [ ] Heaps
+  - [ ] [Heap](what-to-prepare/data-structures/heap.cpp)
   - [ ] Tree
   - [ ] Graph
   - [ ] Hash Table
