@@ -102,7 +102,9 @@ private:
   }
 
 public:
-  // O(n)
+  // SiftUp: O(nlogn)
+  // We can speed up to O(n) by copying the list l
+  // to the heap's internal array and then siftUp
   MaxHeap(initializer_list<int> l) {
     for(int e : l) insert(e);
   }

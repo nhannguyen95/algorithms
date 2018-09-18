@@ -25,6 +25,7 @@
 ## Classic problems
 
   - [x] [Maximum subarray problem](what-to-prepare/classic-problems/maximum-subarray.cpp)
+  - [ ] Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
 
 ## Data structures
   - [ ] Array
@@ -34,7 +35,8 @@
   - [ ] Queues
   - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
   - [ ] Binary Search Tree
-  - [ ] [Heap](what-to-prepare/data-structures/heap.cpp)
+  - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
+    - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
   - [ ] Tree
   - [ ] Graph
   - [ ] Hash Table
