@@ -37,6 +37,7 @@
   - [ ] Binary Search Tree
   - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
     - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
+    - [x] [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
   - [ ] Tree
   - [ ] Graph
   - [ ] Hash Table
