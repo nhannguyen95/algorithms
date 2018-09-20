@@ -1,10 +1,15 @@
 /* D-ary max heap implementation (tested)
 
-In D-ary performs faster SiftUp operation than binary heap, at the expense of slower SiftDown operation.
+In D-ary performs faster SiftUp operation than binary heap,
+at the expense of slower SiftDown operation.
 
-This tradeoff leads to better running times for algorithms such as Dijkstra's algorithm.
+This tradeoff leads to better running times for algorithms
+such as Dijkstra's algorithm.
 
-Additionally, d-ary heaps have better memory cache behavior than binary heaps, allowing them to run more quickly in practice despite having a theoretically larger worst-case running time.
+Additionally, d-ary heaps have better memory cache behavior
+than binary heaps, allowing them to run more quickly in
+practice despite having a theoretically larger worst-case
+running time.
 
 */
 
