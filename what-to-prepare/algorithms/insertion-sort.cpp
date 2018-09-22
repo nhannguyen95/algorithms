@@ -10,6 +10,11 @@ Time complexity:
   - Average: Θ(N^2)
   - Worst case: the array sorted in reverse order, Θ(N^2)
 
+  - Another nice way to think about the time complexity:
+    If on average, each element is k positions from its
+    correct place in sorted array, then the time
+    complexity is O(nk)
+
 Space complexity: O(1)
 
 Stable: keep the relative position of elements with equal keys.
