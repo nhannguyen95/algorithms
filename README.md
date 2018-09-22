@@ -10,10 +10,11 @@
     - [x] [Insertion sort](what-to-prepare/algorithms/insertion-sort.cpp)
     - [x] [Selection sort](what-to-prepare/algorithms/selection-sort.cpp)
     - [ ] [Merge sort](what-to-prepare/algorithms/merge-sort.cpp)
-    - [ ] Quick sort
-    - [ ] Counting sort
-    - [ ] Radix sort
+    - [ ] [Quick sort](what-to-prepare/algorithms/quick-sort.cpp)
     - [ ] [Heap sort](what-to-prepare/algorithms/heap-sort.cpp)
+    - [ ] [Counting sort](what-to-prepare/algorithms/counting-sort.cpp)
+    - [ ] Radix sort
+    - [ ] Bucket sort
   - [ ] Searching
     - [ ] Binary search
   - [ ] Probability and basic Number Theory
@@ -128,7 +129,7 @@
 
 - _"The truth is that you are never going to feel fully prepared."_
 
-- _"Majority candidates know what DFS/BFS is. What makes a difference is to have a deep understanding of those concepts."
+- _"Majority candidates know what DFS/BFS is. What makes a difference is to have a deep understanding of those concepts."_
 
 - _"You should be clear about the definition of those basic data structures/algorithms. Most people did a good job in this part, but not perfect. For instance, a lot of people are confused about dynamic programming and recursion."_
 
