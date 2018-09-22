@@ -26,6 +26,7 @@
 
   - [x] [Maximum subarray problem](what-to-prepare/classic-problems/maximum-subarray.cpp)
   - [ ] Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
+  - [x] [Dutch national flag algorithm](classic-problems/dutch-national-flag.md): [2-ways.cpp](handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
 
 ## Data structures
   - [ ] Array
@@ -90,7 +91,6 @@
 
 **Handy algorithms**:
 - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
-- [Dutch national flag algorithm](http://users.monash.edu/~lloyd/tildeAlgDS/Sort/Flag/): [2-ways.cpp](handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
 - Split string: [code](handy-algorithms/split-string.cpp).
 
 # Resources
