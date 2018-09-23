@@ -40,6 +40,11 @@ equation for both cases would be (randomized version):
               => T(n) = Θ(n^2)
   - Expected running time: O(nlogn)
     Proof in CLRS p.181..184
+
+NOT STABLE
+
+IN-PLACE
+
 */
 
 // ----------------INCLUDE-----------------
