@@ -13,7 +13,7 @@
     - [ ] [Quick sort](what-to-prepare/algorithms/quick-sort.cpp)
     - [ ] [Heap sort](what-to-prepare/algorithms/heap-sort.cpp)
     - [x] [Counting sort](what-to-prepare/algorithms/counting-sort.cpp)
-    - [ ] Radix sort
+    - [x] [Radix sort](what-to-prepare/algorithms/radix-sort.cpp)
     - [ ] Bucket sort
   - [ ] Searching
     - [ ] Binary search
