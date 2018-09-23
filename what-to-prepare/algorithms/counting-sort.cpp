@@ -1,6 +1,7 @@
 /*  Counting sort (tested)
 
 Given n-element array in the range of k
+(that is, small INTEGERS)
 
 Time complexity: O(n+k)
 
@@ -9,11 +10,19 @@ Space complexity: O(n+k)
 NOT IN-PLACE
 
 STABLE:
-  Note that in the for statement (*), the stability
+  Note that in the for statement (**), the stability
   of the algorithm doesn't depend on the direction
   of this for loop, but on the data structure used
   to store the frequency instead (freq) in this case
   (i.e. whether it's FILO or FIFO).
+
+(*): Actually we don't need to compute the prefix sum
+to identify the position of the elements in the sorted
+array. Instead just simply append freq[e] copies of
+the number e to the output.
+
+Couting sort can be paralleized when k is small:
+splitting the input into subarrays.
 
 */
 
@@ -38,13 +47,13 @@ void countingSort(vector<int> & A) {
   // Count frequency
   for(int e : A) freq[e]++;
 
-  // freq[e] = number of elements <= e
+  // freq[e] = number of elements <= e (*)
   for(int i = 0; i <= k; i++)
     freq[i] += freq[i-1];
 
   // Put elements to correct position
   vector<int> B(A.size(), 0);
-  for(int i = A.size() - 1; i >= 0; i--) {  /* (*) */
+  for(int i = A.size() - 1; i >= 0; i--) {  // (**)
     // If element e has C[e] frequency,
     // then correct position of e in sorted array
     // in at index C[e]
