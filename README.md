@@ -38,7 +38,7 @@
   - [ ] Strings
   - [ ] Linked List - Single and Doubly
   - [ ] Stack
-  - [ ] Queues
+  - [ ] [Queues](what-to-prepare/data-structures/queue-array.cpp)
   - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
   - [ ] Binary Search Tree
   - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
