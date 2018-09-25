@@ -10,7 +10,7 @@
     - [x] [Insertion sort](what-to-prepare/algorithms/insertion-sort.cpp)
     - [x] [Selection sort](what-to-prepare/algorithms/selection-sort.cpp)
     - [ ] [Merge sort](what-to-prepare/algorithms/merge-sort.cpp)
-    - [ ] [Quick sort](what-to-prepare/algorithms/quick-sort.cpp)
+    - [ ] [Quick sort](what-to-prepare/algorithms/quick-sort.cpp) _(missing analyzing expected running time)_
     - [ ] [Heap sort](what-to-prepare/algorithms/heap-sort.cpp)
     - [x] [Counting sort](what-to-prepare/algorithms/counting-sort.cpp)
     - [x] [Radix sort](what-to-prepare/algorithms/radix-sort.cpp)
@@ -22,6 +22,10 @@
     - [ ] BFS
     - [ ] DFS
   - [ ] Network flow
+  - [ ] Medians and Order Statistics
+    - [ ] [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp) _(missing analyzing expected running time)_
+    - [ ] [Order statistic] linear worst case running time
+
 
 ## Classic problems
 
