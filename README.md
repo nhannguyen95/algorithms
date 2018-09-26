@@ -36,7 +36,7 @@
 ## Data structures
   - [ ] Array
   - [ ] Strings
-  - [ ] Linked List - Single and Doubly
+  - [ ] [Doubly Linked List](what-to-prepare/data-structures/doubly-linked-list.cpp) _CLRS Questions_
   - [x] [Stack](what-to-prepare/data-structures/stack-array.cpp)
   - [x] [Queues](what-to-prepare/data-structures/queue-array.cpp)
   - [x] [Deque](what-to-prepare/data-structures/deque-array.cpp)
@@ -94,6 +94,7 @@
 - [x] Stack with push, pop and min operate in O(1): [code](data-structure-implementation/stack-min-o1.cpp)
 - [x] Set of stacks with popAt(stackIndex) method: [code](data-structure-implementation/set-of-stacks-with-popat.cpp)
 - [x] Implement queue with 2 stacks: [code](data-structure-implementation/queue-with-2-stacks.cpp)
+- [ ] Implement stack with 2 queues
 
 **Handy algorithms**:
 - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
@@ -130,7 +131,7 @@
 
 - [System design](strategies/system-design.md).
 
-# Advices:
+# Advices
 
 - _"The truth is that you are never going to feel fully prepared."_
 
