@@ -6,8 +6,12 @@ Two operations of dynamic sets are implemented on queues:
 
 */
 
+// ----------------INCLUDE-----------------
+
 #include <iostream>
 using namespace std;
+
+// --------------QUEUE ARRAY---------------
 
 class Queue {
 private:
@@ -69,6 +73,8 @@ public:
     cout << '\n';
   }
 };
+
+// ----------------------------------------
 
 int main() {
   Queue q(5);
