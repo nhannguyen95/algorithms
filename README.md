@@ -39,6 +39,7 @@
   - [ ] Linked List - Single and Doubly
   - [x] [Stack](what-to-prepare/data-structures/stack-array.cpp)
   - [x] [Queues](what-to-prepare/data-structures/queue-array.cpp)
+  - [x] [Deque](what-to-prepare/data-structures/deque-array.cpp)
   - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
   - [ ] Binary Search Tree
   - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
