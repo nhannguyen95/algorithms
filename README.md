@@ -46,10 +46,10 @@
     - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [x] [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
     - [x] [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
+    - [ ] Mergeable heap
   - [ ] Tree
   - [ ] Graph
-  - [ ] Hash Table
-  - [ ] Hash Map
+  - [ ] [Hash Table](what-to-prepare/data-structure/hash-table.md)
   - [ ] Tries
   - [ ] Segment Tree (IT - Interval Tree)
   - [ ] Binary Indexed Tree (BIT)
