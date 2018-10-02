@@ -1,4 +1,4 @@
-###Types of binary tree:
+### Types of binary tree:
 
 **Depth, Height, Level in binary tree**: https://www.youtube.com/watch?v=TKQe_mvLRaI
 
@@ -10,7 +10,15 @@
 
 ---
 
-###Properties
+### Operations on a binary tree
+
+- PREDECESSOR, O(h)
+
+- SUCCESSOR, O(h)
+
+---
+
+### Properties
 
 Notations:
   - h: height

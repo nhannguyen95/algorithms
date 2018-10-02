@@ -41,7 +41,7 @@
   - [x] [Queues](what-to-prepare/data-structures/queue-array.cpp)
   - [x] [Deque](what-to-prepare/data-structures/deque-array.cpp)
   - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
-  - [ ] Binary Search Tree
+  - [ ] [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp) _CLRS Questions_
   - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
     - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [x] [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
@@ -54,6 +54,7 @@
   - [ ] Segment Tree (IT - Interval Tree)
   - [ ] Binary Indexed Tree (BIT)
   - [ ] AVL Tree
+  - [ ] Red-black Tree
   - [ ] B+ Tree
 
 ## Others
