@@ -3,8 +3,8 @@
 ## Algorithms
   - [ ] Recursion
   - [ ] Divide and Conquer
-  - [ ] Greedy
-  - [ ] Dynamic Programming
+  - [ ] [Dynamic Programming](what-to-prepare/algorithms/dynamic-programming.md)
+  - [ ] [Greedy](what-to-prepare/algorithms/greedy.md)
   - [ ] [Sorting](what-to-prepare/algorithms/sorting.md):
     - [x] [Bubble sort](what-to-prepare/algorithms/bubble-sort.cpp)
     - [x] [Insertion sort](what-to-prepare/algorithms/insertion-sort.cpp)
@@ -32,6 +32,19 @@
   - [x] [Maximum subarray problem](what-to-prepare/classic-problems/maximum-subarray.cpp)
   - [ ] Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
   - [x] [Dutch national flag algorithm](classic-problems/dutch-national-flag.md): [2-ways.cpp](handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
+  - [ ] [0-1 knapsack problem](classic-problems/0-1-knapsack-problem.cpp)
+  - [ ] 0-∞ knapsack problem
+  - [ ] Fractional knapsack problem
+  - [ ] Huffman codes
+  - [ ] Longest common subsequence (LCS)
+  - [ ] Edit distance problem
+  - [ ] Optimal binary search tree
+  - [ ] Activity selection problem
+  - [ ] Interval-graph coloring problem
+  - [ ] Minimum spanning tree
+  - [ ] Dijkstra - Finding shortest paths from a single source
+  - [ ] Chvátal's greedy set-covering heuristic
+  - [ ] Least Common Ancestors (LCA)
 
 ## Data structures
   - [ ] Array
@@ -40,13 +53,14 @@
   - [x] [Stack](what-to-prepare/data-structures/stack-array.cpp)
   - [x] [Queues](what-to-prepare/data-structures/queue-array.cpp)
   - [x] [Deque](what-to-prepare/data-structures/deque-array.cpp)
-  - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
-  - [ ] [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp) _CLRS Questions_
   - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
     - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [x] [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
     - [x] [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
     - [ ] Mergeable heap
+  - [ ] [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
+  - [ ] [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp) _CLRS Questions_
+  - [ ] Red-black Tree _Quite complicated to implement_
   - [ ] Tree
   - [ ] Graph
   - [ ] [Hash Table](what-to-prepare/data-structure/hash-table.md)
@@ -54,12 +68,17 @@
   - [ ] Segment Tree (IT - Interval Tree)
   - [ ] Binary Indexed Tree (BIT)
   - [ ] AVL Tree
-  - [ ] Red-black Tree
   - [ ] B+ Tree
+  - Advanced data structures:
+    - [ ] B-Trees
+    - [ ] Fibonacci Heap
+    - [ ] Emde Boas Tree
+    - [ ] [Disjoint-Set Forest](what-to-prepare/data-structure/disjoint-set-forest.cpp)
 
 ## Others
   - [ ] [Big O Notation](what-to-prepare/big-o-notation.md)
   - [ ] [Master Theorem](what-to-prepare/master-theorem.md)
+  - [ ] [Amortized Analysis](what-to-prepare/amortized-analysis.md)
   - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - [ ] Computer Architecture
   - [ ] Scalability Issues, RPCs, Rate limiter
