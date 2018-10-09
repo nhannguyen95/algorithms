@@ -18,9 +18,11 @@
   - [ ] Searching
     - [ ] Binary search
   - [ ] Probability and basic Number Theory
-  - [ ] Graph:
-    - [ ] BFS
-    - [ ] DFS
+  - [ ] [Graph](what-to-prepare/algorithms/graph.md):
+    - [ ] [BFS](what-to-prepare/algorithms/bfs.cpp)
+    - [ ] [DFS](what-to-prepare/algorithms/dfs.cpp)
+    - [ ] [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
+    - [ ] [Strongly connected components](what-to-prepare/algorithms/strongly-connected-components.cpp)
   - [ ] Network flow
   - [ ] Medians and Order Statistics
     - [ ] [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp) _(missing analyzing expected running time)_
@@ -41,7 +43,6 @@
   - [ ] Optimal binary search tree
   - [ ] Activity selection problem
   - [ ] Interval-graph coloring problem
-  - [ ] Minimum spanning tree
   - [ ] Dijkstra - Finding shortest paths from a single source
   - [ ] Chvátal's greedy set-covering heuristic
   - [ ] Least Common Ancestors (LCA)
@@ -63,7 +64,7 @@
   - [ ] Red-black Tree _Quite complicated to implement_
   - [ ] Tree
   - [ ] Graph
-  - [ ] [Hash Table](what-to-prepare/data-structure/hash-table.md)
+  - [ ] [Hash Table](what-to-prepare/data-structures/hash-table.md)
   - [ ] Tries
   - [ ] Segment Tree (IT - Interval Tree)
   - [ ] Binary Indexed Tree (BIT)
@@ -73,7 +74,7 @@
     - [ ] B-Trees
     - [ ] Fibonacci Heap
     - [ ] Emde Boas Tree
-    - [ ] [Disjoint-Set Forest](what-to-prepare/data-structure/disjoint-set-forest.cpp)
+    - [ ] [Disjoint-Set Forest](what-to-prepare/data-structures/disjoint-set-forest.cpp)
 
 ## Others
   - [ ] [Big O Notation](what-to-prepare/big-o-notation.md)
