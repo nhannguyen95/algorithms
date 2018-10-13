@@ -23,6 +23,9 @@
     - [ ] [DFS](what-to-prepare/algorithms/dfs.cpp)
     - [ ] [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
     - [ ] [Strongly connected components](what-to-prepare/algorithms/strongly-connected-components.cpp)
+    - [ ] [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
+      - [ ] Kruskal's algorihtm
+      - [ ] Prim's algorithm
   - [ ] Network flow
   - [ ] Medians and Order Statistics
     - [ ] [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp) _(missing analyzing expected running time)_
