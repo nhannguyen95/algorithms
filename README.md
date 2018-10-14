@@ -24,8 +24,13 @@
     - [ ] [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
     - [ ] [Strongly connected components](what-to-prepare/algorithms/strongly-connected-components.cpp)
     - [ ] [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
-      - [ ] Kruskal's algorihtm
-      - [ ] Prim's algorithm
+      - [ ] [Kruskal's algorihtm](what-to-prepare/algorithms/mst-kruskal.cpp)
+      - [ ] [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
+    - [ ] [Shortest-paths](what-to-prepare/algorithms/shortest-paths.md)
+      - [ ] [Single-source shortest-paths -  Bellman Ford] (what-to-prepare/algorithms/bellman-ford.cpp)
+      - [ ] [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
+      - [ ] [Single-source shortest-paths -  Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
+      - [ ] All pairs shortest-paths - Floyd
   - [ ] Network flow
   - [ ] Medians and Order Statistics
     - [ ] [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp) _(missing analyzing expected running time)_

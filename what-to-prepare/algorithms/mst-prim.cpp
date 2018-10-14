@@ -5,6 +5,9 @@ https://vn.spoj.com/problems/QBMST/
 
 Property: A at each time is a single tree.
 
+The idea is simple, we add into A the minimum weight
+edge (u, v) with u in A and v not in A.
+
 The running time of this algorithm depends on how we
 implement the min queue Q. Assume we implement it using
 a complete binary tree.
