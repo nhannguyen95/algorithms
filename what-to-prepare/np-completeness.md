@@ -62,16 +62,10 @@ There are many problems that are NP-complete (with the natural statement) but no
 
 Every problem satisfies (2) condition is NP-hard problem, it doesn't matter if it belongs to NP or not (polynomial-time verifiable or not).
 
+### NP-Completeness proofs
 
-## Some NP-complete problems
+Given an NP-complete problem P, then we can prove some other problem S is NP-complete (or NP-hard) by showing that P ≤<sub>P</sub> S.
 
-### The clique problem
+Our first NP-complete problem to prove is [Circuit satisfiability problem](https://en.wikipedia.org/wiki/Circuit_satisfiability_problem).
 
----
-
-In each of the following pairs of problems, one is solvable in polynomial time and the other is NP-complete:
-- **Shortest vs. longest simple paths** in a directed graph.
-- **Euler tour vs. hamiltonian cycle** in a connected, directed graph G = (V, E):
-    - Euler tour: a cycle that traverses each edge of G exactly once (each vertex may be visited more than once).
-    - Hamiltonian cycle: a simple cycle that contains each vertex in V exactly once.
-- **2-CNF satisfiability vs. 3-CNF satisfiability**
+You can read more in CLRS, 3rd, Chapter 34.
