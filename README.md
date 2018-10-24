@@ -30,7 +30,7 @@
       - [ ] [Single-source shortest-paths -  Bellman Ford] (what-to-prepare/algorithms/bellman-ford.cpp)
       - [ ] [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
       - [ ] [Single-source shortest-paths -  Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
-      - [ ] All pairs shortest-paths - Floyd
+      - [ ] [All pairs shortest-paths - Floyd](what-to-prepare/algorithms/floyd.cpp)
   - [ ] Network flow
   - [ ] Medians and Order Statistics
     - [ ] [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp) _(missing analyzing expected running time)_
@@ -88,6 +88,7 @@
   - [ ] [Big O Notation](what-to-prepare/big-o-notation.md)
   - [ ] [Master Theorem](what-to-prepare/master-theorem.md)
   - [ ] [Amortized Analysis](what-to-prepare/amortized-analysis.md)
+  - [ ] [NP-Completeness](what-to-prepare/np-completeness.md)
   - [ ] Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - [ ] Computer Architecture
   - [ ] Scalability Issues, RPCs, Rate limiter
@@ -154,6 +155,7 @@
   - [Gainlo Blog](http://blog.gainlo.co/)
   - [ ] [Programming Interviews Exposed](https://www.amazon.in/Programming-Interviews-Exposed-Secrets-Landing/dp/8126539119)
   - [ ] [Elements of Programming Interview](https://www.amazon.in/Elements-Programming-Interviews-Adnan-Aziz/dp/9382359443/)
+  - [ ] [Book: Clean Code - Robert C Martin](clean-code/)
 
 # [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
 

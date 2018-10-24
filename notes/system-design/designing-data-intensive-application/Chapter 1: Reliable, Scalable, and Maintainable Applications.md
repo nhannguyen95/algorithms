@@ -7,6 +7,8 @@ As the system grows (in data volume, traffic volume, or complexity), there shoul
 **Maintainability**
 Over time, many different people will work on the system (engineering and oper‐ ations, both maintaining current behavior and adapting the system to new use cases).
 
+---
+
 What it means for something to be reliable or unreliable?
 - Performs the function that the user expected.
 - Tolerate the user making mistakes or using the software in unexpected ways.
@@ -16,11 +18,15 @@ What it means for something to be reliable or unreliable?
 
 It is impossible to reduce the probability of a fault to zero; therefore it is usually best to design fault-tolerance mechanisms that prevent faults from causing failures.
 
+---
+
 Load parameters (load factors) can be (depends on the architecture of your system):
 - Requests per second (to a webserver).
 - The ratio of reads to writes in a database.
 - The number of simultaneously active users in a chat room.
 - The hit rate on a cache.
+
+---
 
 **Twitter timeline problem**:
 - According to data published in November 2012:
@@ -34,3 +40,17 @@ Load parameters (load factors) can be (depends on the architecture of your syste
  - Twitter is now moving to a hybrid of both approaches. Less follower: use 1st approach, many followers: use 2nd approach (the result is merged with the homeline cache).
  - The distribution of followers per user is a key load parameter for discussing scalability, since it determines the _fan-out_ load.
  
+---
+
+When you increase a load parameter:
+- How is the performance of the system affected if you keep the system resource unchanged?
+- To keep the performance unchanged, how much do you need to increase the resources?
+
+---
+
+**Latency**: the duration that a request is waiting to be handled (to be processed by the server).
+
+**Response time**: what the clients see, actual time to process the request + network delays + queueing delays etc.
+
+Response time can vary a lot even if you issue the same request, so think of it as a distribution of values rather than a single one.
+
