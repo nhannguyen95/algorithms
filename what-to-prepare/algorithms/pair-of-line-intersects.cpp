@@ -50,4 +50,9 @@ so far will never be discovered.
 The intuition to understand this maybe because the algorithm
 only consider consecutive segments.
 
+This algorithms works even when 3 or more segments intersect
+at the same point.
+
+This algorithms works even when there exist verticle segments
+(we treat left point as bottom point and right point as top point)
 */ 
