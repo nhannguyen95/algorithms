@@ -5,7 +5,8 @@ m = |P| = Length of pattern
 
 |Algorithm|Preprocessing time|Matching time|
 |-|-|-|
-|Naive|0|O((n - m + 1)m)
+|Naive|0|O((n - m + 1)m)|
+|Rabin-Karp|Θ(m)|O((n - m + 1)m)|
 
 ## Why is naive algorithm inefficient?
 
