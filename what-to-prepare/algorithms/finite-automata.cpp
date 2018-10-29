@@ -1,8 +1,5 @@
 /* String matching with Finite Automata
 
-Understanding this algorithm is extremely important to
-understand the KMP algorithm.
-
 We will use 1-based index.
 
 P = Pattern string of length m
@@ -80,9 +77,10 @@ COMPUTE-TRANSITION-FUNCTION(P, Σ)
                 k_next--
             𝛿(k, c) = k_next
 
-The improved version of this is in KMP algorithm.
+
 
 Follow up problems:
+- Improve O(m^3|Σ|) to O(m|Σ|)
 - Construct the automata for 2 pattern P and P' that
 determines the occurrences of either of them.
 - Given a pattern P containing gap characters, build

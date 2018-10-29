@@ -7,6 +7,7 @@ m = |P| = Length of pattern
 |-|-|-|
 |Naive|0|O((n - m + 1)m)|
 |Rabin-Karp|Θ(m)|O((n - m + 1)m)|
+|KMP|O(m)|O(n)|
 
 ## Why is naive algorithm inefficient?
 
