@@ -77,8 +77,6 @@ COMPUTE-TRANSITION-FUNCTION(P, Σ)
                 k_next--
             𝛿(k, c) = k_next
 
-
-
 Follow up problems:
 - Improve O(m^3|Σ|) to O(m|Σ|)
 - Construct the automata for 2 pattern P and P' that
