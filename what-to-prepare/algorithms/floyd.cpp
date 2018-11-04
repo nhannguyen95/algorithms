@@ -3,6 +3,9 @@
 The algorithm is tested at:
 http://vn.spoj.com/problems/FLOYD/
 
+We assume for now that the graph may contain negative-weight
+edges, but not negative-weight cycles.
+
 DP idea/Optimal substructure: sub paths of a shortest path
 are also shortest paths.
 
@@ -26,6 +29,24 @@ we can prove that c_ij(k) never steps on c_i'j'(k)
 (with (i', j') is iterated before (i, j)).
 
 Time complexity: O(V^3)
+
+--------------------------------------------------------
+
+So now assume the graph G may contain negative-weight
+cycles.
+
+Problem: Using Floyd(-Warshall) algorithm to detect the
+presence of negative-weight cycles.
+
+Initially, C[i, i] = 0 indicates that we just discover
+only 1 obvious path to go from i to i, that is i --> i,
+and the weight of that path is 0.
+
+At the termination of Floyd algorithm, C[i, i] is the
+minimum weight of the cycle start and end at i.
+
+So if we have some vertice i such that C[i, i] < 0, we
+detect a negative-weight cycle.
 
 */
 

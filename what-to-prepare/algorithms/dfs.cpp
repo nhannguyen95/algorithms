@@ -15,6 +15,7 @@ Each vertex u during DFS has 2 important attributes:
      u is BLACK during time > u.f
 
 Time complexity:
+(Time complexity is computed if use adjacency list)
   - Each vertex is visited once, so O(V)
   - Before finishing u, all edge of u is examined, so O(E)
     in total

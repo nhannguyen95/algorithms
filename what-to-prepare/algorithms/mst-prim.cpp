@@ -10,7 +10,7 @@ edge (u, v) with u in A and v not in A.
 
 The running time of this algorithm depends on how we
 implement the min queue Q. Assume we implement it using
-a complete binary tree.
+a binary heap.
 
 The total running time is O(ElgE), you can figure it out.
 

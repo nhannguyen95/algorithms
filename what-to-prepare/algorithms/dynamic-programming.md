@@ -22,3 +22,7 @@ To prove the **optimal substructure** of a problem: _cut-and-paste_ technique. S
 Divide & conquer (D&C) and DP difference:
   - D&C divides the problem into _disjoint_ subproblems, solve the subproblems recursively, then combine their solutions to solve the original problem.
   - In contract, DP applies when subproblems share subproblems (i.e. when subproblems overlap), each subproblem is solved just once and the result is saved into a table for later use, therefore avoid the work of recomputing the answer every time it solves a subproblem.
+
+---
+
+It's easier to keep track of the solution during doing the dp than tracing back for the solution after computing dp. Trade off: memory complexity.

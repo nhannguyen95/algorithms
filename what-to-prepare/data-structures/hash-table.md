@@ -34,7 +34,7 @@ Hash tables are used to implement _unordered_set_ in C++.
 
 ### Collision resolution
 
-Two different keys can possibly have the same hash value, we can this situation **collision**.
+Two different keys can possibly have the same hash value, we call this situation **collision**.
 
 #### Chaining
 

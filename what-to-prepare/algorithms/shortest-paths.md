@@ -8,7 +8,7 @@ This optimal substructure is one of the key indicators that Dynamic Programming 
 
 **Negative-weight edges**
 
-Let 𝛿(u, v) be the shortest path weight from u to v.
+Let 𝛿(u, v) be the minimum weight of the path from u to v.
 
 If there is no negative-weight *cycle* on the path from u to v, then 𝛿(u, v) is well defined (it's ok if some edge has negative weight).
 
@@ -16,7 +16,7 @@ If there's negative-weight *cycle* on the path from u to v, then 𝛿(u, v) is n
 
 If u is not reachable from v (or vice-versa), 𝛿(u, v) = ∞.
 
-Dijstra algorithm assumes that edge weights are non negative.
+Dijsktra algorithm assumes that edge weights are non negative.
 
 Other algorithms like Bellman Ford's allow negative-weight edges and produce correct answer as long as no negative-weight cycles are reachable from source. Typically, if there is such a negative-weight cycle, the algorithm can detect and reports its existence.
 
@@ -36,7 +36,7 @@ For each vertex v, we maintain an atrribute v.d, the upper bound on the weight o
 
 Initially, s.d = 0, v.d = ∞.
 
-The process of *relax* an edge (u, v): testing whether can improve the shortest path to v so far by going through u and, if so, update v.d and v.parent:
+The process of *relax* an edge (u, v): testing whether we can improve the shortest path to v so far by going through u and, if so, update v.d and v.parent:
 
 ```
 RELAX(u, v, w)
@@ -46,6 +46,8 @@ RELAX(u, v, w)
 ```
 
 Dijkstra and Bellman Ford algorithms differ in how many times they relax each edge and the order in which they relax edges. *Dijkstra and the shortest-paths algorithm for directed acyclic graphs relax each edge exactly once. The Bellman Ford algorithm relaxes each edge V - 1 times.*
+
+Suppose we're finding the shortest path from source s to all remaining vertices. If there is a negative-weight cycle on some path from s to v such that u immediately preceeds v on the path, then v.d strictly decrease every time RELAX(u, v, w) is called. If there is no negative-weight cycle, then v.d never decreases once v.d = 𝛿(s, v).
 
 ---
 

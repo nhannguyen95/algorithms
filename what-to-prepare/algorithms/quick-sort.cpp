@@ -71,6 +71,9 @@ int partition(vector<int> & A, int l, int r) {
     - A[l, p) <= pivot
       A[p, i) > pivot
       A[i, r] = unknown
+
+    - Update: This is Lomuto partition scheme,
+      we can also use Hoare partition scheme.
   */
   // FOR version
   // int pivot = A[r];

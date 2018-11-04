@@ -1,6 +1,6 @@
 There are 2 greedy algorithms to solve MST: Kruskal's algorithm and Prim's algorithm.
 
-Given undirected graph G = (V, E), the common pattern of 2 algorithms is from a set of edge `A` that is a subset of the minimum spanning tree `T`, we pick a *safe edge* for `A` (i.e. the edge that doesn't form a cycle in `A`), repeat until `A = T`:
+Given undirected graph G = (V, E), the common pattern of 2 algorithms is from a set of edge `A` that is a subset of some minimum spanning tree, we pick a *safe edge* for `A` (i.e. the edge that doesn't form a cycle in `A`, and `A ⋃ (u, v)` is a subset of some MST), repeat until `A` = some MST:
 
 ```
 A = ∅

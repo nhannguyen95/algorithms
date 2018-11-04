@@ -8,7 +8,63 @@ is non-negative.
 Idea: the min queue Q maintains a set of vertices
 to extract the vertex u whose d is minimum, then
 relax all outgoing edge of v. All relaxed edges are
-then push into Q for later update.
+then push into Q for later update:
+
+INIT-SINGLE-SOURCE(G, s)
+  s.d = 0
+  u.d = oo if u != s
+
+DIJKSTRA(G, w, s)
+  INIT-SINGLE-SOURCE(G, s)
+  Q = G.V
+  S = ø
+  while Q != ø
+    u = EXTRACT-MIN(Q)
+    S += u
+    for v in G.adj[u]
+      RELAX(u, v, w)
+
+The key to show the correctness of Disjktra's algorithm
+is that when a vertex u is added to S (or is removed from
+Q), we have u.d = 𝛿(s, u).
+
+RELAX(u, v, w) is performed on u in S and v in V \ S.
+Greedily the next vertex we add to S is some vertex
+v in V \ S with minimum v.d.
+
+There is some problem with the current pseudo code:
+- There 2 information in the queue Q, u and its u.d
+- To extract u whose u.d is minimum, we want the key is u.d
+- To RELAX(u, v, w), we need to call DECREASE-KEY(v, new v.d)
+on Q. But since the 'd' is the k, we cannot find v
+efficiently (log|V|). Otherwise, if we let vertex index
+'v' be the key, we cannot EXTRACT-MIN and DECREASE-KEY
+efficiently (since the key for those 2 operations is 'd').
+
+Regardless of the above analysis, this pseudo code is still
+used in CLRS, 3rd book; which is something I haven't been
+able to explain yet and that might be the reason why most
+implementations on internet adopt an other implementation
+like the one below.
+
+The idea is that we use 'd' as the key for the min priority
+queue Q, but instead of pushing all vertices in Q in the first
+place and then cannot DECREASE-KEY(new v.d) efficiently
+since the only way to alter u.d value is to iterate through
+Q in O(|V|), we only push (v.d, v) into Q only when v
+is relaxed.
+
+When u is first popped out of the Q, just the same as before,
+u is now in S and u.d = 𝛿(s, u). However, notice that there
+are still some old version (u.d, u) still in Q. Fortunately
+we can remove them by checking that previous value of u.d
+in the Q with the current value of u[d]. If u.d > u[d],
+that is an old version and needs to be removed.
+
+Time complexity: O((V+E)logV) = O(ElogV)
+
+Notice that if the weight of outgoing edge of the source
+s is negative, the algorithm still correct.
 
 Illustration: CLRS, 3rd, p.659, Figure 24.6
 */

@@ -23,11 +23,44 @@ cycle, we have d.v = 𝛿(s, v) <= 𝛿(s, u) + w(u, v)
 = d.u + w(u, v) for all v in V and (u, v) in E.
 
 So now we prove if there exists some edge (u, v) such
-that d.u > d.v + w(u, v) => graph has negative-weight
+that d.v > d.u + w(u, v) => graph has negative-weight
 cycle that reachable from the source.
 (Proof: CLRS, 3rd, p.653, 654)
 
 Analyzing running time is simple: O(VE)
+
+For later follow up problems, let us describe the pseudo
+code of the Bellman Ford algorithm:
+
+INIT-SINGLE-SOURCE(G, s)
+  for v in G.V
+    v.d = (v == s) ? 0 : ∞
+
+BELLMAN-FORD(G, w, s)
+  INIT-SINGLE-SOURCE(G, s)
+
+  // Relax all edges |V| - 1 times.
+  for i = 1 to |G.V| - 1 (*)
+    for edge=(u, v) in G.E
+      RELAX(u, v, w)
+
+  for edge=(u, v) in G.E
+    if v.d > u.d + w(u, v) (**)
+      return FALSE  // Negative-weight cycle present that
+                    // reachable from source vertex s.
+  return TRUE  // No negative-weight cycle, and v.d = 𝛿(s, v)
+
+We not necessarily iterate up to |V| - 1 times. At the line
+(*) we can have a copy of u.d and detect if RELAX makes a change
+in it. If it doesn't change, it won't never change in the
+next iterations. We can stop there.
+
+From (**), we can know the vertices v such that there is
+negative-weight cycle from the unique path from s to v.
+To find all vertices on this cycle, we can DFS from one
+of such those vertices, until we reach a back edge(u, v)
+such that d.u + w(u, v) - d.v < 0, this is the weight of
+the cycle. To print out the vertices on this cycle.
 
 */
 

@@ -5,6 +5,17 @@
   - DELETE(S, x) as REMOVE(L, x), O(1)
   - SEARCH(S, k) as SEARCH(L, k), O(n)
 
+Follow up: to implement doubly linked list, instead of using
+2 values x.prev and x.next, we can only use one value on each
+item x.np = x.next XOR x.prev (assume that all pointer values
+can be interpreted as k-bit integers, and NIL is represented by 0).
+We utilize this property of XOR operator: A XOR (A XOR B) = B.
+
+To iterate:
+p = NIL
+x = L.head
+x = p XOR x.np  # next item after head
+
 */
 
 // ----------------INCLUDE-----------------

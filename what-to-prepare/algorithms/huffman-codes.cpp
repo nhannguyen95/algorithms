@@ -27,7 +27,7 @@ the text file.
   - Encode is trivial, in order to decode, their huffman
     codes must be "prefix codes", it means no code is a
     prefix of some other code:
-    For example a valid huffman code for 2 characters a & b
+    For example an invalid huffman code for 2 characters a & b
     can be 0 and 001, because 0 is prefix of 001, and
     this confuses the decoding process. Let's say we have
     an encoded code:
@@ -50,10 +50,16 @@ Finding Huffman code:
     process. But inorder to find Huffman codes, we start
     from building the tree based on the frequency.
 
+  - We need to build the tree so that the total number
+    of bits required to encode the file is minimum,
+    called cost of the tree. The following greedy algorithm
+    helps us find such a optimal tree.
+
   - Greedily, we grab the least 2 frequency character
     (using a min-heap / min priority) to connect them
     with a parent node => tends to push the low frequency
-    character to the bottom of the tree.
+    character to the bottom of the tree. The new node's
+    frequency = sum of frequency of its children nodes.
 
   => Problem solved
 */
