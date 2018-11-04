@@ -1,3 +1,14 @@
+# Content
+
+- [Algorithms and Data Structures](#algorithms-and-data-structures)
+- [System Design](#system-design)
+- [Computer Architecture](#computer-architecture)
+- [Database](#database)
+- [Coding Practices](#coding-practices)
+- [Other Useful Resources](#other-useful-resources)
+- [Interview strategies](#interview-strategies)
+- [Advices](#advices)
+
 # Algorithms and Data Structures
 
 ## Algorithms
@@ -194,6 +205,8 @@
 ## Geeksforgeeks
   - [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
   - [Array](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/array).
+
+## [Inteviewbit](practices/interview-bit)
 
 ## [Data structure](https://github.com/nhannguyen95/interview-preparation/tree/master/data-structure-implementation)
   - [x] Implement stack using array: [code](data-structure-implementation/stack-using-array.cpp).
