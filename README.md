@@ -8,6 +8,8 @@
 - [Additional Learning](#additional-learning)
   - [Git](#git)
   - [Unix, Linux](#unix-linux)
+  - [Design Patterns](#design-patterns)
+  - [Clean Code](#clean-code)
 - [Coding Practices](#coding-practices)
 - [Other Useful Resources](#other-useful-resources)
 - [Interview strategies](#interview-strategies)
@@ -202,6 +204,10 @@
 ## Git
 
 ## Unix, Linux
+
+## Design Patterns
+
+## Clean Code
 
 
 # Coding Practices
