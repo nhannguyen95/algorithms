@@ -4,6 +4,9 @@
 - [System Design](#system-design)
 - [Computer Architecture](#computer-architecture)
 - [Database](#database)
+- [Additional Learning](#additional-learning)
+  - [Git](#git)
+  - Unix, Linux
 - [Coding Practices](#coding-practices)
 - [Other Useful Resources](#other-useful-resources)
 - [Interview strategies](#interview-strategies)
@@ -87,11 +90,11 @@
       - [ ] [Javis's march (nh)](what-to-prepare/algorithms/javis-march.cpp)
     - [ ] Finding the farthest pair of points
     - [ ] Finding the closest pair of points (nlogn)
-    - [ ] A*
-    - [ ] Bloom Filter
-    - [ ] K-way merge
-    - [x] [NP-Completeness](what-to-prepare/np-completeness.md)
-    - [ ] NP-Completeness Approximation Algorithms
+  - [ ] A*
+  - [ ] Bloom Filter
+  - [ ] K-way merge
+  - [x] [NP-Completeness](what-to-prepare/np-completeness.md)
+  - [ ] NP-Completeness Approximation Algorithms
 
 ## Data structures
   - [ ] Array
@@ -188,6 +191,13 @@
 
 
 # Database
+
+
+# Additional Learning
+  
+## Git
+
+## Unix, Linux
 
 
 # Coding Practices
