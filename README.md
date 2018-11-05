@@ -6,7 +6,7 @@
 - [Database](#database)
 - [Additional Learning](#additional-learning)
   - [Git](#git)
-  - Unix, Linux
+  - [Unix, Linux](#unix-linux)
 - [Coding Practices](#coding-practices)
 - [Other Useful Resources](#other-useful-resources)
 - [Interview strategies](#interview-strategies)
