@@ -26,6 +26,7 @@ Notations:
 
 **Full Binary Tree**:
   - c leaf nodes, c - 1 internal node => 2c - 1 = n
+  - n-th [Catalan number](https://en.wikipedia.org/wiki/Catalan_number) = number of full binary tree with (n+1) leaf nodes.
 
 **Complete Binary Tree**:
   - h = floor(lgn)
