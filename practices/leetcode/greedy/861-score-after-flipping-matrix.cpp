@@ -49,4 +49,22 @@ public:
 };
 
 // Solution 2: Greedy, shorter
-// TODO
+// Determine the value of each [i][j] when iterate through them
+class Solution {
+public:
+    int matrixScore(vector<vector<int>>& A) {
+        int R = A.size();
+        assert(R > 0);
+        int C = A[0].size();
+        assert(C > 0);
+        
+        int sum = 0;
+        for(int c = 0; c < C; c++) {
+            int cnt0 = 0;
+            for(int r = 0; r < R; r++)
+                cnt0 += A[r][c] ^ A[r][0];
+            sum += max(cnt0, R - cnt0) * (1 << (C - c - 1));
+        }
+        return sum;
+    }
+};
