@@ -3,9 +3,9 @@
 // Solution 1: DP top down
 // Time complexity:
 // - T(1) = 1, T(event) = 0
-   - T(N) = sum[k=1..N-1]T(k)T(N-k) = (N-1)-th Catalan number ~ O(4^N)
+// - T(N) = sum[k=1..N-1]T(k)T(N-k) ~ N/2-th Catalan number ~ O(2^N)
 // Space complexity:
-// - O(4^N)
+// - O(2^N)
 
 class Solution {
 public:
