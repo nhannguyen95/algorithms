@@ -103,3 +103,17 @@ git config --global merge.tool <merge_tool>
 `<merge_tool>` can be kdiff3
 
 ## git alias
+
+2 ways to create Git Aliases:
+- Edit to global or local config file:
+
+```
+[alias]
+co = checkout
+```
+
+- Use git command:
+
+```
+git config --global alias.co checkout
+```
