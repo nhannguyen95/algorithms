@@ -2,7 +2,7 @@
 
 Saving ~ Committing.
 
----
+## git add, git reset, git commit, git push
 
 First, you edit your files in the working directory.
 
@@ -20,7 +20,7 @@ It helps to think of **staging area** as a buffer between the working directory 
 
 When you commit, you commit things in staging area => stanging area helps group related changes into highly focused snapshots before actually committing it to the project history.
 
----
+## git diff
 
 
 
