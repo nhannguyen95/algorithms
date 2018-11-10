@@ -120,6 +120,40 @@ git stash -a
 = git stash --all
 ```
 
+Read more: https://www.atlassian.com/git/tutorials/saving-changes/git-stash
 
+## .gitignore
 
+Git sees every file in your working copy as one of three things:
+- tracked - a file which has been previously staged or committed.
+- untracked - a file which has not been staged or committed.
+- ignored - a file which Git has been explicitly told to ignore.
+
+Some Git ignore patterns:
+- `**/logs`: ignore all logs folder (a double asterisk matches zero or more directories).
+- `*.log \n !important.log`: ignore all .log file except `important.log`.
+- `/debug.log`: prepending a slash matches files only in the repository root.
+- `debug.log`: by default, patterns match files in any directory.
+- `logs`: ignore all logs files and folders.
+- `logs/`: ignore logs folders. 
+- `logs/debug.log`: patterns specifying a file in a particular directory are relative to the repository root, thus this ignores `logs/debug.log` but not `build/logs/debug.log`.
+
+Global Git ignore rules:
+
+```
+$ touch ~/.gitignore
+$ git config --global core.excludesFile ~/.gitignore
+```
+
+Force an ignored file to be committed to the repository:
+
+```
+git add -f debug.log (-f = --force)
+```
+
+To debug which pattern causes a particular file to be ignored:
+
+```
+git check-ignore -v debug.log (-v = --verbose)
+```
 
