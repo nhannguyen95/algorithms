@@ -11,10 +11,19 @@ a1e8fb5 Abc
 `git revert HEAD` will create a new commit with the inverse of the last commit. This adds a new commit to the current branch history and now makes it look like:
 
 ```
+git revert HEAD (this will open editor for entering commit message, to avoid:)
+git revert HEAD --no-edit
+
 git log --oneline
 e2f9a78 Revert "Try something crazy"
 872fa7e Try something crazy
 a1e8fb5 Abc
+```
+
+Passing `--no-commit` or `-n`  will prevent git revert from creating a new commit that inverses the target commit. Instead of creating the new commit this option will add the inverse changes to the Staging Index and Working Directory:
+
+```
+git revert HEAD --no-commit
 ```
 
 This is the ideal 'undo' method for working with public shared repositories, since it doesn't alter the repo history (from 872fa7e to previous ones).
@@ -75,7 +84,6 @@ Interactive mode:
 git clean -i
 (or git clean -di)
 ```
-
 
 
 
