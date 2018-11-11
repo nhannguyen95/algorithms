@@ -46,5 +46,36 @@ git commit --amend (Git will open the editor and let you modify last commit mess
 
 You may need to undo changes within staging index and the working directory (use `git reset`).
 
+## Undoing changes in the working directory with `git clean`
+
+If `git reset` and `git revert` are performed on tracked files, then `git clean` is performed on untracked ones.
+
+To remove all untracked files in the working dir (but not untracked folders and ignored files):
+
+```
+git clean -f
+```
+
+To remove also any untracked folders:
+
+```
+git clean -df
+```
+
+Run in "dry run" mode: 
+
+```
+$ git clean -n
+Would remove untracked_file
+```
+
+Interactive mode:
+
+```
+git clean -i
+(or git clean -di)
+```
+
+
 
 
