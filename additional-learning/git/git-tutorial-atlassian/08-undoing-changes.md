@@ -32,14 +32,48 @@ If you have requirements of keeping a curated and minimal Git history this strat
 
 ## Undo a commit with `git reset`
 
- If we invoke git `reset --hard a1e8fb5` the commit history is reset to that specified commit:
+Three internal trees of Git:
+- The commit history (with HEAD refs points to the most recent commit by default))
+- The staging tree (changes that are ready for the next commit)
+- The working directory
+
+Supose we have made 4 commits to master branch:
+
+```
+[a]--[b]--[c]--[d] <- HEAD ref, branch ref pointing to d
+```
+
+When use `git checkout b`:
+
+```
+[a]--[b]--[c]--[d] <- branch ref
+      ^
+      |
+     HEAD
+```
+
+When use `git reset b`:
+
+```
+[a]--[b]    [c]--[d]
+      ^
+      |
+ HEAD, branch ref
+```
+
+### `git reset --hard <hash_commit, default=HEAD>`, scoped to Commit History
+
+If we invoke git `reset --hard a1e8fb5` the commit history is reset to that specified commit. Any previously pending changes to the Staging Index and the Working Directory gets reset to match the state of the Commit Tree. This means any pending work that was hanging out in the Staging Index and Working Directory will be lost (this cannot be undone).
+
+### `git reset --mixed <hash_commit, default=HEAD>`, scoped to Staging Tree
+
+`git reset --mixed HEAD` is default to `git reset`.
+
+The Staging Index is reset to the state of the specified commit. Any changes that have been undone from the Staging Index are moved to the Working Directory. Let us continue.
+
+### `git reset --soft <hash_commit, default=HEAD>`, scoped to Working Directory
  
- ```
- git log --oneline
- a1e8fb5 Abc
- ```
- 
- Doing a reset is great for local changes, but not for shared remote repo. If we have a shared remote repository that has the 872fa7e commit pushed to it, and we try to git push a branch where we have reset the history, Git will catch this and throw an error. In these scenarios, git revert should be the preferred undo method.
+Note: Doing a reset is great for local changes, but not for shared remote repo. If we have a shared remote repository that has the 872fa7e commit pushed to it, and we try to git push a branch where we have reset the history, Git will catch this and throw an error. In these scenarios, git revert should be the preferred undo method.
  
  
 ## Undoing the last commit
