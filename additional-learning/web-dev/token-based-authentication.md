@@ -4,7 +4,11 @@ Client exchanges its credentials (like username, password, etc.) for a token.
 
 This token is usually stored in [`localStorage`](https://www.quora.com/What-is-the-difference-between-sessionstorage-localstorage-and-Cookies).
 
-Whenever the client performs authorized actions, it can send this token to the server so that the server can verify the client.
+Whenever the client performs authorized actions, it can send this token to the server so that the server can verify the client. The token is attached in the request header:
+
+```
+Authorization: Token c0329145a7b076835688ef1e246c9f85016463c8
+```
 
 This token can be expired or newly-created when the user logins again.
 
