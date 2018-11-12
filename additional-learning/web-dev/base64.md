@@ -6,7 +6,7 @@ Base64 encoding solves this problem by encode the data into only legel ASCII cha
 - `0` to `9`
 - `+` and `/`
 
-These 64 characters are perfectly compatible with any channel. Because the encrypted data contains only 64 characters, we can use 6 bits to represent each character (since 2^6 = 64).
+These 64 characters are perfectly compatible with any channel. Because the encoded data contains only 64 characters, we can use 6 bits to represent each character (since 2^6 = 64).
 
 For example: encode `0xAB34` using base64 encoding.
 
@@ -24,5 +24,5 @@ The group 6 bits into one:
 101010 = 42 -> q
 110011 = 51 -> z
 010000 = 16 (trailing zeros) -> Q
-=> Encrypted data in base64: qzQ
+=> Encoded data in base64: qzQ
 ```
