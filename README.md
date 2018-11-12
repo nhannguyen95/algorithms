@@ -5,6 +5,7 @@
 - [Computer Architecture](#computer-architecture)
 - [Database](#database)
 - [Networking](#networking)
+  - [HTTP](#http)
 - [Additional Learning](#additional-learning)
   - [Git](#git)
   - [Unix, Linux](#unix-linux)
@@ -199,6 +200,9 @@
 
 # Networking
 
+## HTTP
+
+- [HTTP: The definitive guide](additional-learning/http/http-the-definitive-guide)
 
 # Additional Learning
   
