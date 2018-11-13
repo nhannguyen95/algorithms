@@ -23,13 +23,15 @@ URIs come in 2 flavor: URLs and URNs
 
 **URL - Uniform Resource Locator**: the most common form of resource identifier, it describes the specific location of a resource on a particular serve.
 
-Most URL has 3 parts:
-- scheme: the protocol used to access the resource (usually `http://`).
+Most URL has 3 main parts (more in chapter 02):
+- scheme: the protocol used when accessing a server to get the resource (usually `http://`).
 - server Internet address.
 - name (or path to) the resource on the server.
 
 ```
-E.x: [http://][example.com][/books/http.pdf]
+E.x:
+scheme://server location/path
+[http://][example.com][/books/http.pdf]
 ```
 
 **URN - Uniform Resource Name**: serves a unique name for a particular resource, independent of where the resource currently resides.
