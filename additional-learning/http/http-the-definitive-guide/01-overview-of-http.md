@@ -141,16 +141,21 @@ HTTP/1.1 is the current version of HTTP. HTTP/2.0 (HTTP-NG) focuses on performan
 ---
 
 Besides 2 aforementioned **web applications** web browsers and web servers, there are many other web applications that you interact with on the Internet:
+
 - Proxies:
- - HTTP proxy servers sit between C and S, receive client's HTTP requests and relaying them to the server.
- - Proxies can be used for security, filter requests and responses, filter out adult content , etc.
+  - HTTP proxy servers sit between C and S, receive client's HTTP requests and relaying them to the server.
+  - Proxies can be used for security, filter requests and responses, filter out adult content , etc.
+ 
 - Caches (Web cache, caching proxy):
- - A special type of HTTP proxy server that keeps copies of popular previous-requested documents that pass through the proxy. A client may be able to download a document quickly from a nearby cache than from a distant web server.
+  - A special type of HTTP proxy server that keeps copies of popular previous-requested documents that pass through the proxy. A client may be able to download a document quickly from a nearby cache than from a distant web server.
+ 
 - Gateways:
- - Special web server that connects to other applications.
- - The client may not be aware it is communicating with a gateway.
+  - Special web server that connects to other applications.
+  - The client may not be aware it is communicating with a gateway.
+ 
 - Tunnels:
- - Often used to transport non-HTTP data over 1 or more HTTP connections, without looking at the data.
+  - Often used to transport non-HTTP data over 1 or more HTTP connections, without looking at the data.
+ 
 - Agents:
- - Any client programs that make HTTP requests on the user's behalf.
- - For examples: web browsers, spiders..
+  - Any client programs that make HTTP requests on the user's behalf.
+  - For examples: web browsers, spiders..
