@@ -1,1 +1,1 @@
-- parenthesis, /pəˈrenθɪsɪs/, n:  dấu ngoặc đơn
+- **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn
