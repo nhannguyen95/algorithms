@@ -16,6 +16,7 @@
 - [Other Useful Resources](#other-useful-resources)
 - [Interview strategies](#interview-strategies)
 - [Advices](#advices)
+- [Miscellaneous](#miscellaneous)
 
 # Algorithms and Data Structures
 
@@ -280,5 +281,10 @@
 - _"Try to compare relevant data structures/algorithms and understand their pros and cons. A good example is BFS and DFS."_
 
 - Which algorithm is better in what case?
+
+
+# Miscellaneous
+
+- [Vocabulary](miscellaneous/vocabulary.md)
 
 
