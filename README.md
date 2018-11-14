@@ -211,7 +211,7 @@
 - [ ] [Git Tutorial - Atlassian](additional-learning/git/git-tutorial-atlassian)
 - [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/?fbclid=IwAR05eCUp9OO7BCwHbhfbbmuuEzlCJx5AxKuZUWPvWh6GsJFXv-JTM126K0U)
 
-## Unix, [Linux](additional-learning/linux))
+## Unix, [Linux](additional-learning/linux)
 
 - [Introduction to Linux](additional-learning/linux/introduction-to-linux)
 
