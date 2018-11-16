@@ -265,5 +265,49 @@ A large number of open connections can also consume a lot of memory and cause pe
 
 In practice, browsers do use parallel connections, but the total number of parallel connections is limited to a small number (~4).
 
+Some disadvantages of parallel connections:
+- Each transaction opens/closes a new connection => costing time and bandwidth.
+- There is a practical limit on the number of open parallel connections.
+
 ## Persistent Connections
+
+*Site Locality*: an application that initiates an HTTP request to a server will likely make more requests to that server in the near future.
+
+For this reason, HTTP/1.1 allows HTTP devices to keep TCP connections open after transactions complete and to reuse them for future HTTP requests => these connections are called *persistent* connections.
+
+By reusing an idle persisnte connection (that is already open to the target server) => avoid slow connection setup.
+
+Persistent connections have some advantages over parallel connections:
+- reduce the delay and overhead of connection establishment.
+- reduce the potential number of open connections.
+
+However, it need to be managed with care, or you may end up accumulating a large number of idle connections => wasting resources.
+
+Persistent connections can be most effective when used with parallel connections. Today, many web applications open a small number of parallel connections, each persistent.
+
+Two types of persistent connections:
+- HTTP/1.0+ Keep-Alive connections
+- HTTP/1.1 Persistent connections
+
+### HTTP/1.0+ Keep-Alive Connections
+
+HTTP implementors should be prepared to interoperate with this since it's still in relatively common use by browsers and servers.
+
+To establish a HTTP/1.0 keep-alive connections, client can send a request with `Connection: Keep-Alive` request header.
+
+If the server is willing to keep the connection open for the next request, it will respond with the same header in the response. If not, the server will close the connection when the response message is sent back.
+
+Here is an example of response message's header indicating that the server intends to keep the connection for at most five more transactions, or until it has sat idle for 2 mins (not a guaratee)
+
+```
+In response message:
+
+Connection: Keep-Alive
+Keep-Alive: max=5, timeout=120
+```
+
+Some rules and restrictions:
+-
+-
+
 
