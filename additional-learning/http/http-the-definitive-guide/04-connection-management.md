@@ -218,7 +218,37 @@ Let say on a computer client sending HTTP request to a server, the `des-IP` of t
 
 ---
 
+## HTTP Connection Handling**
 
+### Connection Header
 
+HTTP allows a chain of intermediary HTTP applications (proxies, caches etc.) between the client and the ultimate origin server.
 
+In some case, 2 adjacent HTTP applications may want to apply a set of options to their shared connection using *Connection Header*:
 
+```
+[Server] HTTP message --------------> [Proxy]
+
+HTTP message:
+HTTP/1.1 200 OK
+Cache-control: max-age=3600
+Meter: max-uses=3, max-refuses=6, dont-report
+Connection: meter, close, bill-my-credit-card
+```
+
+The Connection header can carry 3 different types of tokens:
+- HTTP header field names (listing headers relevant for only this connection, ex. `meter`): delete this header before the message is forwareded.
+- Arbitrary token values (`bill-my-credit-card`): apply nonstandard options for this connection
+- The value `close`: this connection must be closed after forwarding the next message.
+
+### Serial Transaction Delay
+
+Suppose your browser access a web page with 3 embedded images. Your browser needs to issue 4 HTTP transactions to display the page: 1 for the top HTML documents and 3 for 3 images.
+
+If each transaction requires a new TCP connection, delays can add up: 2nd connection needs to wait for 1st connection to finish to start and so on.
+
+This is called serial loading, and it hamrs performance. Some solution to be discussed next:
+- Parallel connections: Concurrent HTTP requests across multiple TCP connections.
+- Persistent connections: Reusing TCP connections to eliminate connect/close delays.
+- Pipelined connections: Concurrent HTTP requests across a shared TCP connection.
+- Multiplexed connections: Interleaving chunks of requests and responses.
