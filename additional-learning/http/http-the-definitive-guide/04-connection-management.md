@@ -218,7 +218,7 @@ Let say on a computer client sending HTTP request to a server, the `des-IP` of t
 
 ---
 
-## HTTP Connection Handling**
+## HTTP Connection Handling
 
 ### Connection Header
 
@@ -252,3 +252,18 @@ This is called serial loading, and it hamrs performance. Some solution to be dis
 - Persistent connections: Reusing TCP connections to eliminate connect/close delays.
 - Pipelined connections: Concurrent HTTP requests across a shared TCP connection.
 - Multiplexed connections: Interleaving chunks of requests and responses.
+
+## Parallel Connections
+
+HTTP allows clients to open multiple TCP connections and perform multiple HTTP transactions in parallel (each transaction can get its own TCP connection).
+
+For the above example, 1 HTTP transaction can be used to load HTML page first and then 3 remaining transactions are processed concurrently, each with their own connection.
+
+Parallel connections are now always faster, it depends on the client's network bandwidth (if the bandwidth is scarce it can be slow).
+
+A large number of open connections can also consume a lot of memory and cause performance problems of their own. Client might be able to open hundreds of connections, but many web servers handle hundreds of simultanious user at the same time, this will put a burden of 10000 connections on the server, slows it down (servers are free to close excessive connections from a particular client). The same situation is true for high load proxies.
+
+In practice, browsers do use parallel connections, but the total number of parallel connections is limited to a small number (~4).
+
+## Persistent Connections
+
