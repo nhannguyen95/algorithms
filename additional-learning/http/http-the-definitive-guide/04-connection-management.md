@@ -253,6 +253,14 @@ This is called serial loading, and it hamrs performance. Some solution to be dis
 - Pipelined connections: Concurrent HTTP requests across a shared TCP connection.
 - Multiplexed connections: Interleaving chunks of requests and responses.
 
+```
+1st HTTP transaction
+[TCP Connect] Request - Response [TCP Close]
+                                            2nd HTTP transaction
+                                            [TCP Connect] Request - Response [TCP Close]
+and so on
+```
+
 ## Parallel Connections
 
 HTTP allows clients to open multiple TCP connections and perform multiple HTTP transactions in parallel (each transaction can get its own TCP connection).
@@ -285,6 +293,14 @@ However, it need to be managed with care, or you may end up accumulating a large
 
 Persistent connections can be most effective when used with parallel connections. Today, many web applications open a small number of parallel connections, each persistent.
 
+```
+              1st HTTP transaction
+[TCP Connect] Request - Response
+                                 2nd HTTP transaction
+                                 Request - Response [TCP Close]
+and so on
+```
+
 Two types of persistent connections:
 - HTTP/1.0+ Keep-Alive connections
 - HTTP/1.1 Persistent connections
@@ -306,8 +322,68 @@ Connection: Keep-Alive
 Keep-Alive: max=5, timeout=120
 ```
 
-Some rules and restrictions:
--
--
+### HTTP/1.1 Persistent Connections
+
+Not like HTTP/1.0 Keep Alive connections, HTTP/1.1 persistent connections are active by default.
+
+HTTP/1.1 applications have to explicitly add a `Connection: close` header to a message to indicate that a connection should close after the transaction is complete. After that, the application can't send more requests on that connection.
+
+An HTTP/1.1 client assumes an HTTP/1.1 connection will remain open after a response, unless the response contains a Connection: close header. However, clients and servers still can close idle connections at any time. Not sending Connection: close does not mean that the server promises to keep the connection open forever.
+
+A single user client should maintain at most two persistent connections to any server or proxy, to prevent the server from being overloaded.
+
+## Pipelined Connections
+
+HTTP/1.1 permits optional *request pipelining* over persistent connections, this is a performance optimization. While the first request is streaming across the network to a server; 2nd and 3rd requests can get underway in the queue:
+
+
+```
+              1st HTTP transaction
+[TCP Connect] Request - Response
+                 2nd HTTP transaction
+                 Request - Response [TCP Close]
+and so on
+```
+
+HTTP clients should not pipeline HTTP transactions until they are sure the connection is persistent
+
+HTTP responses must be returned in the same order as the requests.
+
+If the client opens a persistent connection and immediately issues 10 requests, the server is free to close the connection after processing only, say, 5 requests. The remaining 5 requests will fail, and the client must be willing to handle these premature closes and reissue the requests.
+
+The client can enqueue a large number of requests, but the origin serve can close the connection, leaving numerous requests unprocessed and in need of rescheduling and retried. That is the reason why nonidempotent transactions should not be put in the pipeline, since some methods like POST shouldn't be (automatically) repeadted (for example POSTing an order to a shop, you may not want to send multiple orders). (*“most browsers will offer a dialog box when reloading a cached POST response, asking if you want to post the transaction again.*)
+
+---
+
+HTTP applications are free to close persistent connections after any period of time. For example a server may decide to shut a persisten connection down after an idle time, but it never know for sure that the client wasn't about to send more data. If this happends, the client sees a connection error in the middle of writing its request message.
+
+---
+
+HTTP response should have an accurate `Content-Length` header, if the receiver is a caching proxy, it shouldn't cache the response with inaccurate `Content-Length`. The proxy should forward the message intact, without any attempt to correct it.
+
+---
+
+Idempotent transactions: GET, HEAD, PUT, DELETE, TRACE, OPTIONS.
+
+Nonidempotent: POST.
+
+---
+
+TCP connections are bidirectional: Each side of a TCP connection has an input queue and an output queue, for data being read or written. Data placed in the output of one side will eventually show up on the input of the other side.
+
+```
+Client <-- in ---------------- out --  Server
+        -- out ---------------- in -->
+```
+
+Closing the output channel *of your connection* is always safe. The peer on the other side will be notified by getting and end-of stream notification once all the data has been read from its buffer.
+
+Closing the input channel *of your connection* is riskier, unless you know the other side doesn't plan to send any more data. Let say the client sent 10 pipelined requests on a persistent connection, and the responses already have arived and are sitting in client OS's buffer (but hasn't been read yet). Now the client sends request #11, but the server decides you've used this connection long enough and closes it. The server receives the #11 request and issue a TCP "connection reset by peer" message back to the client. Most OS treat this as a serious error and erase any buffered data the ther side has not read yet. Therefore, the client OS's buffer will be erased before client application closes them.
+
+In general, applications implementing graceful closes will first close their output channels and then wait for the peer on the other side of the connection to close its output channels. When both sides are done telling each other they won't be sending any more data (i.e., closing output channels), the connection can be closed fully, with no risk of reset.
+
+
+ 
+
 
 
