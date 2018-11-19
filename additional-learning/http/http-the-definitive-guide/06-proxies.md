@@ -88,20 +88,67 @@ However, a proxy may forward the request to forward messages to a varied and cha
 ---
 
 There are four common ways to cause client traffic to get to a proxy:
-- Modify the client: If a client is configured to use a proxy server, the client sends HTTP requests directly and intentionally to the proxy, instead of to the origin server.
+- Modify the client: If a client is configured to use a proxy server, the client sends HTTP requests directly and intentionally to the proxy, instead of to the origin server. This can be done via manually set a proxy in your browser.
 - Modify the network: the network infrastructure intercepts and steers web traffix into a proxy without client's knowledge (this is called an *intercepting proxy*)
 - Modify the DNS namespace: ?
 - Modify the web server: some web servers can redirect client requests to a proxy by 305 HTTP redirection command.
 
 ---
 
+When client sends request directly to a server, it sends the partial URI:
 
+```
+GET /index.html HTTP/1.1
+```
 
+When client sends request to a server through a proxy or a server that uses virtual hosting, it sends the full URI, so that the proxy can have enough information about the server to establish TCP connection with it:
 
+```
+GET http://www.example.com(:80)/index.html HTTP/1.1
+```
 
-Excerpt From: David Gourley. “HTTP: The Definitive Guide.” iBooks. 
+In case the proxy receives a partial URI, it can check the Host header for origin server name and port number. 
 
+---
 
+`Via` header field lists information about each intermediate node (proxy or gateway) through which a message passes. `Via` header field contains a comma-separated list of *waypoints*. Each waypoint represents an individual proxy server or gateway hop and contains information about the protocol and address of that intermediate node.
 
+```
+client ---> proxy1.net ---> proxy2.com ---> server
+           (HTTP 1.1)       (HTTP 1.0)  ^
+                                        |
+                                   Request message
+                                   Via: 1.1 proxy1.net, 1.0 proxy2.com
+```
 
+Both request and response messages pass through proxies, so both request and response messages have Via headers. Via header for responses is almost always the reverse of the Via header for requests.
 
+---
+
+Note: The `Server` response header field describes the software used by the origin server (therefore intermidiate proxies shouldn't modify this):
+
+```
+Server: Apache/1.3.14 (Unix) PHP/4.0.4
+```
+
+---
+
+HTTP/1.1's TRACE method lets you trace a request message through a chain of proxies, observing what proxies the message passes through and how each proxy modifies the request message. TRACE is very useful for debugging proxy flows.
+
+---
+
+When a request for restricted content arrives at a proxy server, the proxy server can return a 407 Proxy Authorization Required status code demanding access credentials, accompanied by a Proxy-Authenticate header field that describes how to provide those credentials.
+
+When the client receives the 407 response, it attempts to gather the required credentials, either from a local database or by prompting the user.
+
+---
+
+Note:
+
+```
+Request:
+OPTIONS /index.html HTTP/1.1
+
+Response:
+Allow: GET, POST.. (proxies can't modify this header)
+```
