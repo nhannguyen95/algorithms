@@ -72,4 +72,36 @@ client
 
 ---
 
+HTTP messages may be passed from proxy to proxy until they eventually reach the origin server:
+
+```
+client <-----> proxy 1 <-----> proxy 2 <-----> server
+             (child of 2)    (parent of 1)  : server -> client: direction of hierachy
+```
+
+However, a proxy may forward the request to forward messages to a varied and changing set of proxy servers and origin servers (dynamic parenting routing logic):
+- If the requested objects belongs to a server that has paid for content distribution, the proxy forward the request to a nearby cache server.
+- Load balancing: A child may pick a parent proxy based on the current level of workload to spread the load around.
+- Geographic proximity routing: A child proxy might select a parent responsible for the origin server's geographic region.
+- etc
+
+---
+
+There are four common ways to cause client traffic to get to a proxy:
+- Modify the client: If a client is configured to use a proxy server, the client sends HTTP requests directly and intentionally to the proxy, instead of to the origin server.
+- Modify the network: the network infrastructure intercepts and steers web traffix into a proxy without client's knowledge (this is called an *intercepting proxy*)
+- Modify the DNS namespace: ?
+- Modify the web server: some web servers can redirect client requests to a proxy by 305 HTTP redirection command.
+
+---
+
+
+
+
+
+Excerpt From: David Gourley. “HTTP: The Definitive Guide.” iBooks. 
+
+
+
+
 
