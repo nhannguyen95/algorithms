@@ -1,4 +1,10 @@
 // Solution 1: hash table with file content as key
+// L = average length of directory name, file name, file content.
+// N = number of given files
+// Average time complexity (Accessing hash table takes O(1) in time):
+// - O(NL)
+// Space complexity:
+// - Hash table: O(NL)
 class Solution {
 public:
     struct FileInfo {
