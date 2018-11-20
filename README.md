@@ -222,6 +222,8 @@
 
 ## [Web Dev](additional-learning/webdev)
 
+- [Django interview questions and answer](additional-learning/webdev/django.md)
+
 # Coding Practices
 
 ## [Leetcode](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode)
