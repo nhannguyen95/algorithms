@@ -1,1 +1,3 @@
-- **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn
+- **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn.
+- **Recursion Depth**.
+-  space of the **Call Stack**.
