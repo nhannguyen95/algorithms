@@ -18,7 +18,7 @@ But the important thing is if we apply these functions for _every element in the
 
   - In `siftUp(e)`, the worst case happens when `e` is the leaf node, and guess what? there are n/2 leaf nodes!
 
-This affects the time complexity of building max heap function that is about to mentioned below:
+This affects the time complexity of building max heap function that is about to be mentioned below:
 
 ---
 
