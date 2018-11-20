@@ -28,18 +28,18 @@
     - [ ] [Longest increasing subsequence (LIC)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
     - [ ] [Edit distance](https://docs.google.com/document/d/1i8bT30KyQpTF7HLZnJkPpnjNmLu7Gj0VnoZ6gXuhRtI/edit?usp=sharing)
     - [ ] Optimal binary search tree
-  - [ ] [Greedy](what-to-prepare/algorithms/greedy.md):
-    - [ ] [Activity selection problem](what-to-prepare/algorithms/activity-selection.cpp)
-    - [ ] [Huffman codes](what-to-prepare/algorithms/huffman-codes.cpp)
-    - [ ] [Coin changing](what-to-prepare/algorithms/coin-changing.cpp)
-  - [ ] [Sorting](what-to-prepare/algorithms/sorting.md):
-    - [x] [Bubble sort](what-to-prepare/algorithms/bubble-sort.cpp)
-    - [x] [Insertion sort](what-to-prepare/algorithms/insertion-sort.cpp)
-    - [x] [Selection sort](what-to-prepare/algorithms/selection-sort.cpp)
-    - [ ] [Merge sort](what-to-prepare/algorithms/merge-sort.cpp)
-    - [ ] [Quick sort](what-to-prepare/algorithms/quick-sort.cpp)
-    - [ ] [Heap sort](what-to-prepare/algorithms/heap-sort.cpp)
-    - [x] [Counting sort](what-to-prepare/algorithms/counting-sort.cpp)
+  - [ ] [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
+    - [ ] [Activity selection problem](algorithms-and-data-structures/algorithms/activity-selection.cpp)
+    - [ ] [Huffman codes](algorithms-and-data-structures/algorithms/huffman-codes.cpp)
+    - [ ] [Coin changing](algorithms-and-data-structures/algorithms/coin-changing.cpp)
+  - [ ] [Sorting](algorithms-and-data-structures/algorithms/sorting.md):
+    - [x] [Bubble sort](algorithms-and-data-structures/algorithms/bubble-sort.cpp)
+    - [x] [Insertion sort](algorithms-and-data-structures/algorithms/insertion-sort.cpp)
+    - [x] [Selection sort](algorithms-and-data-structures/algorithms/selection-sort.cpp)
+    - [ ] [Merge sort](algorithms-and-data-structures/algorithms/merge-sort.cpp)
+    - [ ] [Quick sort](algorithms-and-data-structures/algorithms/quick-sort.cpp)
+    - [ ] [Heap sort](algorithms-and-data-structures/algorithms/heap-sort.cpp)
+    - [x] [Counting sort](algorithms-and-data-structures/algorithms/counting-sort.cpp)
     - [x] [Radix sort](what-to-prepare/algorithms/radix-sort.cpp)
     - [ ] Bucket sort
   - [ ] Searching
@@ -113,7 +113,7 @@
   - [ ] Priority Queue
   - [ ] Circular queue
   - [x] [Deque](what-to-prepare/data-structures/deque-array.cpp)
-  - [ ] [Heap](what-to-prepare/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
+  - [ ] [Heap](algorithms-and-data-structures/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
     - [x] [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [x] [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
     - [x] [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
