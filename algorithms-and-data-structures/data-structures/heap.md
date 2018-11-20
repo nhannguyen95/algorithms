@@ -6,13 +6,13 @@ _Note: For simplicity, we use binary max heap for analytics without saying expli
 
 There are 2 important functions in heap implementation that one needs to be extremely well aware of (and be careful as well):
 
-  - `siftDown(e)`: Float up the element `e` by comparing its key value to parent in order to maintain heap property.
+  - `sifUp(e)`: Float up the element `e` by comparing its key value to parent in order to maintain heap property.
 
-  - `siftUp(e)`: Float down the element `e` by comparing its key value to children in order to maintain heap property.
+  - `siftDown(e)`: Float down the element `e` by comparing its key value to children in order to maintain heap property.
 
 By superficially observing, we see that both `siftDown` and `siftUp` have the same time complexity `O(h) = O(lgn)`, and that is true.
 
-But the important thing is if we apply these functions for _every element in the heap_, then `siftDown` is more optimal than `siftDown`, why?:
+But the important thing is if we apply these functions for _every element in the heap_, then `siftDown` is more optimal than `siftUp`, why?:
 
   - In `siftDown(e)`, the worst case happens when `e` is the root of the heap, and there's only 1 root.
 
