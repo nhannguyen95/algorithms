@@ -1,6 +1,8 @@
 /* Quicksort (tested)
 
-The running time of quicksort depends on whether the partitioning is balanced or unbalanced, which in turn depends on which elements are used for partitioning.
+The running time of quicksort depends on whether the
+partitioning is balanced or unbalanced, which in turn
+depends on which elements are used for partitioning.
 
 If balanced (p at mid):
   - T(n) = 2T(n/2) + Θ(n) => Θ(NlogN) in time (*)
