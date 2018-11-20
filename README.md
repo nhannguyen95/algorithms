@@ -23,7 +23,7 @@
 ## Algorithms
   - [ ] Recursion
   - [ ] Divide and Conquer
-  - [ ] [Dynamic Programming](what-to-prepare/algorithms/dynamic-programming.md):
+  - [ ] [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md):
     - [ ] [Longest common subsequence (LCS)](https://nhannguyen95.wordpress.com/tag/lcs/)
     - [ ] [Longest increasing subsequence (LIC)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
     - [ ] [Edit distance](https://docs.google.com/document/d/1i8bT30KyQpTF7HLZnJkPpnjNmLu7Gj0VnoZ6gXuhRtI/edit?usp=sharing)
