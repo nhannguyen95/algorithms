@@ -60,6 +60,7 @@ private:
   int lsone(int b) { return b & (-b); }
 
 public:
+  // O(nlogn)
   FenwickTree(const vector<int> & _A) {
     n = _A.size();
     ft.assign(n + 1, 0);
