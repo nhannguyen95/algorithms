@@ -127,7 +127,7 @@
   - Hash Map
   - Set
   - Tries
-  - Segment Tree (IT - Interval Tree)
+  - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
   - Binary Indexed Tree (BIT - Fenwick Tree)
   - Fibonacci Heap
   - [Disjoint-Set Forest](what-to-prepare/data-structures/disjoint-set-forest.cpp)
