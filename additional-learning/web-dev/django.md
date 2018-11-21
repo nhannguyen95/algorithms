@@ -1,1 +1,1 @@
-
+- [40+ Latest Django Interview Questions 2018](https://www.onlineinterviewquestions.com/django-interview-questions/) 
