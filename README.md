@@ -21,6 +21,7 @@
 # Algorithms and Data Structures
 
 ## Algorithms
+  - [Bit manipulation](algorithms-and-data-structures/algorithms/bit-manipulation.md)
   - Recursion
   - Divide and Conquer
   - [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md):
