@@ -128,7 +128,7 @@
   - Set
   - Tries
   - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
-  - Binary Indexed Tree (BIT - Fenwick Tree)
+  - [Binary Indexed Tree (BIT - Fenwick Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
   - Fibonacci Heap
   - [Disjoint-Set Forest](what-to-prepare/data-structures/disjoint-set-forest.cpp)
   - Blanced Search Tree:
