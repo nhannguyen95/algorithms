@@ -283,5 +283,5 @@
 # Miscellaneous
 
 - [Vocabulary](miscellaneous/vocabulary.md)
-
+- [C++ STD Containers](miscellaneous/c++-std-containers.md)
 
