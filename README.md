@@ -67,7 +67,7 @@
       - [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
       - [Second-best minimum spanning tree](algorithms-and-data-structures/algorithms/2nd-mst.cpp)
     - [Shortest-paths](what-to-prepare/algorithms/shortest-paths.md)
-      - [Single-source shortest-paths - Bellman Ford](what-to-prepare/algorithms/bellman-ford.cpp)
+      - [Single-source shortest-paths - Bellman Ford](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
       - [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
       - [Single-source shortest-paths - Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
       - [All pairs shortest-paths - Floyd](what-to-prepare/algorithms/floyd.cpp)
