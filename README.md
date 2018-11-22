@@ -47,10 +47,11 @@
     - Binary search
   - [String](what-to-prepare/algorithms/string.md):
     - String matching:
-      - Rabin-Karp(what-to-prepare/algorithms/rabin-karp.cpp)
-      - 2D Rabin-Karp(what-to-prepare/algorithms/2d-rabin-karp.cpp)
-      - Finite automata(what-to-prepare/algorithms/finite-automata.cpp)
-      - KMP (Knuth-Morris-Pratt)(what-to-prepare/algorithms/kmp.cpp)
+      - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
+      - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
+      - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
+      - [KMP (Knuth-Morris-Pratt)](algorithms-and-data-structures/algorithms/kmp.cpp)
+      - String matching with gap characters.
   - Probability
   - [Number Theory](what-to-prepare/algorithms/number-theory.md)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
@@ -66,9 +67,9 @@
       - [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
       - [Second-best minimum spanning tree](algorithms-and-data-structures/algorithms/2nd-mst.cpp)
     - [Shortest-paths](what-to-prepare/algorithms/shortest-paths.md)
-      - [Single-source shortest-paths -  Bellman Ford](what-to-prepare/algorithms/bellman-ford.cpp)
+      - [Single-source shortest-paths - Bellman Ford](what-to-prepare/algorithms/bellman-ford.cpp)
       - [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
-      - [Single-source shortest-paths -  Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
+      - [Single-source shortest-paths - Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
       - [All pairs shortest-paths - Floyd](what-to-prepare/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
       - [Transitive closure of a directed graph](what-to-prepare/algorithms/transitive-closure.cpp)
