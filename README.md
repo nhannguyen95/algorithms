@@ -58,7 +58,7 @@
     - [Primality testing](what-to-prepare/algorithms/primality-testing.cpp)
   - [Graph](algorithms-and-data-structures/algorithms/graph.md):
     - [BFS](what-to-prepare/algorithms/bfs.cpp)
-    - [DFS](what-to-prepare/algorithms/dfs.cpp)
+    - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
     - [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
     - [Strongly connected components](what-to-prepare/algorithms/strongly-connected-components.cpp)
     - [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
