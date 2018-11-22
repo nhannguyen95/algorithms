@@ -1,4 +1,5 @@
-/* Strongly connected components (tested)
+/* Finding Strongly connected components of directed graph
+(tested)
 
 There are 2 algorithms to solve this problem:
 
