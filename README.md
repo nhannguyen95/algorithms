@@ -56,7 +56,7 @@
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](what-to-prepare/algorithms/euclid-mmi.cpp)
     - [Primality testing](what-to-prepare/algorithms/primality-testing.cpp)
-  - [Graph](what-to-prepare/algorithms/graph.md):
+  - [Graph](algorithms-and-data-structures/algorithms/graph.md):
     - [BFS](what-to-prepare/algorithms/bfs.cpp)
     - [DFS](what-to-prepare/algorithms/dfs.cpp)
     - [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
@@ -75,7 +75,8 @@
     - [Bridges and Articulation Points of a undirected graph](https://nhannguyen95.wordpress.com/2017/04/10/tim-khop-va-cau-tren-do-thi-vo-huong/)
     - [Biconnected Components](what-to-prepare/algorithms/biconnected-components.cpp)
     - [Euler tour](what-to-prepare/algorithms/euler-tour.cpp)
-    - [Graph coloring](what-to-prepare/algorithms/graph-coloring.cpp)
+    - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
+    - [Bipartite graph checking](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
   - Network flow
   - Medians and Order Statistics
     - [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp)
