@@ -1,4 +1,4 @@
-/* Find Bridges and Articulation Points of a undirected graph
+/* Finding Bridges and Articulation Points of a undirected graph
 (tested)
 
 Code at:
