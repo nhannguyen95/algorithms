@@ -1,5 +1,7 @@
 /* Finding Biconnected Components of undirected graph
 
+Biconnected Component: thành phần song liên thông
+
 A biconnected component of G is a maximal set of edges such that
 any two edges in the set lie on a common simple cycle
 
