@@ -33,3 +33,9 @@ w(T') = w(T) - w(x, y) + w(u, v) <= w(T)
 ```
 
 Since T is MST, `w(T') = w(T)`, thus T' also a MST. Finally we have `A ⋃ (u, v) ⊆ T'` and (u, v) is a safe edge for A since (u, v) crosses the cut of A.
+
+---
+
+**Minimax problem**: Given an weighted undirected Graph G; for a pair of vertices (u, v), the cost of a path from u to v is the maximum edge weight along that path. Among all possible paths from u to v, pick the one with the minimum max-edge-weight.
+
+Solution: the max edge weight along the unique path between u and v in the MST.
