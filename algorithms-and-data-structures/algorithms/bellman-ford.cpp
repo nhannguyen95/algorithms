@@ -43,7 +43,9 @@ BELLMAN-FORD(G, w, s)
   for i = 1 to |G.V| - 1 (*)
     for edge=(u, v) in G.E
       RELAX(u, v, w)
-
+  
+  // If we can still relax an edge, there must be a negative
+  // cycle in our graph.
   for edge=(u, v) in G.E
     if v.d > u.d + w(u, v) (**)
       return FALSE  // Negative-weight cycle present that
