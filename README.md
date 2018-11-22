@@ -64,7 +64,7 @@
     - [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
       - [Kruskal's algorihtm](what-to-prepare/algorithms/mst-kruskal.cpp)
       - [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
-      - [Second-best minimum spanning tree](what-to-prepare/algorithms/bridges-articulation-points.cpp)
+      - [Second-best minimum spanning tree](algorithms-and-data-structures/algorithms/2nd-mst.cpp)
     - [Shortest-paths](what-to-prepare/algorithms/shortest-paths.md)
       - [Single-source shortest-paths -  Bellman Ford](what-to-prepare/algorithms/bellman-ford.cpp)
       - [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
@@ -72,7 +72,7 @@
       - [All pairs shortest-paths - Floyd](what-to-prepare/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
       - [Transitive closure of a directed graph](what-to-prepare/algorithms/transitive-closure.cpp)
-    - [Bridges and Articulation Points of a undirected graph](https://nhannguyen95.wordpress.com/2017/04/10/tim-khop-va-cau-tren-do-thi-vo-huong/)
+    - [Bridges and Articulation Points of a undirected graph](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
     - [Biconnected Components](what-to-prepare/algorithms/biconnected-components.cpp)
     - [Euler tour](what-to-prepare/algorithms/euler-tour.cpp)
     - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
