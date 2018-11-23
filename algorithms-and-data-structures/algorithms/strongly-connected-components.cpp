@@ -2,10 +2,14 @@
 (tested)
 
 There are 2 algorithms to solve this problem:
+- Kosaraju's
+- Tarjan's
+
+Both utilize DFS and have the same running time
 
 ---------------------------------------------
 
-SOLUTION 1: Use 2 for loops
+SOLUTION 1: Kosaraju's: Use 2 for loops
 
 G = (V, E)
 GT = (V, invert(E))
