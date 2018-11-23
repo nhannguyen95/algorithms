@@ -54,6 +54,7 @@
       - String matching with gap characters.
   - Probability
   - [Math](what-to-prepare/algorithms/number-theory.md)
+    - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
     - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
     - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
@@ -172,7 +173,6 @@
   - (Scaleable) Distributed Systems and Cloud Computing
   - Design Pattern
   - [RSA public-key cryptosystem](what-to-prepare/rsa.md)
-  - [Mathematical Background](what-to-prepare/mathematical-background.md)
 
 ## Resources
   - Book: Cracking the coding interview - Gayle Laakmann McDowell.
