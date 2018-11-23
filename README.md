@@ -109,6 +109,10 @@
   - K-way merge
   - [NP-Completeness](what-to-prepare/np-completeness.md)
   - NP-Completeness Approximation Algorithms
+  - [Window Sliding](algorithms-and-data-structures/algorithms/window-sliding.cpp)
+  - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.cpp)
+  - Matrix Power (Nhân ma trận)
+  - Lowest Common Ancestor
 
 ## Data structures
   - Array
