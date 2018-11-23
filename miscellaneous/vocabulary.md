@@ -1,3 +1,4 @@
 - **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn.
 - **Recursion Depth**.
 -  space of the **Call Stack**.
+- **Recurrence Relation**: hệ thức truy hồi (dùng trong DP).
