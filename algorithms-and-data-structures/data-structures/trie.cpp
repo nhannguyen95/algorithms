@@ -14,6 +14,12 @@ You can implement Suffix Trie or Prefix Trie on a string.
 When build Suffix Trie or Prefix Trie, the node which has isWord=True
 saves the index of the suffix or the prefix.
 
+Suppose we already built the Suffix Trie of a given string T (n = len(T)),
+some applications:
+- String matching: find some pattern string P in T with O(len(P) + number of occurences)
+- Find Longest Repeated Substring in O(n)
+- Find Longest Common Substring of 2 or more strings in linear time.
+
 */
 
 #include <iostream>
