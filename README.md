@@ -55,6 +55,7 @@
   - Probability
   - [Math](what-to-prepare/algorithms/number-theory.md)
     - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
+    - [Counting and Probability](algorithms-and-data-structures/counting-and-probability.md)
     - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
     - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
@@ -163,7 +164,6 @@
   - [Big O Notation](what-to-prepare/big-o-notation.md)
   - [Master Theorem](what-to-prepare/master-theorem.md)
   - [Amortized Analysis](what-to-prepare/amortized-analysis.md)
-  - [Counting and Probability](what-to-prepare/counting-and-probability.md)
   - Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - Scalability Issues, RPCs, Rate limiter
   - Concurrency
