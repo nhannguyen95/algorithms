@@ -53,7 +53,9 @@
       - [KMP (Knuth-Morris-Pratt)](algorithms-and-data-structures/algorithms/kmp.cpp)
       - String matching with gap characters.
   - Probability
-  - [Number Theory](what-to-prepare/algorithms/number-theory.md)
+  - [Math](what-to-prepare/algorithms/number-theory.md)
+    - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
+    - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](what-to-prepare/algorithms/euclid-mmi.cpp)
     - [Primality testing](what-to-prepare/algorithms/primality-testing.cpp)
