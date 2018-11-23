@@ -128,7 +128,7 @@
     - Mergeable heap
     - Fibonacci Heap
   - String:
-    - Suffix Trie
+    - [Trie](algorithms-and-data-structures/data-structures/trie.cpp)
     - Suffix Tree
     - Suffix Array
   - [Stack](what-to-prepare/data-structures/stack-array.cpp)
