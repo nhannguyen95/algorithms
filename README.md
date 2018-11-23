@@ -52,6 +52,7 @@
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
       - [KMP (Knuth-Morris-Pratt)](algorithms-and-data-structures/algorithms/kmp.cpp)
       - String matching with gap characters.
+    - String Alignment (Edit Distance)
   - Probability
   - [Math](what-to-prepare/algorithms/number-theory.md)
     - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
@@ -113,37 +114,38 @@
 ## Data structures
   - Array
   - Vector (Dynamic Array)
-  - Strings
-  - [Singly Linked List](what-to-prepare/data-structures/singly-linked-list.cpp)
-  - [Doubly Linked List](what-to-prepare/data-structures/doubly-linked-list.cpp)
-  - [Stack](what-to-prepare/data-structures/stack-array.cpp)
-  - [Queue](what-to-prepare/data-structures/queue-array.cpp)
-  - Priority Queue
-  - Circular queue
-  - [Deque](what-to-prepare/data-structures/deque-array.cpp)
+  - Linked list:
+    - [Singly Linked List](what-to-prepare/data-structures/singly-linked-list.cpp)
+    - [Doubly Linked List](what-to-prepare/data-structures/doubly-linked-list.cpp)
+  - [Hash Table](what-to-prepare/data-structures/hash-table.md)
   - [Heap](algorithms-and-data-structures/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
     - [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
     - [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
     - Mergeable heap
-  - [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
-  - [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp)
-  - Red-black Tree _Quite complicated to implement_
-  - [Tree](what-to-prepare/data-structures/tree.md)
-  - Radix Tree
-  - [Hash Table](what-to-prepare/data-structures/hash-table.md)
-  - Hash Map
-  - Set
-  - Tries
-  - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
-  - [Binary Indexed Tree (BIT - Fenwick Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
-  - Fibonacci Heap
+    - Fibonacci Heap
+  - String:
+    - Suffix Trie
+    - Suffix Tree
+    - Suffix Array
+  - [Stack](what-to-prepare/data-structures/stack-array.cpp)
+  - [Queue](what-to-prepare/data-structures/queue-array.cpp):
+    - Priority Queue
+    - Circular queue
+  - [Deque](what-to-prepare/data-structures/deque-array.cpp)
+  - [Tree](algorithms-and-data-structures/data-structures/tree.md):
+    - [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
+    - [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp)
+    - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
+    - [Binary Indexed Tree (BIT - Fenwick Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
+    - Radix Tree
+    - Balanced Search Tree:
+      - AVL Tree
+      - Splay Tree
+      - Red Black Tree
+      - B-Trees
+  - Set/Map
   - [Disjoint-Set Forest](what-to-prepare/data-structures/disjoint-set-forest.cpp)
-  - Blanced Search Tree:
-    - AVL Tree
-    - Splay Tree
-    - Red Black Tree
-    - B-Trees
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 
 ## Classic/Handy problems
