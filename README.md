@@ -27,7 +27,6 @@
   - [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md):
     - [Longest common subsequence (LCS)](https://nhannguyen95.wordpress.com/tag/lcs/)
     - [Longest increasing subsequence (LIC)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
-    - [Edit distance](https://docs.google.com/document/d/1i8bT30KyQpTF7HLZnJkPpnjNmLu7Gj0VnoZ6gXuhRtI/edit?usp=sharing)
     - Optimal binary search tree
   - [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
     - [Activity selection problem](algorithms-and-data-structures/algorithms/activity-selection.cpp)
@@ -52,7 +51,7 @@
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
       - [KMP (Knuth-Morris-Pratt)](algorithms-and-data-structures/algorithms/kmp.cpp)
       - String matching with gap characters.
-    - String Alignment (Edit Distance)
+    - [Edit Distance](algorithms-and-data-structures/algorithms/edit-distance.cpp)
   - Probability
   - [Math](what-to-prepare/algorithms/number-theory.md)
     - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
@@ -153,7 +152,6 @@
   - Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
   - [Dutch national flag algorithm](classic-problems/dutch-national-flag.md): [2-ways.cpp](handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
   - [Knapsack problem](what-to-prepare/classic-problems/knapsack-problem.cpp)
-  - Edit distance problem
   - Optimal binary search tree
   - Interval-graph coloring problem
   - Dijkstra - Finding shortest paths from a single source
