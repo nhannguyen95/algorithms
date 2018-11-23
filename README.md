@@ -61,6 +61,7 @@
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](what-to-prepare/algorithms/euclid-mmi.cpp)
     - [Primality testing](what-to-prepare/algorithms/primality-testing.cpp)
+    - [The Tortoise and Hare algorithm](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
   - [Graph](algorithms-and-data-structures/algorithms/graph.md):
     - [BFS](what-to-prepare/algorithms/bfs.cpp)
     - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
