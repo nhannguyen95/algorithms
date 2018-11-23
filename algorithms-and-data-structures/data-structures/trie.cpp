@@ -11,6 +11,9 @@ The information in the Node depends on problems.
 
 You can implement Suffix Trie or Prefix Trie on a string.
 
+When build Suffix Trie or Prefix Trie, the node which has isWord=True
+saves the index of the suffix or the prefix.
+
 */
 
 #include <iostream>
