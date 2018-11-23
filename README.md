@@ -66,7 +66,7 @@
     - [BFS](what-to-prepare/algorithms/bfs.cpp)
     - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
     - [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
-    - [Strongly connected components](what-to-prepare/algorithms/strongly-connected-components.cpp)
+    - [Strongly connected components](algorithms-and-data-structures/algorithms/strongly-connected-components.cpp)
     - [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
       - [Kruskal's algorihtm](what-to-prepare/algorithms/mst-kruskal.cpp)
       - [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
