@@ -15,7 +15,9 @@ A **k-combination** of an n-set S is simply a k-subset of:
 This formula is symmetric in k and n - k:
 
 ```
+(n, 0) = (n, n) = 1
 (n, k) = (n, n - k)
+(n, k) = (n-1, k-1) + (n-1, k)
 ```
 
 This number is also known as **binomial coefficients**, due to their appearance in the binomial expansion:
