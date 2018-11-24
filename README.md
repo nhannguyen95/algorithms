@@ -129,8 +129,8 @@
     - Fibonacci Heap
   - String:
     - [Trie](algorithms-and-data-structures/data-structures/trie.cpp)
-    - Suffix Tree
-    - Suffix Array
+    - [Suffix Tree](algorithms-and-data-structures/data-structures/suffix-tree.md)
+    - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
   - [Stack](what-to-prepare/data-structures/stack-array.cpp)
   - [Queue](what-to-prepare/data-structures/queue-array.cpp):
     - Priority Queue
