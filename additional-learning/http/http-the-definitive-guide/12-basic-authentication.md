@@ -48,7 +48,7 @@ Authentication also can be done by intermediary proxy servers. Some organization
 The Security Flaws of Basic Authentication:
 
 - Base 64-encoded username and password can be easily decoded => send all your HTTP transactions over SSL encrypted channels, or use more secure authentication protocol like digest authentication.
-- Even if username and password encoding scheme is difficult to decode, a 3rd party can capture/steal it in the middle and send to the origin server to gain access.
+- Even if username and password encoding scheme is difficult to decode, a 3rd party can capture/steal it in the middle and send to the origin server to gain access over time (since the digest is unchanged if the password is unchanged).
 - A user can be led to believe that he is connecting to a valid host protected by basic authentication when, in fact, he is connecting to a hostile server or gateway, the attacker can request a password, store it for later use, and feign an error.
 
 That is to say, basic authentication is still useful in situations where privacy is desired but not necessary.
