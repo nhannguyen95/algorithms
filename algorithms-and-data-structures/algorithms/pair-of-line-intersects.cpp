@@ -55,4 +55,10 @@ at the same point.
 
 This algorithms works even when there exist verticle segments
 (we treat left point as bottom point and right point as top point)
+
+The data structure for storing the sweeping-line status can be
+a balanced binary search tree. In C/C++ we can use set/map,
+refer to the code here, it's pretty concise:
+https://sites.google.com/site/indy256/algo_cpp/find_segments_intersection
+
 */ 
