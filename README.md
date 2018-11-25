@@ -254,6 +254,7 @@
   - Implement 3 stacks using array, flexible size: [code](data-structure-implementation/flexible-multistack-using-array.cpp).
   - Implement queue using linked list: [code](data-structure-implementation/queue-using-linked-list.cpp).
   - Stack with push, pop and min operate in O(1): [code](data-structure-implementation/stack-min-o1.cpp)
+  - Queue with push, pop and min operate in O(1)
   - Set of stacks with popAt(stackIndex) method: [code](data-structure-implementation/set-of-stacks-with-popat.cpp)
   - Implement queue with 2 stacks: [code](data-structure-implementation/queue-with-2-stacks.cpp)
   - Implement stack with 2 queues
