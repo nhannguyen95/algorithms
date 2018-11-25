@@ -35,9 +35,47 @@ To build the Suffix Array of a string, we use the method
 int CP3 p.255, 256 which takes O(Nlog^2N) in time.
 
 Applications (similar as Suffix Trie):
+
 - String matching: given a string P of length m,
 find P in T in O(MlogN) time: find the suffix SA[i] whose
 prefix is P using binary search.
+
+- Find the Longest Common Prefix between consecutive suffixes
+in O(N) using Permuted Longest-Common Prefix (PLCP) theorem.
+The theorem says that it is efficient if we perform in the original
+order of suffixes, consider the first 2 suffix:
+
+io (original order)  string      is (suffix array order)  Phi[SA[is]] = SA[is-1]    PLCP
+0                    GATAGACA    6                        4                         
+1                    ATAGACA     3                        3                         
+
+First we iterate in suffix array order to compute Phi column:
+Phi[SA[is]] stores the suffix index of the previous suffix of suffix
+SA[i] in the Suffix Array order. That is, "GACA" preceeds
+"GATAGACA" in the Suffix Array order and has the suffix index
+as 4, so Phi["GATAGACA"] = 4.
+
+Then we iterate in original suffix order to compute PLCP:
+PLCP[i] = L means the i-th suffix has the common prefix of
+length L with previous subffixes in original order,
+for example we have PLCP[0] = PLCP["GATAGACA"] = 2, since
+Phi["GATAGACA"] = "GACA" (in suffix array order), and
+these 2 suffixes has the longest common prefix of length 2 ("GA").
+
+Next, we compute PLCP[1] = PLCP["ATAGACA"], 2 important points to make
+this algorithm run fast:
+- PLCP[i] is at most (PLCP[i-1] - 1), that is PLCP["ATAGACA"]
+is at most PLCP["GATAGACA"] - 1 = 1. This is because (i-1)-th suffix
+is suffix of i-th suffix and has 1 character less than i-th suffix.
+- That is, when solve PLCP[i], we don't need to compare suffixes from 0, 
+but from PCLP[i-1]-1.
+
+- Longest Repeated Substring = Longest Common Prefix
+
+- Longest Common Substring of 2 strings (can be generalized to M strings):
+we build Suffix Array on the concatenation version of those 2 strings,
+find LCP on that. Iterate through the Suffix Array and consider 2 suffixes
+that belong to 2 strings, find the max length => result.
 
 */
 
@@ -121,6 +159,35 @@ public:
 
     return pos;
   }
+  
+  // Longest Common Prefix
+  // Also the Longest Repeated Substring
+  string findLCP() {
+    vector<int> phi(n);
+    phi[sa[0]] = -1;
+    for(int i = 1; i < n; i++) phi[sa[i]] = sa[i-1];
+
+    vector<int> plcp(n);
+    int L = 0, maxL = 0;
+    string lcp = "";
+    for(int i = 0; i < n; i++) {
+      if (phi[i] == -1) {
+        plcp[i] = 0;
+        continue;
+      }
+      while(s[i + L] == s[phi[i] + L]) L++;
+      plcp[i] = L;
+
+      if (L > maxL) {
+        maxL = L;
+        lcp = s.substr(i, L);
+      }
+
+      L = max(L - 1, 0);
+    }
+
+    return lcp;
+  }
 
   void print() {
     for(int i = 0; i < n; i++)
@@ -130,17 +197,22 @@ public:
 };
 
 int main() {
+  // Build Suffix Array
   string T = "GATAGACA";
   SuffixArray sa(T);
   sa.print();
-
+  
+  // String matching
   string P = "GA";
   vector<int> pos = sa.find(P);
   for(int i : pos) {
     cout << i << ' ' << T.substr(i) << '\n';
   }
   cout << '\n';
-
+ 
+  // Longest Common Prefix
+  string lcp = sa.lcp();
+  
   return 0;
 }
 
