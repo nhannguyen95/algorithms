@@ -57,6 +57,7 @@
     - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
     - [Counting and Probability](algorithms-and-data-structures/counting-and-probability.md)
     - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
+    - [Factorization in O(sqrt(N))](https://sites.google.com/site/indy256/algo/factorization)
     - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](what-to-prepare/algorithms/euclid-mmi.cpp)
@@ -125,7 +126,7 @@
     - [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
     - [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
     - [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
-    - Mergeable heap
+    - [Mergeable heap](https://sites.google.com/site/indy256/algo/mergeable_heap)
     - Fibonacci Heap
   - String:
     - [Trie](algorithms-and-data-structures/data-structures/trie.cpp)
