@@ -183,6 +183,7 @@
   - Book: Cracking the coding interview - Gayle Laakmann McDowell.
   - Book: Introduction to Algorithms, 3rd - CLRS. (Chapter 5, 26, 27, 35; ~~Chapter 14, 17, 18, 19, 20, 28, 29, 30~~)
   - Book: Competitive Programming 3.
+  - [Algorithms and Data Structures](https://sites.google.com/site/indy256/)
   - [Big O cheatsheet](http://bigocheatsheet.com/)
   - [E-Maxx Algorithms in English](https://cp-algorithms.com/)
 
