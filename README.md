@@ -115,6 +115,7 @@
   - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.cpp)
   - Matrix Power (Nhân ma trận)
   - Lowest Common Ancestor
+  - [Partial Sum](algorithms-and-data-structures/algorithms/partial-sum.cpp)
 
 ## Data structures
   - Array
