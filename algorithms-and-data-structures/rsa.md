@@ -19,8 +19,8 @@ M = S(P(M))
 For the system works, we need to ensure that eventhough everyone knows P and thus P(), they cannot compute the inverse function S() efficiently.
 
 Let denote:
-- Alice has public key P<sub>A</sub> and S<sub>A</sub>.
-- Bob has public key P<sub>B</sub> and S<sub>B</sub>.
+- Alice has public key P<sub>A</sub> and secret key S<sub>A</sub>.
+- Bob has public key P<sub>B</sub> and secret key S<sub>B</sub>.
 
 # Bob sends message to Alice
 
@@ -59,7 +59,7 @@ The procedure for a participant to create his or her own public and secret keys:
 
 We can prove that for any M in D, M = P(S(M)) = S(P(M)).
 
-Assume that P<sub>A</sub> = (e, n) and S<sub>A</sub> = (d, n), Alice keeps S<sub>A</sub> secret and publicize P<sub>A</sub>. Eventhough everyone knows P<sub>A</sub> = (e, n), they can compute back S<sub>A</sub> efficiently. Why?
+Assume that P<sub>A</sub> = (e, n) and S<sub>A</sub> = (d, n), Alice keeps S<sub>A</sub> secret and publicizes P<sub>A</sub>. Eventhough everyone knows P<sub>A</sub> = (e, n), they can't compute back S<sub>A</sub> efficiently. Why?
 
 To compute S<sub>A</sub> and thus S<sub>A</sub>(), one needs to compute d from e and ϕ(n). If he can **factor n = pq**, then he can follow the aforementioned procedure to generate all information he needs to know.
 
