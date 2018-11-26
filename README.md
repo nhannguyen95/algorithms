@@ -178,7 +178,7 @@
   - Databases - SQL, NoSQL, Writing simple Queries, Transactions, ACID
   - (Scaleable) Distributed Systems and Cloud Computing
   - Design Pattern
-  - [RSA public-key cryptosystem](what-to-prepare/rsa.md)
+  - [RSA public-key cryptosystem](algorithms-and-data-structures/rsa.md)
 
 ## Resources
   - Book: Cracking the coding interview - Gayle Laakmann McDowell.
