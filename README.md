@@ -236,6 +236,8 @@
 
 - [Django interview questions and answer](additional-learning/webdev/django.md)
 
+- The Web Application Hacker's Handbook 2
+
 # Coding Practices
 
 ## [Leetcode](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode)
