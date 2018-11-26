@@ -1,4 +1,4 @@
-Web proxy servers are intermediaries. Proxies sit between clients and servers and act as "middlemen" (it communicates with the server on the client's behalf), shuffling HTTP messages back and forth between the parties.
+Web proxy servers are intermediaries. Proxies sit between clients and servers and act as "middlemen" (clients often use web proxy servers to access web servers on their behalf), shuffling HTTP messages back and forth between the parties.
 
 => HTTP proxy servers are both web servers and web clients (send response to client, send request to server).
 
