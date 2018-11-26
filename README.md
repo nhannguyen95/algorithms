@@ -6,7 +6,7 @@
 - [Database](#database)
 - [Networking](#networking)
   - [HTTP](#http)
-  - [TCP/IP](#tcp-ip)
+  - [TCP/IP](#tcpip)
 - [Additional Learning](#additional-learning)
   - [Git](#git)
   - [Unix, Linux](#unix-linux)
