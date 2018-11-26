@@ -68,22 +68,22 @@ server using Digest Functions.
     
   - The client then send the request again to the client with authentication header:
   
-  ```
-  GET /dir/amy.jpeg HTTP/1.1
-  Host: www.example.com
-  Authorization: Digest username="Amy"
-                        realm="Family Pictures"
-                        nonce="5eb63bbbe01eeed093cb22bb8f5acdc3"
-                        uri="/dir/any.jpeg"
-                        qop="auth"
-                        nc=00000001        // The request counter
-                        cnonce="0a4f113b"  // nonce value that client generate (read more about these at https://code-maze.com/http-series-part-4/)
-                        response="6629fae49393a05397450978507c4ef1"
+    ```
+    GET /dir/amy.jpeg HTTP/1.1
+    Host: www.example.com
+    Authorization: Digest username="Amy"
+                          realm="Family Pictures"
+                          nonce="5eb63bbbe01eeed093cb22bb8f5acdc3"
+                          uri="/dir/any.jpeg"
+                          qop="auth"
+                          nc=00000001        // The request counter
+                          cnonce="0a4f113b"  // nonce value that client generate (read more about these at https://code-maze.com/http-series-part-4/)
+                          response="6629fae49393a05397450978507c4ef1"
 
-  cnonce is there to provice symmetric authentication: allow the client to authenticate the server,
-  the server generates a correct response digest based on correct knowledge of the shared secret information,
-  it then returns this digest to the client in the Authorization-Info header.
-  ```
+    cnonce is there to provice symmetric authentication: allow the client to authenticate the server,
+    the server generates a correct response digest based on correct knowledge of the shared secret information,
+    it then returns this digest to the client in the Authorization-Info header.
+    ```
   
 **Step 3**: The server receives the request from the client, its get needed information from HTTP request's header and its own database (username, thus password, and nonce value) to perform a similar hashing procedure as the client's and match with client's response. If the result is matched, then it returns response with information for the next client's queries in the `Authorization-Info` header:
 
