@@ -97,6 +97,8 @@ Expires: Fri, 05 Jul 2002, 5:00:00 GMT
 
 HTTP/1.1:
 Cache-Control: max-age=484200 (seconds since the document is first generated)
+OR:
+Cache-Control: s-max-age=484200 (for shared caches, overriding max-age)
 ```
 
 Until a cache document expires, it can serve the document as often as it wants.
@@ -121,7 +123,7 @@ If the document is available and has expired (indicating it's time to check), a 
 > (*): this can be computed using Age or Date headers in the response message
 > ```
 >
-> freshness_lifetime can be computed from Cache-Control: max-age or Expires header in the server response
+> freshness_lifetime can be computed from `Cache-Control: max-age` or `Expires` header in the server response
 
 If the revalidation shows the document has changed, the cache gets a new copy of the document, stores it in place of the old data.
 
