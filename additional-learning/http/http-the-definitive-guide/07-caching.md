@@ -129,7 +129,7 @@ If the revalidation shows the document has changed, the cache gets a new copy of
 
 If revalidation shows the content has not changed, the cache only gets new headers, including a *new expiration date*, and updates the headers in the cache.
 
-The cache can revalidate with the server using *Conditional Methods* (attached in a GET request) (these methods help caches avoid always fetching data from servers whenever the document expired and only fetch when the document changed, because the document expired doesn't mean it's currently different from its version stored on the server, it's just indicate that it's time to check):
+The cache can revalidate with the server using *Conditional Methods* (attached in a GET request) (these methods help caches avoid always fetching data from servers whenever the document expired and only fetch when the document actually changed, because the document expired doesn't mean it's currently different from its version stored on the server, it's just indicate that it's time to check):
 - `If-Modified-Since` (the most common cache revalidation header)
 - `If-None-Match`: return new document if on-server tags document differ from tags in this header (eg. "v2.5" and "v2.6").
 
