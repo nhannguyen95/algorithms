@@ -148,5 +148,30 @@ Steps:
 
 ---
 
+Let assume you downloaded 400 bytes of a document the network was suddenly interupted. Provided that the document did not change at the origin server between the time you first requested it and you've just reconnected with the network again. You can make a **range requests** asking for the range or part of the document you failed to get:
 
-  
+```
+GET /bigfile.html HTTP/1.1
+Host: www.example.com
+Range: bytes=4000-
+User-Agent ...
+```
+
+The range header can also be used so that a client can request different ranges of the same document from different servers in order to speed up overall download time.
+
+The server can tell clients if they accept range requests or not:
+
+```
+HTTP/1.1 2002 OK
+Date: ..
+Server: ..
+Accept-Ranges: bytes
+```
+
+Range headers are used extensively by popular peer-to-peer file-sharing client software to download different parts of multimedia files simultaneously, from different peers.
+
+---
+
+If the server has a newer version of a document than the document's copy at the client, instead of sending the server the whole document, the server can only send the difference between 2 document versions, this is obtained by using **delta encoding**.
+
+Delta encoding can reduce transfer times, but it can be tricky to implement since the server needs to keep all different copies of the document and extra disk space too.
