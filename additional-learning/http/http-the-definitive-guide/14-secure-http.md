@@ -1,4 +1,4 @@
-HTTPs provides a stronger scheme to secure HTTP transactions using digital cryptography.
+HTTPs provides a stronger scheme to secure HTTP transactions using digital cryptography, *data can be read only from sender and receiver*.
 
 HTTPs provides:
 - Server authentication (clients know who they're talking to)
