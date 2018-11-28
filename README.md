@@ -41,11 +41,11 @@
     - [Quick sort](algorithms-and-data-structures/algorithms/quick-sort.cpp)
     - [Heap sort](algorithms-and-data-structures/algorithms/heap-sort.cpp)
     - [Counting sort](algorithms-and-data-structures/algorithms/counting-sort.cpp)
-    - [Radix sort](what-to-prepare/algorithms/radix-sort.cpp)
+    - [Radix sort](algorithms-and-data-structures/algorithms/radix-sort.cpp)
     - Bucket sort
   - Searching
     - Binary search
-  - [String](what-to-prepare/algorithms/string.md):
+  - [String](algorithms-and-data-structures/algorithms/string.md):
     - String matching:
       - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
       - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
@@ -54,40 +54,40 @@
       - String matching with gap characters.
     - [Edit Distance](algorithms-and-data-structures/algorithms/edit-distance.cpp)
   - Probability
-  - [Math](what-to-prepare/algorithms/number-theory.md)
+  - Math:
     - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
     - [Counting and Probability](algorithms-and-data-structures/counting-and-probability.md)
     - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
     - [Factorization in O(sqrt(N))](https://sites.google.com/site/indy256/algo/factorization)
     - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
-    - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](what-to-prepare/algorithms/euclid-gcd.cpp)
-    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](what-to-prepare/algorithms/euclid-mmi.cpp)
-    - [Primality testing](what-to-prepare/algorithms/primality-testing.cpp)
+    - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](algorithms-and-data-structures/algorithms/euclid-gcd.cpp)
+    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
+    - [Primality testing](algorithms-and-data-structures/algorithms/primality-testing.cpp)
     - [The Tortoise and Hare algorithm](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
   - [Graph](algorithms-and-data-structures/algorithms/graph.md):
-    - [BFS](what-to-prepare/algorithms/bfs.cpp)
+    - [BFS](algorithms-and-data-structures/algorithms/bfs.cpp)
     - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
-    - [Topological sort](what-to-prepare/algorithms/topo-sort.cpp)
+    - [Topological sort](algorithms-and-data-structures/algorithms/topo-sort.cpp)
     - [Strongly connected components](algorithms-and-data-structures/algorithms/strongly-connected-components.cpp)
-    - [Minimum spanning tree (MST)](what-to-prepare/algorithms/mst.md)
-      - [Kruskal's algorihtm](what-to-prepare/algorithms/mst-kruskal.cpp)
-      - [Prim's algorithm](what-to-prepare/algorithms/mst-prim.cpp)
+    - [Minimum spanning tree (MST)](algorithms-and-data-structures/algorithms/mst.md)
+      - [Kruskal's algorihtm](algorithms-and-data-structures/algorithms/mst-kruskal.cpp)
+      - [Prim's algorithm](algorithms-and-data-structures/algorithms/mst-prim.cpp)
       - [Second-best minimum spanning tree](algorithms-and-data-structures/algorithms/2nd-mst.cpp)
-    - [Shortest-paths](what-to-prepare/algorithms/shortest-paths.md)
+    - [Shortest-paths](algorithms-and-data-structures/algorithms/shortest-paths.md)
       - [Single-source shortest-paths - Bellman Ford](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
-      - [Single-source shortest-paths on DAG](what-to-prepare/algorithms/sssp-dag.cpp)
-      - [Single-source shortest-paths - Dijkstra](what-to-prepare/algorithms/dijkstra.cpp)
-      - [All pairs shortest-paths - Floyd](what-to-prepare/algorithms/floyd.cpp)
+      - [Single-source shortest-paths on DAG](algorithms-and-data-structures/algorithms/sssp-dag.cpp)
+      - [Single-source shortest-paths - Dijkstra](algorithms-and-data-structures/algorithms/dijkstra.cpp)
+      - [All pairs shortest-paths - Floyd](algorithms-and-data-structures/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
-      - [Transitive closure of a directed graph](what-to-prepare/algorithms/transitive-closure.cpp)
+      - [Transitive closure of a directed graph](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
     - [Bridges and Articulation Points of a undirected graph](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
-    - [Biconnected Components](what-to-prepare/algorithms/biconnected-components.cpp)
-    - [Euler tour](what-to-prepare/algorithms/euler-tour.cpp)
+    - [Biconnected Components](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
+    - [Euler tour](algorithms-and-data-structures/algorithms/euler-tour.cpp)
     - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
     - [Bipartite graph checking](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
   - Network flow
   - Medians and Order Statistics
-    - [Randomized order statistic / Quickselect](what-to-prepare/algorithms/randomized-order-statistic.cpp)
+    - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
     - [Order statistic] linear worst case running time
   - Computational Geometry:
     - Determine if vector _a_ is clockwise from vector _b_
@@ -98,18 +98,18 @@
     - Determine if a given set of points forms a convex polygon
     - Determine if a point lies inside a simple polygon (not neccessary convex)
     - Find area of a simple polygon (not neccessary convex)
-    - [Determining whether any pair of segments intersects (Shamos–Hoey algorithm)](/what-to-prepare/algorithms/pair-of-line-intersects.cpp)
+    - [Determining whether any pair of segments intersects (Shamos–Hoey algorithm)](algorithms-and-data-structures/algorithms/pair-of-line-intersects.cpp)
     - Determining whether any pair of circles intersects
     - [Find all intersections of a set of segments (Bentley–Ottmann algorithm)](https://en.wikipedia.org/wiki/Bentley%E2%80%93Ottmann_algorithm)
     - Finding the convex hull:
-      - [Graham's scan algorithm (nlogn)](what-to-prepare/algorithms/graham-scan.cpp)
-      - [Javis's march (nh)](what-to-prepare/algorithms/javis-march.cpp)
+      - [Graham's scan algorithm (nlogn)](algorithms-and-data-structures/algorithms/graham-scan.cpp)
+      - [Javis's march (nh)](algorithms-and-data-structures/algorithms/jarvis-march.cpp)
     - Finding the farthest pair of points
     - Finding the closest pair of points (nlogn)
   - A*
   - Bloom Filter
   - K-way merge
-  - [NP-Completeness](what-to-prepare/np-completeness.md)
+  - [NP-Completeness](algorithms-and-data-structures/np-completeness.md)
   - NP-Completeness Approximation Algorithms
   - [Window Sliding](algorithms-and-data-structures/algorithms/window-sliding.cpp)
   - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.cpp)
@@ -121,27 +121,27 @@
   - Array
   - Vector (Dynamic Array)
   - Linked list:
-    - [Singly Linked List](what-to-prepare/data-structures/singly-linked-list.cpp)
-    - [Doubly Linked List](what-to-prepare/data-structures/doubly-linked-list.cpp)
-  - [Hash Table](what-to-prepare/data-structures/hash-table.md)
+    - [Singly Linked List](algorithms-and-data-structures/data-structures/singly-linked-list.cpp)
+    - [Doubly Linked List](algorithms-and-data-structures/data-structures/doubly-linked-list.cpp)
+  - [Hash Table](algorithms-and-data-structures/data-structures/hash-table.md)
   - [Heap](algorithms-and-data-structures/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
-    - [Binary heap](what-to-prepare/data-structures/binary-heap.cpp)
-    - [D-ary heap](what-to-prepare/data-structures/d-ary-heap.cpp)
-    - [Young Tableau](what-to-prepare/data-structures/young-tableau.cpp)
+    - [Binary heap](algorithms-and-data-structures/data-structures/binary-heap.cpp)
+    - [D-ary heap](algorithms-and-data-structures/data-structures/d-ary-heap.cpp)
+    - [Young Tableau](algorithms-and-data-structures/data-structures/young-tableau.cpp)
     - [Mergeable heap](https://sites.google.com/site/indy256/algo/mergeable_heap)
     - Fibonacci Heap
   - String:
     - [Trie](algorithms-and-data-structures/data-structures/trie.cpp)
     - [Suffix Tree](algorithms-and-data-structures/data-structures/suffix-tree.md)
     - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
-  - [Stack](what-to-prepare/data-structures/stack-array.cpp)
-  - [Queue](what-to-prepare/data-structures/queue-array.cpp):
+  - [Stack](algorithms-and-data-structures/data-structures/stack-array.cpp)
+  - [Queue](algorithms-and-data-structures/data-structures/queue-array.cpp):
     - Priority Queue
     - Circular queue
-  - [Deque](what-to-prepare/data-structures/deque-array.cpp)
+  - [Deque](algorithms-and-data-structures/data-structures/deque-array.cpp)
   - [Tree](algorithms-and-data-structures/data-structures/tree.md):
-    - [Binary Tree](what-to-prepare/data-structures/binary-tree.md)
-    - [Binary Search Tree](what-to-prepare/data-structures/binary-search-tree.cpp)
+    - [Binary Tree](algorithms-and-data-structures/data-structures/binary-tree.md)
+    - [Binary Search Tree](algorithms-and-data-structures/data-structures/binary-search-tree.cpp)
     - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
     - [Binary Indexed Tree (BIT - Fenwick Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
     - Radix Tree
@@ -151,14 +151,14 @@
       - Red Black Tree
       - B-Trees
   - Set/Map
-  - [Disjoint-Set Forest](what-to-prepare/data-structures/disjoint-set-forest.cpp)
+  - [Disjoint-Set Forest](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 
 ## Classic/Handy problems
-  - [Maximum subarray problem](what-to-prepare/classic-problems/maximum-subarray.cpp)
+  - [Maximum subarray problem](algorithms-and-data-structures/classic-problems/maximum-subarray.cpp)
   - Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
-  - [Dutch national flag algorithm](classic-problems/dutch-national-flag.md): [2-ways.cpp](handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](https://github.com/nhannguyen95/interview-preparation/tree/master/handy-algorithms).
-  - [Knapsack problem](what-to-prepare/classic-problems/knapsack-problem.cpp)
+  - [Dutch national flag algorithm](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
+  - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
   - Dijkstra - Finding shortest paths from a single source
@@ -166,12 +166,12 @@
   - Least Common Ancestors (LCA)
   - Scheduling with profits and deadlines
   - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
-  - Split string: [code](handy-algorithms/split-string.cpp).
+  - Split string: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp).
 
 ## Others
-  - [Big O Notation](what-to-prepare/big-o-notation.md)
-  - [Master Theorem](what-to-prepare/master-theorem.md)
-  - [Amortized Analysis](what-to-prepare/amortized-analysis.md)
+  - [Big O Notation](algorithms-and-data-structures/big-o-notation.md)
+  - [Master Theorem](algorithms-and-data-structures/master-theorem.md)
+  - [Amortized Analysis](algorithms-and-data-structures/amortized-analysis.md)
   - Operating System - Threads, Processes and Locks using Mutex, Semaphores
   - Scalability Issues, RPCs, Rate limiter
   - Concurrency
@@ -196,7 +196,7 @@
 ## Resources
 - [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
 - [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
-- [Book: Designing Data-intensive Applications - Martin Kleppmann](https://github.com/nhannguyen95/interview-preparation/tree/master/notes/system-design/designing-data-intensive-application)
+- [Book: Designing Data-intensive Applications - Martin Kleppmann](system-design/designing-data-intensive-application)
 
 
 # Computer Architecture
@@ -216,7 +216,7 @@
 
 ## TCP/IP
 
-- [TCP/IP](https://www.ictshore.com/free-ccna-course-start/)
+- [TCP/IP](additional-learning/networking/tcpip)
 
 # Additional Learning
   
@@ -241,7 +241,7 @@
 
 # Coding Practices
 
-## [Leetcode](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode)
+## [Leetcode](practices/leetcode)
   - Array.
   - Binary search.
   - Dynamic programming.
@@ -249,23 +249,23 @@
   - Linked list.
   - Tree.
   - Database.
-  - [Bit manipulation](https://github.com/nhannguyen95/interview-preparation/tree/master/leetcode/bit-manipulation).
+  - Bit manipulation.
 
-## Geeksforgeeks
-  - [Tree](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/tree).
-  - [Array](https://github.com/nhannguyen95/interview-preparation/tree/master/geeksforgeeks/array).
+## [Geeksforgeeks](practices/geeksforgeeks)
+  - Tree.
+  - Array.
 
 ## [Inteviewbit](practices/interview-bit)
 
-## [Data structure](https://github.com/nhannguyen95/interview-preparation/tree/master/data-structure-implementation)
-  - Implement stack using array: [code](data-structure-implementation/stack-using-array.cpp).
-  - Implement 3 stacks using array, fixed size: [code](data-structure-implementation/fixed-multistack-using-array.cpp).
-  - Implement 3 stacks using array, flexible size: [code](data-structure-implementation/flexible-multistack-using-array.cpp).
-  - Implement queue using linked list: [code](data-structure-implementation/queue-using-linked-list.cpp).
-  - Stack with push, pop and min operate in O(1): [code](data-structure-implementation/stack-min-o1.cpp)
+## [Data structure](practices/data-structure-implementation)
+  - Implement stack using array: [code](practices/data-structure-implementation/stack-using-array.cpp).
+  - Implement 3 stacks using array, fixed size: [code](practices/data-structure-implementation/fixed-multistack-using-array.cpp).
+  - Implement 3 stacks using array, flexible size: [code](practices/data-structure-implementation/flexible-multistack-using-array.cpp).
+  - Implement queue using linked list: [code](practices/data-structure-implementation/queue-using-linked-list.cpp).
+  - Stack with push, pop and min operate in O(1): [code](practices/data-structure-implementation/stack-min-o1.cpp)
   - Queue with push, pop and min operate in O(1)
-  - Set of stacks with popAt(stackIndex) method: [code](data-structure-implementation/set-of-stacks-with-popat.cpp)
-  - Implement queue with 2 stacks: [code](data-structure-implementation/queue-with-2-stacks.cpp)
+  - Set of stacks with popAt(stackIndex) method: [code](practices/data-structure-implementation/set-of-stacks-with-popat.cpp)
+  - Implement queue with 2 stacks: [code](practices/data-structure-implementation/queue-with-2-stacks.cpp)
   - Implement stack with 2 queues
 
 
@@ -280,12 +280,12 @@
   - [Gainlo Blog](http://blog.gainlo.co/)
   - [Programming Interviews Exposed](https://www.amazon.in/Programming-Interviews-Exposed-Secrets-Landing/dp/8126539119)
   - [Elements of Programming Interview](https://www.amazon.in/Elements-Programming-Interviews-Adnan-Aziz/dp/9382359443/)
-  - [Book: Clean Code - Robert C Martin](clean-code/)
+  - [Book: Clean Code - Robert C Martin](notes/clean-code)
 
 
 # [Interview strategies](https://github.com/nhannguyen95/interview-preparation/tree/master/strategies)
 
-- [System design](strategies/system-design.md).
+- [System design](interview-strategies/system-design.md).
 
 
 # Advices
