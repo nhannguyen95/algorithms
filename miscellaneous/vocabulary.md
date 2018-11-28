@@ -2,3 +2,7 @@
 - **Recursion Depth**.
 -  space of the **Call Stack**.
 - **Recurrence Relation**: hệ thức truy hồi (dùng trong DP).
+- **Arc** */ɑːrk/, n*: cung (của đường tròn).
+- **Chord** */kɔːrd/, n*: dây cung.
+- **Sector**: hình quạt tròn.
+- **Segment**: hình cung.
