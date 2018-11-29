@@ -1,4 +1,4 @@
-/* Graham'scan algorithm
+Graham'scan algorithm
 
 This algorithm should be really easy to understand
 by looking at the pseudo code and the illustrative
@@ -17,4 +17,4 @@ is in the convex hull.
 is in the convex hull.
 This is proved easily using Proof by contradiction.
 
-*/
+[Implementation](algorithms-and-data-structures/algorithms/computational-geometry.cpp)
