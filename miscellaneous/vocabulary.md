@@ -6,3 +6,10 @@
 - **Chord** */kɔːrd/, n*: dây cung.
 - **Sector**: hình quạt tròn.
 - **Segment**: hình cung.
+- **Equilateral** triangle */iːkwə'lætərəl/, n*: tam giác đều.
+- **Isosceles** triangle */aɪˌsɒsəliːz/, n*: tam giác cân.
+- **Right triangle**: tam giác vuông.
+- **Primeter** */pəˈrɪmɪtə/, n*: chu vi.
+- **Trapezium** */trəˈpiːziəm/, n*: hình thang.
+- **Parallelogram** */ˌpærəˈleləɡræm/, n*: hình bình hành.
+- **Rhombus** */ˈrɒmbəs/, n*: hình thoi.
