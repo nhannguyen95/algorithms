@@ -17,4 +17,4 @@ is in the convex hull.
 is in the convex hull.
 This is proved easily using Proof by contradiction.
 
-[Implementation](algorithms-and-data-structures/algorithms/computational-geometry.cpp)
+[Implementation](../computational-geometry.cpp)
