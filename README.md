@@ -89,13 +89,8 @@
   - Medians and Order Statistics
     - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
     - [Order statistic] linear worst case running time
-  - Computational Geometry:
-    - Determine if vector _a_ is clockwise from vector _b_
-    - Determine if we turn left or right at B if we go from AB then BC
-    - Determine if 2 segments intersect
-    - Sort a list of n points in polar angle increasing order
+  - [Computational Geometry](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
     - Determine if there exists any 3 points in a set of n points that are colinear
-    - Determine if a given set of points forms a convex polygon
     - Determine if a point lies inside a simple polygon (not neccessary convex)
     - Find area of a simple polygon (not neccessary convex)
     - [Determining whether any pair of segments intersects (Shamos–Hoey algorithm)](algorithms-and-data-structures/algorithms/pair-of-line-intersects.cpp)
