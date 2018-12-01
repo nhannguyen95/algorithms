@@ -45,7 +45,13 @@ This feature of switches allows full-duplex transmission, because you can send a
 
 Another cool feature of modern switches is the **Virtual Local Area Networks (VLANs)**. Basically, you can configure a switch to group its ports in groups, traffic will spread only between ports inside the same group and not between different group.
 
+---
 
+**unicast addresses** – represent a single LAN interface. A unicast frame will be sent to a specific device, not to a group of devices on the LAN.
+
+**multicast addresses** – represent a group of devices in a LAN. A frame sent to a multicast address will be forwarded to a group of devices on the LAN.
+
+**broadcast addresses** – represent all device on the LAN. Frames sent to a broadcast address will be delivered to all devices on the LAN.
 
 
 
