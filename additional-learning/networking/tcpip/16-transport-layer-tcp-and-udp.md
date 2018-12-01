@@ -71,9 +71,7 @@ The *retransmission* is triggered in three cases:
 
 UDP is today mainly used for real-time application, with RTP (Real Time Protocol) sitting on top of it at the session layer. This is because real-time applications (video and/or audio streams) need speed (otherwise they wouldn’t be real-time!) and ordered delivery if possible: this mean that if they receive two segments almost at the same time, they have to know which one has to go first, but in case they do not receive something, there is no time to arrange a retransmission, the stream must continue (this is why sometimes you may hear disruption in a VoIP call). Because of its simplicity and extensibility, UDP is being considered as a great protocol to replace TCP in the future, but for now these ideas remain only theories and studies.
 
-
-
-## [UDP header](https://www.ictshore.com/wp-content/uploads/2016/12/1016-11-UDP_segment.png)
+### [UDP header](https://www.ictshore.com/wp-content/uploads/2016/12/1016-11-UDP_segment.png)
 
 UDP header has just the information that allow the delivery to the correct application:
 - **UDP Length**: how long is the segment (header + data).
