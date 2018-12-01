@@ -80,6 +80,12 @@ UDP header has just the information that allow the delivery to the correct appli
 
 If we use all fields, **UDP has a header of 64 bits**, much smaller than the 160-bit long TCP header; implies that we can send 96 bits more of data with UDP than with TCP => UDP is faster.
 
+### Limitations
+
+UDP:
+- do not order packets, and therefore the receiver cannot guess in which order they were sent originally.
+- is not reliable, what is lost is just lost, no UDP component will trigger a re-transmission.
+
 ## UDP vs TCP
 
 UDP is extremely faster then TCP: not only because it can send 96 bits more in every segment, but also because there is no connection establishment and the sender does not have to wait for acknowledgements.
