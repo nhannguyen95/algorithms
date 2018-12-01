@@ -64,4 +64,29 @@ The *retransmission* is triggered in three cases:
 
 ## UDP
 
+**User Datagram Protocol** is born at the same time of TCP, UDP:
+- is a **connection-less** protocol: there is no need to establish a connection before data can be sent, instead an application can simply choose to send data immediately.
+- is a **fast** protocol: allowing more data to be sent with a single segment if compared to TCP.
+- works in **best effort**: mean that there is no built-in mechanism to verify that segments were received, they are just sent hoping that they won’t be lost (This also implies the lack of ordered delivery).
+
+UDP is today mainly used for real-time application, with RTP (Real Time Protocol) sitting on top of it at the session layer. This is because real-time applications (video and/or audio streams) need speed (otherwise they wouldn’t be real-time!) and ordered delivery if possible: this mean that if they receive two segments almost at the same time, they have to know which one has to go first, but in case they do not receive something, there is no time to arrange a retransmission, the stream must continue (this is why sometimes you may hear disruption in a VoIP call). Because of its simplicity and extensibility, UDP is being considered as a great protocol to replace TCP in the future, but for now these ideas remain only theories and studies.
+
+
+
+## [UDP header](https://www.ictshore.com/wp-content/uploads/2016/12/1016-11-UDP_segment.png)
+
+UDP header has just the information that allow the delivery to the correct application:
+- **UDP Length**: how long is the segment (header + data).
+- **UDP Checksum**: to verify the integrity of data.
+- ***Source port** and checksum are optional fields.*
+
+If we use all fields, **UDP has a header of 64 bits**, much smaller than the 160-bit long TCP header; implies that we can send 96 bits more of data with UDP than with TCP => UDP is faster.
+
+## UDP vs TCP
+
+UDP is extremely faster then TCP: not only because it can send 96 bits more in every segment, but also because there is no connection establishment and the sender does not have to wait for acknowledgements.
+
+It is a protocol that truly works at the Transport layer, because re-transmission and ordered delivery should be tasks managed at the session layer (which TCP covers too).
+> By having a light-weight protocol at the transport layer, we can then decide which other extra features to implement within the application.
+
 
