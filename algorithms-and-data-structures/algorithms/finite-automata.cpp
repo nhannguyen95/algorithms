@@ -72,7 +72,7 @@ COMPUTE-TRANSITION-FUNCTION(P, Σ)
     m = P.length
     for k = 0 to m
         for each character c in Σ
-            k_next = min(m, q + 1)
+            k_next = min(m, k + 1)
             while P[..k_next] IS NOT suffix of P[..k]c
                 k_next--
             𝛿(k, c) = k_next
