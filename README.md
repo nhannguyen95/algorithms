@@ -26,7 +26,7 @@
   - Recursion
   - Divide and Conquer
   - [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md):
-    - [Longest common subsequence (LCS)](https://nhannguyen95.wordpress.com/tag/lcs/)
+    - [Longest common subsequence (LCS)](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
     - [Longest increasing subsequence (LIC)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
     - Optimal binary search tree
   - [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
