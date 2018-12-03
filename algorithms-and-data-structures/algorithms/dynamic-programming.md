@@ -1,4 +1,4 @@
-The running time of a dynamic programming algorithm is roughly equal the number of subproblems times the number of choice in solving each subproblems.
+The running time of a dynamic programming algorithm is roughly equal the number of subproblems times the number of choice in solving each subproblems (haven't applied memoization).
 
 ---
 
