@@ -1,4 +1,4 @@
-To ,ultiply x by 2: 
+To multiply x by 2: 
 
 ```
 x << 1
