@@ -11,7 +11,7 @@ The running time of a dynamic programming algorithm is roughly equal the number 
 To prove the **optimal substructure** of a problem: _cut-and-paste_ technique. Suppose that each of the subproblem solutions is not optimal and then deriving a contradiction.
 
 **2. Overlapping subproblems:**
-  - The space of subproblems must be _small_, so that it easier to have duplicated. Normally the total distinct subproblems is polynomial in the input size.
+  - The space of subproblems must be _small_, so that it's easier to have duplicated. Normally the total distinct subproblems is polynomial in the input size.
 
 ---
 
