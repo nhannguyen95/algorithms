@@ -6,7 +6,7 @@ Transport Layer means Application-to-Application connections: it allows the comm
 
 The Protocol Data Unit (PDU) at this layer is **Segment** (or **Datagram**), the header of the segment is different if the protocol used is TCP or UDP, but 2 fields are always present: [source Port ID and destination port ID](https://www.ictshore.com/wp-content/uploads/2016/12/1016-05-Segment.png).
 
-**Transport Layer Port ranges*
+**Transport Layer Port ranges**
 
 |Range name|Range|Description|
 |-|-|-|
