@@ -18,3 +18,44 @@ Some explanation:
 
 
 
+## [Selective Acknowledgement (Selective ACK or simply SACK)](https://www.ictshore.com/wp-content/uploads/2016/12/1017-06-TCP_selective_acknowledgment_SACK_vs_normale_ACK.png)
+
+In the traditional implementation of TCP, when a segment is lost, it has to be retransmitted, *and all segments after the lost one has to be retransmitted too, even if they were received correctly*. (This is because of the nature of the acknowledgement number, which tells the other device which byte is expected next).
+
+SACK improves this by allowing a device to individually acknowledge segments, so that only the lost ones are retransmitted.
+
+SACK implements two different TCP header options:
+- **Sack-Permitted Option**: this option is used during the three-way handshake to verify that both TCP partners support the SACK mechanism.
+- **Sack Option**: used to tell the other device which segments are acknowledged with SACK.
+
+## Header Compression
+
+Header compression is a cool TCP features that allows bandwidth enhancement on low-speed links, such as satellite connections. This feature is implemented on the routers (network devices) in the path.
+
+Imagine a router that has to process IP packets containing TCP segments, if you are doing some heavy use of a connection (such as downloading a file from a server), the router will see a lot of packets with the same source and destination IPs, all of them containing the same source and destination ports in the segment’s header => With header compression, we can send them just once.
+
+A router implementing header compression takes IP and TCP addresses in the header, plus other fields that will not change during the connection, and run an algorithm on them to extrapolate an unique identifier (hash ID) which is much more smaller. All the router’s receiving a compressed header must know its expanded value to send the packet/segment to the right destination. In the end, a router will de-compress the header and send the normal one to the destination device.
+
+## Handling network congestions
+
+### Fast retransmit
+
+In a normal TCP implementation, we should wait for ACKs to decide what we have to retransmit. With fast retransmit enabled, if an ACK is not received within a specific timeout, the segment not yet acknowledged is automatically re-sent, to save time.
+
+This can unnecessarily saturate high-latency low-bandwidth networks, as information is not truly lost but it simply takes time to arrive on the other side.
+
+### TCP congestion control
+
+We need to find a way to use as much bandwidth as possible, without flooding the network with traffic and overwhelming it. We need some tools to control the congestion, and TCP has those tools.
+
+**Congestion window (CWND)** defines the number of bytes that can be sent before we must stop and wait for acknowledgement.
+
+### [UDP predominance and TCP starvation](https://www.ictshore.com/wp-content/uploads/2016/12/1017-10-TCP_starvation-1.png)
+
+TCP implements such a sophisticated mechanisms to back-off in case of network congestion, but UDP does not. So,if a lot of traffic is generated in UDP, so much that TCP and UDP together exceed the network capacity, TCP will back-off due to the congestion control algorithm. UDP instead, will continue to use the bandwidth it was already using, and if some UDP traffic was queued due to the network congestion, it will be triggered now that the network is not congested anymore. If this saturate the network again, TCP will continue to back-off until UDP is almost the only traffic in the network.
+
+**Quality of Service (QoS)** is a mechanism on WAN links to avoid that these links get saturated with UDP traffic. QoS rules can keep UDP separated from TCP so that UDP can saturate only its part of the network, can grant a percentage of bandwidth for some applications or can even reserve bandwidth to other applications (meaning that this part of bandwidth will be used only by some applications, and in case they are not using it nothing else will be able to use it).
+
+
+
+
