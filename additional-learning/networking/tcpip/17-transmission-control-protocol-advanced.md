@@ -13,10 +13,13 @@ Some explanation:
 
 [**Reset a TCP connection**](https://www.ictshore.com/wp-content/uploads/2016/12/1017-04-Reset_connection.png): the device sending the RST will move to `CLOSED` state after that, the other device no longer receive any acknowlegment thus it also moves to `CLOSED` state after a timeout.
 
-## TCP Windowing
+## [TCP Windowing](https://www.ictshore.com/wp-content/uploads/2016/12/1017-05-TCP_Windowing.png)
 
+In the TCP segment’s header we can find a 16-bit long field called **Window Size**. It identifies the **receiver window**. Window Size is the number of bytes that the device sending the segment can store waiting for the application to process them.
 
+By *sending that value in each segment*, the device is saying “Hey you, you can send me X bytes and I guarantee I will store them in my temporary memory so that the application will process them eventually”, where X is the Window Size value.
 
+> Window size is sent in every segment, and in every segment it defines the total space available in the buffer of the device sending it. The device that receive the segment with the Window Size will transmit as many bytes as it can, but the amount of bytes left unacknowledged cannot exceed the Window Size.
 
 ## [Selective Acknowledgement (Selective ACK or simply SACK)](https://www.ictshore.com/wp-content/uploads/2016/12/1017-06-TCP_selective_acknowledgment_SACK_vs_normale_ACK.png)
 
