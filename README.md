@@ -186,7 +186,7 @@
   - [E-Maxx Algorithms in English](https://cp-algorithms.com/)
 
 
-# System Design
+# [System Design](system-design)
 
 ## Resources
 - [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
@@ -194,7 +194,9 @@
 - [Book: Designing Data-intensive Applications - Martin Kleppmann](system-design/designing-data-intensive-application)
 
 
-# Computer Architecture
+# [Computer Architecture](computer-architecture)
+
+- [Cache](computer-architecture/cache.md)
 
 ## Resources
 - [Book: Computer Organization and Design MIPS Edition: The Hardware/Software Interface](https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0124077269/ref=sr_1_1?s=books&ie=UTF8&qid=1536553502&sr=1-1&keywords=Computer+Organization+and+Design+MIPS+Edition)
