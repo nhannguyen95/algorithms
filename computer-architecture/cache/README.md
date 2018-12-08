@@ -2,3 +2,6 @@ This is my note while learning about cache in the book [Computer Organization an
 
 There are several concepts that are not clearly explained in the book, like *cache block size* and *byte addressing*. Luckily I found [this lecture notes]() which also refers to the book ([source](https://courses.cs.washington.edu/courses/cse378/09wi/lectures/lec15.pdf)).
 
+Read in this order:
+- [01 - Memory Hierarchy](01-memory-hierarchy.md).
+- [02 - Cache](02-cache.md) (notes for the lecture notes).
