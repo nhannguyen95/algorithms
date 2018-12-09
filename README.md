@@ -202,7 +202,10 @@
 - [Book: Computer Organization and Design MIPS Edition: The Hardware/Software Interface](https://www.amazon.com/Computer-Organization-Design-MIPS-Architecture/dp/0124077269/ref=sr_1_1?s=books&ie=UTF8&qid=1536553502&sr=1-1&keywords=Computer+Organization+and+Design+MIPS+Edition)
 - [CSE378: Machine Organization & Assembly Language](https://courses.cs.washington.edu/courses/cse378/)
 
-# Database
+# [Database](database)
+
+## Resources
+- [Book: Database System Concepts 6th Edition](https://www.amazon.com/Database-Concepts-Abraham-Silberschatz-Professor/dp/0073523321)
 
 
 # Networking
