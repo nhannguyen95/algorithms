@@ -90,6 +90,10 @@ Now to find a record in the relation, we binary search on the outer index first 
 
 Regardless of what form of index is used, every index must be updated whenever a record is either updated, inserted into or deleted from the file.
 
+### B<sup>+</sup> indices
+
+The aforementioned ordered-indexing scheme apply for **sequential file organizations** (index-sequential organization), the disadvantage is that performance degrades as the file grows. To overcome this deficiency, we can use a *B<sup>+</sup>-tree*, which requires fewer disk accesses to locate records.
+
 ### Automatic creation of Indices
 
 If a relation is declared to have a primary key, most database implementations automatically create an index on the primary key. Whenever a tuple is inserted into the relation, the index can be used to check that the primary key constraint is not violated (that is, there are no duplicates on the primary key value). Without the index on the primary key, whenever a tuple is inserted, the entire relation would have to be read to ensure that the primary-key constraint is satisfied.
@@ -100,12 +104,33 @@ If a relation is declared to have a primary key, most database implementations a
 
 We use a hash function to map search-key values into bucket addresses (the term bucket can be used to denote a unit of storage that can store one or more records, it's typically a disk block).
 
-
-
-
 ### Dynamic Hashing
 
+Static hashing imposes serious problems when the database grows over time.
+
+Dynamic hashing techniques allow the hash function to be modified dynamically to accommodate the growth or shrinkage of the database.
+
+One form of dynamic hashing is **extendable hashing**, which copes with changes in database size by splitting and coalescing buckets as the database grows and shrinks.
 
 
+## Comparison of Ordered Indexing and Hashing
+
+If queries are in this form, it's preferable to use hashing-index technique:
+
+```
+select A1, A2, .. , An
+from r
+where Ai = c;
+```
+
+Ordered-index techniques are preferable for these queries:
+
+```
+select A1, A2, .., An
+from r
+where Ai <= c1 and Ai >= c2;
+```
+
+Usually the designer will choose ordered indexing unless it is known in advance that range queries will be infrequent, in which case hashing would be chosen.
 
 
