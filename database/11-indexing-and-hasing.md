@@ -22,3 +22,90 @@ Usage of each technique for both ordered indexing and hashing is best suited to 
 We often want to have more than one index for a file/relation.
 
 An attribute or set of attributes used to look up records in a file/relation is called a **search key**.
+
+A search key containing more than one attribute is referred to as a **composite search key**.
+
+## Ordered Indices
+
+To gain fast random access to records in a file, we can use an index structure.
+
+Each index structure is associated with a particular search key.
+```
+For example: index = (ID,)
+```
+
+An ordered index stores the values of the search keys in sorted order, and associates with each search key the records that contain it.
+```
+For example:
+Index entry/record      Student: ID  | Name
+(1,)  --------------->           1     A
+(2,)  --------------->           2     B
+(3,)  --------------->           3     C
+```
+
+### Dense and Sparse Indices
+
+An **index entry**, or **index record**, consists of a search-key value and pointers to one or more records with that value as their search-key value.
+
+2 types of ordered indices:
+- Dense index: an index entry appears for every search-key value in the relation.
+  ```
+  Example: As the above example
+  Search-key: (ID,)
+  Search-key value set in the relation: (1, 2, 3)
+  Search-key value set of index entries: (1, 2, 3) <- appear for every searh-key value in the relation
+  ```
+- Sparse index: an index entry appears for only some of the search-key values.
+  ```
+  Example:
+  Index entry/record      Student: ID  | Name
+  (1,)  --------------->           1     A
+                                   2     B
+                                   3     C
+  (4,)  --------------->           4     D
+  
+  Search-key: (ID,)
+  Search-key value set in the relation: (1, 2, 3, 4)
+  Search-key value set of index entries: (1, 4)
+  ```
+
+Comparision:
+- Faster to locate a record if having dense index.
+- Sparse index saves space, imposes less maintenance overhead.
+- => Trade-offs
+
+### Multilevel indices
+
+Suppose we build a dense index on a relation with 1e8 records. Index entries are smaller than data records, so we assume 100 index entries fit on a 4Kb block. Thus our index occupies 1e6 blocks ~ 4Gb.
+
+If this index was small enough to be kept entirely in the main memory, the search time to find an entry is low. However this index is large and we might want to fetch from disk.
+
+If we use binary search to locate an entry, it would require up to `log(1e6)` blocks to be read, this can be costly.
+
+To deal with this problem, we construct a sparse outer index on the original index (it's dense w.r.t the original index), which we now call the inner index. In our example, an inner index with 1e6 blocks would require 1e6 entries in the outer index, which would occupy just 1e4 blocks ~ 40Mb. We can keep outer index in main memory and inner index on disk.
+
+Now to find a record in the relation, we binary search on the outer index first to locate the inner index block that contains the record's search key. Eventually it requires only 1 block read operation (on disk).
+
+### Index Update
+
+Regardless of what form of index is used, every index must be updated whenever a record is either updated, inserted into or deleted from the file.
+
+### Automatic creation of Indices
+
+If a relation is declared to have a primary key, most database implementations automatically create an index on the primary key. Whenever a tuple is inserted into the relation, the index can be used to check that the primary key constraint is not violated (that is, there are no duplicates on the primary key value). Without the index on the primary key, whenever a tuple is inserted, the entire relation would have to be read to ensure that the primary-key constraint is satisfied.
+
+## Hash Indices
+
+### Static Hashing
+
+We use a hash function to map search-key values into bucket addresses (the term bucket can be used to denote a unit of storage that can store one or more records, it's typically a disk block).
+
+
+
+
+### Dynamic Hashing
+
+
+
+
+
