@@ -10,6 +10,13 @@ Physical storage media (increasing in size, decreasing in speed and price):
 
 ---
 
+Storage media classification:
+- **Volatile storage**: information residing in volatile storage doesn not survive system crashes. Example: *main memory*, *cache*. Access to volatile storage is extremely fast.
+- **Nonvolatile storage**: Information residing in nonvolatile storage survives system crashes. Example: *magnetic disk*, *flash*, *optical media*, *magnetic tapes*. Nonvolatile storage is slower than volatile storage.
+- **Stable storage**: Information residing in stable storage is "never" lost. Although stable storage is theoretically impossible to obtain, it can be closely approximated by techniques that make data loss extremely unlikely. Updates must be done with care to ensure that a failure during an update to stable storage does not cause a loss of information.
+
+---
+
 A database is mapped into a number of different files that are maintained by the underlying operating system. These files reside permanently on disks.
 
 2 approach to store records (rows):
