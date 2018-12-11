@@ -90,7 +90,9 @@ We need to address transaction failures during concurrent execution:
 - Any transaction Tj that is dependent on Ti (that is, Tj has read data written by Ti), is also aborted.
 
 To achieve this, we need to place restrictions on the type of schedules permitted in the system:
-- **Recoverable schedules**: for each pair of transactions Ti and Tj such that Tj reads a data item previously written by Ti , the commit operation of Ti appears before the commit operation of Tj. Otherwise, we have Tj commited while Ti is still active, and if Ti aborted, Tj can't because it's already commited, we call this *nonrecoverable schedules*.
-- **Cascadeless schedules**: 
+
+- **Recoverable schedules**: for each pair of transactions Ti and Tj such that Tj reads a data item previously written by Ti, *the commit operation of Ti appears before the commit operation of Tj*. Otherwise, we have Tj commited while Ti is still active, and if Ti aborted, Tj can't because it's already commited, we call this *nonrecoverable schedules*.
+
+- **Cascadeless schedules**: if a single transaction failure leads to a series of transaction rollbacks, we call this a **cascading rollback**. This is undesirable, since it leads to the undoing of a significant amount of work. It is desirable to restrict the schedules to those where cascading rollbacks cannot occur. Such schedules are called cascadeless schedules: for each pair of transactions Ti and Tj such that Tj reads a data item previously written by Ti, *the commit operation of Ti appears before the read operation of Tj*. It is easy to verify that every cascadeless schedule is also recoverable.
 
 Schedules must be *recoverable*, to make sure that if transaction a sees the effects of transaction b (that is, a has read data written by b), and b then aborts, then a also gets aborted.
