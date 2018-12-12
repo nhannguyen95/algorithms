@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/design-hashmap/
+// design-hashmap
 
 class MyHashMap {
 private:
