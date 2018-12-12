@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/design-hashmap/
+
 class MyHashMap {
 private:
     const static int MAX_KEY_VALUE = 1000000;
