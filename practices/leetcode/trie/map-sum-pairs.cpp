@@ -28,3 +28,49 @@ public:
         return ans;
     }
 };
+
+// Solution 2: Trie
+struct TrieNode {
+    int score;
+    map<char, TrieNode*> children;
+    TrieNode(int score) : score(score) {}
+};
+
+class MapSum {
+private:
+    map<string, int> mapScore;
+    TrieNode* root;
+    
+public:
+    MapSum() {
+        root = new TrieNode(0);
+    }
+    
+    void insert(string key, int val) {
+        int delta = val - mapScore[key];
+        mapScore[key] = val;
+        
+        TrieNode* node = root;
+        for(int i = 0; i < key.size(); i++) {
+            char c = key[i];
+            if (node->children[c] == NULL)
+                node->children[c] = new TrieNode(0);
+            node = node->children[c];
+            node->score += delta;
+        }
+    }
+    
+    int sum(string prefix) {
+        TrieNode* node = root;
+        for(int i = 0; i < prefix.size(); i++) {
+            char c = prefix[i];
+            if (node->children.find(c) != node->children.end()) {
+                node = node->children[c];
+                if (i == (int)prefix.size() - 1)
+                    return node->score;
+            } else break;
+        }
+        return 0;
+    }
+};
+    
