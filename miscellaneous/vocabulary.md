@@ -13,3 +13,5 @@
 - **Trapezium** */trəˈpiːziəm/, n*: hình thang.
 - **Parallelogram** */ˌpærəˈleləɡræm/, n*: hình bình hành.
 - **Rhombus** */ˈrɒmbəs/, n*: hình thoi.
+- **Exponential time**
+  > a running complexity of exponential time
