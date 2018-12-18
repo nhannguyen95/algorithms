@@ -162,6 +162,7 @@
   - Scheduling with profits and deadlines
   - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
   - Split string: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp).
+  - [Morris Inorder Tree Traversal](https://nhannguyen95.github.io/morris-inorder-tree-traversal/)
 
 ## Others
   - [Big O Notation](algorithms-and-data-structures/big-o-notation.md)
