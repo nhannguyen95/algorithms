@@ -88,7 +88,7 @@
   - Network flow
   - Medians and Order Statistics
     - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
-    - [Order statistic] linear worst case running time
+      > There is a linear worst case running time for this problem.
   - [Computational Geometry](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
     - Determine if there exists any 3 points in a set of n points that are colinear
     - Determine if a point lies inside a simple polygon (not neccessary convex)
