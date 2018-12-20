@@ -15,3 +15,5 @@
 - **Rhombus** */ˈrɒmbəs/, n*: hình thoi.
 - **Exponential time**
   > a running complexity of exponential time
+- **Predecessor** */ˈpredəsesər, n/*
+- **Successor** */səkˈsesə/, n*
