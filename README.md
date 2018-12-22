@@ -190,6 +190,7 @@
 # [System Design](system-design)
 
 ## Resources
+- [System design primer](https://github.com/donnemartin/system-design-primer): should read as notes.
 - [Online course: HiredInTech's system design](https://www.hiredintech.com/classrooms/system-design).
 - [Online course: Grokking the System Design Interview](https://www.educative.io/collection/5668639101419520/5649050225344512).
 - [Book: Designing Data-intensive Applications - Martin Kleppmann](system-design/designing-data-intensive-application)
