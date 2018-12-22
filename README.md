@@ -13,6 +13,7 @@
   - [Design Patterns](#design-patterns)
   - [Clean Code](#clean-code)
   - [Web Dev](#web-dev)
+  - [Web Security](#web-security)
 - [Coding Practices](#coding-practices)
 - [Other Useful Resources](#other-useful-resources)
 - [Interview strategies](#interview-strategies)
@@ -239,9 +240,12 @@
 
 ## [Web Dev](additional-learning/webdev)
 
-- [Django interview questions and answer](additional-learning/webdev/django.md)
+- [Django interview questions and answer](additional-learning/web-dev/django.md)
 
-- The Web Application Hacker's Handbook 2
+## [Web Security]
+
+- [The Web Application Hacker's Handbook 2](additional-learning/web-security)
+
 
 # Coding Practices
 
