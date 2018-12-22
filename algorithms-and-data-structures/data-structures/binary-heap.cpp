@@ -67,8 +67,7 @@ private:
   // 'bubble' this element up.
   // Kind of opposite of `heapify`
   void increaseKey(int i, int key) {
-    A[i] = key;
-    while(i > 0 && A[parent(i)] < A[i]) {
+    while(i > 0 && A[parent(i)] < key) {
       A[i] = A[parent(i)];
       i = parent(i);
     }
@@ -162,7 +161,7 @@ public:
 
 int main() {
   // Build a heap of some elements.
-  MaxHeap heap({4,10,3,2,5,3,1});
+  MaxHeap heap({4,3,2,3,1,5,10,100});
 
   // Test some operations.
   heap.printArray();
@@ -171,7 +170,7 @@ int main() {
   heap.remove(1);
 
   // Should be in descending order.
-  // 10 4 3 3 2 1
+  // 100 5 4 3 3 2 1
   while(heap.size() > 0) {
     cout << heap.extractMax() << ' ';
   }
