@@ -35,4 +35,8 @@
 
   **Successor** */səkˈsesə/, n*
   
+- **ancestor** */ˈænsəstə/, n*: tổ tiên
+
+  **descendant** */dɪˈsendənt/, n*: hậu duệ
+
 - **lexicographically** *adj*: theo thứ tự từ điển
