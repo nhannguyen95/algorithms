@@ -53,3 +53,29 @@ To circumvent the application's defensive filters, some of these can be tried:
 “><scr<script>ipt>alert(document.cookie)</scr</script>ipt>
 %00“><script>alert(document.cookie)</script>
 ```
+
+---
+
+The root cause of XSS is that user-controllable data is copied into application responses without adequate validation and sanitization.
+
+To eliminate XSS vulnerabilities:
+- first step is to identify every instance withing the application where user-controllable data is being copied into responses.
+- validate input:
+  - data is not too long
+  - data contains only a permitted set of characters
+  - data matches a particular regular expression
+- validate output: applications can perform HTML encoding of user-controllabel DOM data before insert it into the document:
+  ```
+  function sanitize(str) {
+    var d = document.createElement('div');
+    d.appendChild(document.createTextNode(str));
+    return d.innerHTML;
+  }
+  ```
+  
+---
+
+How does Django protect the site against major XSS attacks?:
+- https://docs.djangoproject.com/en/2.1/topics/security/#cross-site-scripting-xss-protection
+- https://docs.djangoproject.com/en/2.1/ref/templates/language/#automatic-html-escaping
+
