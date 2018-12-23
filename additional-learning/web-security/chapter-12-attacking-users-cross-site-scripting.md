@@ -1,3 +1,5 @@
+Cross-Site Scripting (XSS) is a kind of code injection attack in which an attacker inserts arbitrary Javascript code into the page of attacked web site that will be executed in visitor's web browser when he opens the page. The built-in code will be executed in the scope of the attacked domain, which is a bypass Same-origin policy.
+
 This is a client-side attacking technique.
 
 ## Reflected XSS
