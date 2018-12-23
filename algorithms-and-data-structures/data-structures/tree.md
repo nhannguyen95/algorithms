@@ -28,8 +28,8 @@ Fortunately, there is a clever scheme to represent trees with arbitrary numbers 
 ```
 p
 (p.parent)
-p.left-child
-p.right-sibling
+p.left_child
+p.right_sibling
 ```
 
 ## Represent by array
