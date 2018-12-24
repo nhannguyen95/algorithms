@@ -8,7 +8,7 @@ void threeWayPartitioningWhile(vector<int> & nums) {
 		// nums[0..lo-1] = 0s
 		// nums[lo..mi-1] = 1s
 		// nums[mi..hi] = unknown (not processed yet)
-		// nums[hi+1..N] = 2s
+		// nums[hi+1..N) = 2s
 		if (nums[mi] == 0) swap(nums[lo++], nums[mi++]);  // We increase `mi` because it already in correct position
 		else if (nums[mi] == 1) mi++;
 		else swap(nums[mi], nums[hi--]);
@@ -27,7 +27,7 @@ int main() {
 	// Goal: 0s to the left, 1s to middle, 2s to the right
 	// Eg: 0 0 0 0 1 1 1 2 2 2 
   
-  // O(N) in time, O(1) in space
+  	// O(N) in time, O(1) in space
 	threeWayPartitioningWhile(nums);  // While style
 
 	printArray(nums);
