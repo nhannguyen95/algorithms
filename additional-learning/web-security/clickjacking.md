@@ -14,3 +14,8 @@ The reason this attack succeeds, where a pure CSRF attack would fail, is that th
 
 The developers can prevent the site from being framed by using the `X-Frame-Options` response header.
 
+---
+
+How Django protects the app against clickacking attack?
+- https://docs.djangoproject.com/en/2.1/topics/security/#clickjacking-protection
+- https://docs.djangoproject.com/en/2.1/ref/clickjacking/#clickjacking-prevention
