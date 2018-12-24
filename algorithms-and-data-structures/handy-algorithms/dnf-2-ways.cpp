@@ -9,7 +9,7 @@ void twoWayPartitioningFor(vector<int>& nums) {
 	for(int hi = 0; hi < nums.size(); hi++) {
 		// nums[0..lo-1] = 0s
 		// nums[lo..hi-1] = 1s
-		// nums[hi..N] = unknown (not processed yet)
+		// nums[hi..N) = unknown (not processed yet)
 		if (nums[hi] == 0) swap(nums[lo++], nums[hi]);
 	}
 }
@@ -19,7 +19,7 @@ void twoWayPartitioningWhile(vector<int> & nums) {
 	while(lo <= hi) {
 		// nums[0..lo-1] = 0s
 		// nums[lo..hi] = unknown (not processed yet)
-		// nums[hi+1..N] = 1s
+		// nums[hi+1..N) = 1s
 		if (nums[lo] == 0) lo++;
 		else swap(nums[lo], nums[hi--]);
 		// Notice here that we don't increase `lo` when swap,
