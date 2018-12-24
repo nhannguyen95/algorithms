@@ -26,7 +26,7 @@ Basically in all 3 cases, the result is determined by the larger of the 2 functi
 
 Need to notice that in case #1, not only must _f(n)_ be smaller than _n<sup>log<sub>b</sub>a</sup>_, it must be polynomial smaller (asymptotically smaller by a factor of _n<sup>ϵ</sup>_ for some constant ϵ > 0).  Similarly for case #3.
 
-Not also that the above 3 cases do not cover all possibilities for _f(n)_. There is a gap between cases 1 and 2 when _f(n)_ is smaller than _n<sup>log<sub>b</sub>a</sup>_ but not polynomial smaller. Similarly the gap between cases 2 and 3 when _f(n)_ is larger than _n<sup>log<sub>b</sub>a</sup>_ but not polynomial larger. The master theorem can't be used in those scenarios.
+Note also that the above 3 cases do not cover all possibilities for _f(n)_. There is a gap between cases 1 and 2 when _f(n)_ is smaller than _n<sup>log<sub>b</sub>a</sup>_ but not polynomial smaller. Similarly the gap between cases 2 and 3 when _f(n)_ is larger than _n<sup>log<sub>b</sub>a</sup>_ but not polynomial larger. The master theorem can't be used in those scenarios.
 
 ---
 
