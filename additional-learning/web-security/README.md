@@ -1,4 +1,5 @@
-- [Cross Site Scripting (XSS)](chapter-12-attacking-users-cross-site-scripting.md)
-- [Request Forgery](chapter-13-attacking-users-other-techniques.md):
+- [Cross Site Scripting (XSS)](cross-site-scripting-xss.md)
+- [Request Forgery](request-forgery-osrf-csrf.md):
   - On-Site Request Forgery (OSRF)
   - Cross-Site Request Forgery (CSRF)
+- [SQL Injection](sql-injection.md)
