@@ -154,8 +154,9 @@
   - Array
     - [Maximum subarray problem](algorithms-and-data-structures/classic-problems/maximum-subarray.cpp)
     - [Missing number in array](https://leetcode.com/problems/missing-number/)
+    - [Dutch national flag algorithm](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
+    
   - Merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
-  - [Dutch national flag algorithm](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
   - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
