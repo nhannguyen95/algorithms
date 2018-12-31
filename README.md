@@ -245,7 +245,7 @@
 
 - [Django interview questions and answer](additional-learning/web-dev/django.md)
 
-## [Web Security]
+## [Web Security](additional-learning/web-security)
 
 - [The Web Application Hacker's Handbook 2](additional-learning/web-security)
 
