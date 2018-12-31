@@ -1,5 +1,0 @@
-- [Cross Site Scripting (XSS)](cross-site-scripting-xss.md)
-- [Request Forgery](request-forgery-osrf-csrf.md):
-  - On-Site Request Forgery (OSRF)
-  - Cross-Site Request Forgery (CSRF)
-- [SQL Injection](sql-injection.md)
