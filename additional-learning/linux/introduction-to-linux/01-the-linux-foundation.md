@@ -56,5 +56,11 @@ SUSE family:
 - Debian family uses the DPKG-based APT package manager (using apt-get, apt-cache, etc.) to install, update, and remove packages in the system.
 - Ubuntu distro is commonly used on both servers and desktop computers.
 
+## Choosing a Linux Distribution
 
+Server: RHEL/CentOS, Ubuntu Server, SLES, Debian
+
+Desktop: Ubuntu, Fedora, Linux Mint, Debian
+
+Embedded: Yocto, Open Embedded, Android
 
