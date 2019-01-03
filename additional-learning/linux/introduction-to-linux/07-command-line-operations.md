@@ -22,6 +22,62 @@ To set the date and timestamp of a file to a specific value: `touch -t 12091600 
 
 ---
 
+## Searching for files
+
+### Standard File Streams
+
+When commands are executed, by default there are three standard file streams (or *descriptors*) always open for use: standard input (standard in or stdin), standard output (standard out or stdout) and standard error (or stderr).
+
+Usually, stdin is your keyboard, and stdout and stderr are printed on your terminal.
+
+In Linux, all open files are represented internally by what are called file descriptors. Simply put, these are represented by numbers starting at zero. stdin is file descriptor 0, stdout is file descriptor 1, and stderr is file descriptor 2. Typically, if other files are opened in addition to these three, *which are opened by default*, they will start at file descriptor 3 and increase from there.
+
+### I/O Redirection
+
+If we have a program called **do_something** that reads from stdin and writes to stdout and stderr:
+
+We can change its input source by using the less-than sign:
+
+```do_something < input-file```
+
+If you want to send the output to a file, use the greater-than sign:
+
+```
+do_something > output-file
+
+Note: Because stderr is not the same as stdout, error messages will still be seen on the terminal windows in the above command
+```
+
+If you want to redirect stderr to a separate file, you use stderr’s file descriptor number:
+
+```
+do_something 2> error-file
+
+Note: do_something 1> output-file = do_something > output-file
+```
+
+A special shorthand notation can send anything written to file descriptor 2 (stderr) to the same place as file descriptor 1 (stdout):
+
+```
+do_something > all-output-file 2>&1
+
+An alternative in bash:
+do_something >& all-output-file
+```
+
+### Pipes
+
+You can pipe the *output* of one command or program into another as its input:
+
+```
+command1 | command2 | command3
+```
+
+
+
+
+
+
 
 
 
