@@ -44,6 +44,7 @@
     - [Counting sort](algorithms-and-data-structures/algorithms/counting-sort.cpp)
     - [Radix sort](algorithms-and-data-structures/algorithms/radix-sort.cpp)
     - Bucket sort
+    - [External sort](https://en.wikipedia.org/wiki/External_sorting)
   - Searching
     - Binary search
   - [String](algorithms-and-data-structures/algorithms/string.md):
