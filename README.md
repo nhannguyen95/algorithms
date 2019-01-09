@@ -161,8 +161,10 @@
     - [Reverse a linked list in O(N) time, O(1) space](https://leetcode.com/problems/reverse-linked-list/)
   - Heap:
     - [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
-    
-  - k-way merge: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
+    - k-way merge: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
+  - Binary tree:
+    - [Construct BST from preorder traversal](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
+
   - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
