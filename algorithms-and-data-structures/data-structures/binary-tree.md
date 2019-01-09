@@ -54,3 +54,7 @@ If the last edge on the simple path from the root r of a tree T to a node x is (
 An **ordered tree** is a rooted tree in which the children of each node are ordered
 
 ---
+
+Preorder, inorder, postorder; given 2, we can reconstruct a Binary Tree from them. Given 1, we can't (there's an infinite number of trees).
+
+Given a preorder or postorder, we can reconstruct a Binary Search Tree from it.
