@@ -1,4 +1,4 @@
-HTTP uses reliable data-transmission protocols, it guarantees that your data will not be damaged transit.
+HTTP uses reliable data-transmission protocols, it guarantees that your data will not be damaged during transit.
 
 ---
 
