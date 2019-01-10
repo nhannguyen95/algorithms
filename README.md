@@ -164,6 +164,7 @@
     - k-way merge: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
   - Binary tree:
     - [Construct BST from preorder traversal](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
+    - [Serialize and Deserialize a BT](https://leetcode.com/problems/serialize-and-deserialize-binary-tree): We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
 
   - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
