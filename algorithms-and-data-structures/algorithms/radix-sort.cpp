@@ -48,7 +48,7 @@ Time complexity:
   The math is now easy, but I haven't been able to pull out
   a intuitively for the answer.
 
-Space complexity: O(n+k) = O(n+base)
+Space complexity: O(n+k) = O(n+base) (actually it's only O(n))
 
 */
 
