@@ -73,7 +73,7 @@ Read more: https://bit.ly/2DjAC3p
 
 Before an HTTP client sends a message to a server, a TCP/IP connection between C and S needs to be established with known server's address and TCP port number with specific software program running on the server:
 
-Consider the request `https://www.example.com:80/books/http.html
+Consider the request `https://www.example.com:80/books/http.html`:
 - From the URL: the browser extracts protocol used is HTTP, server's host name (and uses DNS to convert into server's IP address), TCP port number (if any, default = 80).
 - The browser uses those info to establish a TCP connection with the web server
 - HTTP requests exchanged like below...
