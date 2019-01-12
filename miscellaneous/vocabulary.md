@@ -40,3 +40,7 @@
   **descendant** */dɪˈsendənt/, n*: hậu duệ
 
 - **lexicographically** *adj*: theo thứ tự từ điển
+
+- **forward-slash**: /
+
+  **backslash**: \
