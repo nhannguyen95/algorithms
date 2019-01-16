@@ -168,8 +168,8 @@
     - [Serialize and Deserialize a BT](https://leetcode.com/problems/serialize-and-deserialize-binary-tree): We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
   - Recursion:
     - [Generate permutations (duplications possible)](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
-    
-  - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
+  - Dynamic Programming:
+    - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
   - Dijkstra - Finding shortest paths from a single source
