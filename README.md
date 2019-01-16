@@ -172,7 +172,6 @@
     - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
-  - Dijkstra - Finding shortest paths from a single source
   - Chvátal's greedy set-covering heuristic
   - Least Common Ancestors (LCA)
   - Scheduling with profits and deadlines
