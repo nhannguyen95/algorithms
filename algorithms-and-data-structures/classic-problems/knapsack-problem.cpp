@@ -19,6 +19,8 @@ then put into the knapsack until it reaches W.
 
 --------------- 0-1 KNAPSACK ---------------
 
+https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+
 Solution: DP
 
 Optimal structure property: When we put i-th item into the knapsack,
