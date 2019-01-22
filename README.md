@@ -23,26 +23,26 @@
 # Algorithms and Data Structures
 
 ## Algorithms
-  - [Bit manipulation](algorithms-and-data-structures/algorithms/bit-manipulation.md)
+  - [Bit manipulation *](algorithms-and-data-structures/algorithms/bit-manipulation.md)
   - Recursion
   - Divide and Conquer
-  - [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md):
-    - [Longest common subsequence (LCS)](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
-    - [Longest increasing subsequence (LIC)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
+  - [Dynamic Programming *](algorithms-and-data-structures/algorithms/dynamic-programming.md):
+    - [Longest common subsequence (LCS) *](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
+    - [Longest increasing subsequence (LIC) *](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
     - Optimal binary search tree
   - [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
     - [Activity selection problem](algorithms-and-data-structures/algorithms/activity-selection.cpp)
-    - [Huffman codes](algorithms-and-data-structures/algorithms/huffman-codes.cpp)
-    - [Coin changing](algorithms-and-data-structures/algorithms/coin-changing.cpp)
-  - [Sorting](algorithms-and-data-structures/algorithms/sorting.md):
-    - [Bubble sort](algorithms-and-data-structures/algorithms/bubble-sort.cpp)
-    - [Insertion sort](algorithms-and-data-structures/algorithms/insertion-sort.cpp)
-    - [Selection sort](algorithms-and-data-structures/algorithms/selection-sort.cpp)
-    - [Merge sort](algorithms-and-data-structures/algorithms/merge-sort.cpp)
-    - [Quick sort](algorithms-and-data-structures/algorithms/quick-sort.cpp)
-    - [Heap sort](algorithms-and-data-structures/algorithms/heap-sort.cpp)
-    - [Counting sort](algorithms-and-data-structures/algorithms/counting-sort.cpp)
-    - [Radix sort](algorithms-and-data-structures/algorithms/radix-sort.cpp)
+    - [Huffman codes *](algorithms-and-data-structures/algorithms/huffman-codes.cpp)
+    - [Coin changing *](algorithms-and-data-structures/algorithms/coin-changing.cpp)
+  - [Sorting *](algorithms-and-data-structures/algorithms/sorting.md):
+    - [Bubble sort *](algorithms-and-data-structures/algorithms/bubble-sort.cpp)
+    - [Insertion sort *](algorithms-and-data-structures/algorithms/insertion-sort.cpp)
+    - [Selection sort *](algorithms-and-data-structures/algorithms/selection-sort.cpp)
+    - [Merge sort *](algorithms-and-data-structures/algorithms/merge-sort.cpp)
+    - [Quick sort *](algorithms-and-data-structures/algorithms/quick-sort.cpp)
+    - [Heap sort *](algorithms-and-data-structures/algorithms/heap-sort.cpp)
+    - [Counting sort *](algorithms-and-data-structures/algorithms/counting-sort.cpp)
+    - [Radix sort *](algorithms-and-data-structures/algorithms/radix-sort.cpp)
     - Bucket sort
     - [External sort](https://en.wikipedia.org/wiki/External_sorting)
   - Searching
@@ -52,47 +52,54 @@
       - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
       - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
-      - [KMP (Knuth-Morris-Pratt)](algorithms-and-data-structures/algorithms/kmp.cpp)
+      - [KMP (Knuth-Morris-Pratt) *](algorithms-and-data-structures/algorithms/kmp.cpp)
       - String matching with gap characters.
-    - [Edit Distance](algorithms-and-data-structures/algorithms/edit-distance.cpp)
+    - [Edit Distance *](algorithms-and-data-structures/algorithms/edit-distance.cpp)
   - Probability
   - Math:
-    - [Mathematical Background](algorithms-and-data-structures/mathematical-background.md)
-    - [Counting and Probability](algorithms-and-data-structures/counting-and-probability.md)
-    - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
-    - [Factorization in O(sqrt(N))](https://sites.google.com/site/indy256/algo/factorization)
-    - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
-    - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](algorithms-and-data-structures/algorithms/euclid-gcd.cpp)
-    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
+    - [Mathematical Background *](algorithms-and-data-structures/mathematical-background.md)
+    - [Counting and Probability *](algorithms-and-data-structures/counting-and-probability.md)
+    - [Number theory *](algorithms-and-data-structures/algorithms/number-theory.md)
+    - [Factorization in O(sqrt(N)) *](https://sites.google.com/site/indy256/algo/factorization)
+    - [Sieve Eratosthenes *](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
+    - [Euclid's algorithm for finding Greatest Common Divisor (GCD) *](algorithms-and-data-structures/algorithms/euclid-gcd.cpp)
+    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse *](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
     - [Primality testing](algorithms-and-data-structures/algorithms/primality-testing.cpp)
-    - [The Tortoise and Hare algorithm](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
-  - [Graph](algorithms-and-data-structures/algorithms/graph.md):
-    - [BFS](algorithms-and-data-structures/algorithms/bfs.cpp)
-    - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
-    - [Flood fill](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
-    - [Topological sort](algorithms-and-data-structures/algorithms/topo-sort.cpp)
-    - [Strongly connected components](algorithms-and-data-structures/algorithms/strongly-connected-components.cpp)
-    - [Minimum spanning tree (MST)](algorithms-and-data-structures/algorithms/mst.md)
-      - [Kruskal's algorihtm](algorithms-and-data-structures/algorithms/mst-kruskal.cpp)
-      - [Prim's algorithm](algorithms-and-data-structures/algorithms/mst-prim.cpp)
+    - [The Tortoise and Hare algorithm *](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
+  - Tree:
+    - [Minimum spanning tree (MST) *](algorithms-and-data-structures/algorithms/mst.md)
+      - [Kruskal's algorihtm *](algorithms-and-data-structures/algorithms/mst-kruskal.cpp)
+      - [Prim's algorithm *](algorithms-and-data-structures/algorithms/mst-prim.cpp)
       - [Second-best minimum spanning tree](algorithms-and-data-structures/algorithms/2nd-mst.cpp)
-    - [Shortest-paths](algorithms-and-data-structures/algorithms/shortest-paths.md)
-      - [Single-source shortest-paths - Bellman Ford](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
-      - [Single-source shortest-paths on DAG](algorithms-and-data-structures/algorithms/sssp-dag.cpp)
-      - [Single-source shortest-paths - Dijkstra](algorithms-and-data-structures/algorithms/dijkstra.cpp)
-      - [All pairs shortest-paths - Floyd](algorithms-and-data-structures/algorithms/floyd.cpp)
+  - Binary Tree:
+    - [Preorder traversal, recursive and iterative *](https://nhannguyen95.github.io/preorder-traversal-binary-tree/)
+    - [Inorder traversal, recursive and iterative *](https://nhannguyen95.github.io/inorder-traversal-binary-tree/)
+    - [Postorder traversal, recursive and iterative *](https://nhannguyen95.github.io/postorder-traversal-binary-tree/)
+    - [Morris Inorder Tree Traversal *](https://nhannguyen95.github.io/morris-inorder-tree-traversal/)
+    - [Binary Tree Iterator *](https://nhannguyen95.github.io/bt-iterator/)
+  - [Graph *](algorithms-and-data-structures/algorithms/graph.md):
+    - [BFS *](algorithms-and-data-structures/algorithms/bfs.cpp)
+    - [DFS *](algorithms-and-data-structures/algorithms/dfs.cpp)
+    - [Flood fill *](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
+    - [Topological sort *](algorithms-and-data-structures/algorithms/topo-sort.cpp)
+    - [Strongly connected components *](algorithms-and-data-structures/algorithms/strongly-connected-components.cpp)
+    - [Shortest-paths *](algorithms-and-data-structures/algorithms/shortest-paths.md)
+      - [Single-source shortest-paths - Bellman Ford *](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
+      - [Single-source shortest-paths on DAG *](algorithms-and-data-structures/algorithms/sssp-dag.cpp)
+      - [Single-source shortest-paths - Dijkstra *](algorithms-and-data-structures/algorithms/dijkstra.cpp)
+      - [All pairs shortest-paths - Floyd *](algorithms-and-data-structures/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
-      - [Transitive closure of a directed graph](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
-    - [Bridges and Articulation Points of a undirected graph](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
-    - [Biconnected Components](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
-    - [Euler tour](algorithms-and-data-structures/algorithms/euler-tour.cpp)
-    - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
-    - [Bipartite graph checking](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
+      - [Transitive closure of a directed graph *](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
+    - [Bridges and Articulation Points of a undirected graph *](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
+    - [Biconnected Components *](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
+    - [Euler tour *](algorithms-and-data-structures/algorithms/euler-tour.cpp)
+    - [Graph coloring *](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
+    - [Bipartite graph checking *](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
   - Network flow
   - Medians and Order Statistics
-    - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
+    - [Randomized order statistic / Quickselect *](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
       > There is a linear worst case running time for this problem.
-  - [Computational Geometry](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
+  - [Computational Geometry *](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
     - Determine if there exists any 3 points in a set of n points that are colinear
     - Determine if a point lies inside a simple polygon (not neccessary convex)
     - Find area of a simple polygon (not neccessary convex)
@@ -100,7 +107,7 @@
     - Determining whether any pair of circles intersects
     - [Find all intersections of a set of segments (Bentley–Ottmann algorithm)](https://en.wikipedia.org/wiki/Bentley%E2%80%93Ottmann_algorithm)
     - Finding the convex hull:
-      - [Graham's scan algorithm (nlogn)](algorithms-and-data-structures/algorithms/graham-scan.cpp)
+      - [Graham's scan algorithm (nlogn) *](algorithms-and-data-structures/algorithms/graham-scan.cpp)
       - [Javis's march (nh)](algorithms-and-data-structures/algorithms/jarvis-march.cpp)
     - Finding the farthest pair of points
     - Finding the closest pair of points (nlogn)
@@ -111,37 +118,37 @@
   - NP-Completeness Approximation Algorithms
   - [Window Sliding](algorithms-and-data-structures/algorithms/window-sliding.cpp)
   - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.cpp)
-  - Matrix Power (Nhân ma trận)
+  - Matrix Power (Nhân ma trận) *
   - Lowest Common Ancestor
-  - [Partial Sum](algorithms-and-data-structures/algorithms/partial-sum.cpp)
+  - [Partial Sum *](algorithms-and-data-structures/algorithms/partial-sum.cpp)
 
 ## Data structures
   - Array
   - Vector (Dynamic Array)
   - Linked list:
-    - [Singly Linked List](algorithms-and-data-structures/data-structures/singly-linked-list.cpp)
-    - [Doubly Linked List](algorithms-and-data-structures/data-structures/doubly-linked-list.cpp)
-  - [Hash Table](algorithms-and-data-structures/data-structures/hash-table.md)
-  - [Heap](algorithms-and-data-structures/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
-    - [Binary heap](algorithms-and-data-structures/data-structures/binary-heap.cpp)
-    - [D-ary heap](algorithms-and-data-structures/data-structures/d-ary-heap.cpp)
+    - [Singly Linked List *](algorithms-and-data-structures/data-structures/singly-linked-list.cpp)
+    - [Doubly Linked List *](algorithms-and-data-structures/data-structures/doubly-linked-list.cpp)
+  - [Hash Table *](algorithms-and-data-structures/data-structures/hash-table.md)
+  - [Heap *](algorithms-and-data-structures/data-structures/heap.md) _Need to read this before reading any heap related stuffs_:
+    - [Binary heap *](algorithms-and-data-structures/data-structures/binary-heap.cpp)
+    - [D-ary heap *](algorithms-and-data-structures/data-structures/d-ary-heap.cpp)
     - [Young Tableau](algorithms-and-data-structures/data-structures/young-tableau.cpp)
     - [Mergeable heap](https://sites.google.com/site/indy256/algo/mergeable_heap)
     - Fibonacci Heap
   - String:
-    - [Trie](algorithms-and-data-structures/data-structures/trie.cpp)
-    - [Suffix Tree](algorithms-and-data-structures/data-structures/suffix-tree.md)
-    - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
-  - [Stack](algorithms-and-data-structures/data-structures/stack-array.cpp)
-  - [Queue](algorithms-and-data-structures/data-structures/queue-array.cpp):
+    - [Trie *](algorithms-and-data-structures/data-structures/trie.cpp)
+    - [Suffix Tree *](algorithms-and-data-structures/data-structures/suffix-tree.md)
+    - [Suffix Array *](algorithms-and-data-structures/data-structures/suffix-array.cpp)
+  - [Stack *](algorithms-and-data-structures/data-structures/stack-array.cpp)
+  - [Queue *](algorithms-and-data-structures/data-structures/queue-array.cpp):
     - Priority Queue
     - Circular queue
-  - [Deque](algorithms-and-data-structures/data-structures/deque-array.cpp)
-  - [Tree](algorithms-and-data-structures/data-structures/tree.md):
-    - [Binary Tree](algorithms-and-data-structures/data-structures/binary-tree.md)
-    - [Binary Search Tree](algorithms-and-data-structures/data-structures/binary-search-tree.cpp)
-    - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
-    - [Binary Indexed Tree (BIT - Fenwick Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
+  - [Deque *](algorithms-and-data-structures/data-structures/deque-array.cpp)
+  - [Tree *](algorithms-and-data-structures/data-structures/tree.md):
+    - [Binary Tree *](algorithms-and-data-structures/data-structures/binary-tree.md)
+    - [Binary Search Tree *](algorithms-and-data-structures/data-structures/binary-search-tree.cpp)
+    - [Segment Tree (IT - Interval Tree) *](algorithms-and-data-structures/data-structures/segment-tree.cpp)
+    - [Binary Indexed Tree (BIT - Fenwick Tree) *](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
     - Radix Tree
     - Balanced Search Tree:
       - AVL Tree
@@ -149,38 +156,37 @@
       - Red Black Tree
       - B-Trees
   - Set/Map
-  - [Disjoint-Set Forest](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
+  - [Disjoint-Set Forest *](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 
 ## Classic/Handy problems (compiled from [GFGs](https://www.geeksforgeeks.org/must-coding-questions-company-wise/))
   - Array
-    - [Maximum subarray problem](algorithms-and-data-structures/classic-problems/maximum-subarray.cpp)
+    - [Maximum subarray problem *](algorithms-and-data-structures/classic-problems/maximum-subarray.cpp)
     - [Missing number in array](https://leetcode.com/problems/missing-number/)
-    - [Dutch national flag algorithm](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
+    - [Dutch national flag algorithm *](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
     - [Maximum sum increasing subsequence](https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0): [solution](https://e2718281828459045.wordpress.com/2013/09/06/maximum-sum-increasing-subsequence/).
   - Linked list:
-    - [Reverse a linked list in O(N) time, O(1) space](https://leetcode.com/problems/reverse-linked-list/)
+    - [Reverse a linked list in O(N) time, O(1) space *](https://leetcode.com/problems/reverse-linked-list/)
   - Heap:
     - [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
-    - k-way merge: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
+    - k-way merge *: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
   - Binary tree:
-    - [Construct BST from preorder traversal](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
-    - [Serialize and Deserialize a BT](https://leetcode.com/problems/serialize-and-deserialize-binary-tree): We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
+    - [Construct BST from preorder traversal *](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
+    - [Serialize and Deserialize a BT *](https://leetcode.com/problems/serialize-and-deserialize-binary-tree): We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
   - Recursion:
-    - [Generate permutations (duplications possible)](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
+    - [Generate permutations (duplications possible) *](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
   - Dynamic Programming:
-    - [Knapsack problem](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
+    - [Knapsack problem *](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Optimal binary search tree
   - Interval-graph coloring problem
   - Chvátal's greedy set-covering heuristic
   - Least Common Ancestors (LCA)
   - Scheduling with profits and deadlines
-  - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
-  - Split string: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp).
-  - [Morris Inorder Tree Traversal](https://nhannguyen95.github.io/morris-inorder-tree-traversal/)
+  - [Exponential search *](https://en.wikipedia.org/wiki/Exponential_search).
+  - Split string *: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp).
 
 ## Others
-  - [Big O Notation](algorithms-and-data-structures/big-o-notation.md)
+  - [Big O Notation *](algorithms-and-data-structures/big-o-notation.md)
   - [Master Theorem](algorithms-and-data-structures/master-theorem.md)
   - [Amortized Analysis](algorithms-and-data-structures/amortized-analysis.md)
   - Operating System - Threads, Processes and Locks using Mutex, Semaphores
