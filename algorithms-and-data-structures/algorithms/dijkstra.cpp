@@ -7,7 +7,7 @@ is non-negative.
 
 Idea: the min queue Q maintains a set of vertices
 to extract the vertex u whose d is minimum, then
-relax all outgoing edge of v. All relaxed edges are
+relax all outgoing edge of u. All relaxed edges are
 then push into Q for later update:
 
 INIT-SINGLE-SOURCE(G, s)
