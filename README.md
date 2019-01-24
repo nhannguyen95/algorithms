@@ -177,6 +177,8 @@
     - [Generate permutations (duplications possible) *](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
   - Dynamic Programming:
     - [Knapsack problem *](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
+  - Graph:
+    - [Minimum Swaps to Sort](https://practice.geeksforgeeks.org/problems/minimum-swaps/1)
   - Optimal binary search tree
   - Interval-graph coloring problem
   - Chvátal's greedy set-covering heuristic
