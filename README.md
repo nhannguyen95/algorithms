@@ -174,7 +174,8 @@
     - [Construct BST from preorder traversal *](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
     - [Serialize and Deserialize a BT *](https://leetcode.com/problems/serialize-and-deserialize-binary-tree): We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
   - Recursion:
-    - [Generate permutations (duplications possible) *](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
+    - [Generate permutations (no duplications) *](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
+    - [Generate permutations (duplications possible) *](https://leetcode.com/problems/permutations-ii)
   - Dynamic Programming:
     - [Knapsack problem *](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Graph:
