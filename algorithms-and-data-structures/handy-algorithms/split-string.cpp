@@ -4,7 +4,7 @@
 using namespace std;
 
 vector<string> splitAll(const string & s, const string & delim) {
-	vector<string> tokens;
+  vector<string> tokens;
 	size_t last = 0;
 	for(size_t next = 0; (next = s.find(delim, last)) != s.npos; ) {
 		if (last < next)
