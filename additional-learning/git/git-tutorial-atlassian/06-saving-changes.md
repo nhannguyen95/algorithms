@@ -130,12 +130,11 @@ Git sees every file in your working copy as one of three things:
 - ignored - a file which Git has been explicitly told to ignore.
 
 Some Git ignore patterns:
-- `**/logs`: ignore all logs folder (a double asterisk matches zero or more directories).
+- `logs` or `**/logs`: ignore all logs files and folders (a double asterisk matches zero or more directories).
+- `logs/`: ignore logs folders.
+- `debug.log`: by default, patterns match files in any directory.
 - `*.log \n !important.log`: ignore all .log file except `important.log`.
 - `/debug.log`: prepending a slash matches files only in the repository root.
-- `debug.log`: by default, patterns match files in any directory.
-- `logs`: ignore all logs files and folders.
-- `logs/`: ignore logs folders. 
 - `logs/debug.log`: patterns specifying a file in a particular directory are relative to the repository root, thus this ignores `logs/debug.log` but not `build/logs/debug.log`.
 
 Global Git ignore rules:
