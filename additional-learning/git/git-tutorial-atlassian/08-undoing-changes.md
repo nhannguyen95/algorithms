@@ -33,9 +33,9 @@ If you have requirements of keeping a curated and minimal Git history this strat
 ## Undo a commit with `git reset`
 
 Three internal trees of Git:
-- The commit history (with HEAD refs points to the most recent commit by default))
-- The staging tree (changes that are ready for the next commit)
-- The working directory
+- The commit history (with HEAD refs points to the most recent commit by default)) - the **committed** state. The files are in `.git directory`.
+- The staging tree (changes that are ready for the next commit) - the **staged** state. The files are in **staging area** (or **index**).
+- The working directory (tracked files) - the **modified** state. The files are in **working directory** (or **working tree**).
 
 Supose we have made 4 commits to master branch:
 
@@ -131,7 +131,19 @@ git clean -i
 
 ## `git rm`
 
-`git rm` can be thought of as the inverse of `git add`.
+`git rm` can be used to remove files from the Index, or from the Working Tree and the Index. 
+
+Some flags:
+- `-r`: If there is a discrepency between the HEAD version of a file (that we are about to remove) and the staging index or working tree version, Git will by default block the removal. Use this to override that safety check.
+- `--cached`: The cached option specifies that the removal should happen only on the staging index. Working directory files will be left alone.
+
+Note: If you just use rm, you will need to follow it up with `git add <fileRemoved>`.  `git rm` does this in one step.
+
+To remove files in Commit History (Git repo) to Untracked:
+
+```
+git rm <files>
+```
 
 To remove files in Staging Index to Untracked:
 
