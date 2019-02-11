@@ -168,6 +168,8 @@
     - [Spirally traversing a matrix](https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix/0)
   - Linked list:
     - [Reverse a linked list in O(N) time, O(1) space *](https://leetcode.com/problems/reverse-linked-list/)
+  - String:
+    - [Longest Common Substring](https://practice.geeksforgeeks.org/problems/longest-common-substring/0): this can be solved using DP, Trie or Suffix Array.
   - Heap:
     - [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
     - k-way merge *: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
