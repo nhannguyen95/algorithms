@@ -138,7 +138,7 @@
   - String:
     - [Trie *](algorithms-and-data-structures/data-structures/trie.cpp)
     - [Suffix Tree *](algorithms-and-data-structures/data-structures/suffix-tree.md)
-    - [Suffix Array *](algorithms-and-data-structures/data-structures/suffix-array.cpp)
+    - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
   - [Stack *](algorithms-and-data-structures/data-structures/stack-array.cpp)
   - [Queue *](algorithms-and-data-structures/data-structures/queue-array.cpp):
     - Priority Queue
@@ -170,6 +170,7 @@
     - [Reverse a linked list in O(N) time, O(1) space *](https://leetcode.com/problems/reverse-linked-list/)
   - String:
     - [Longest Common Substring](https://practice.geeksforgeeks.org/problems/longest-common-substring/0): this can be solved using DP, Trie or Suffix Array.
+    - [Implement Atoi *](https://www.interviewbit.com/problems/atoi/)
   - Heap:
     - [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
     - k-way merge *: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
