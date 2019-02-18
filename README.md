@@ -44,12 +44,12 @@
     - [Counting sort *](algorithms-and-data-structures/algorithms/counting-sort.cpp)
     - [Radix sort *](algorithms-and-data-structures/algorithms/radix-sort.cpp)
     - Bucket sort
-    - [External sort](https://en.wikipedia.org/wiki/External_sorting)
+    - [External sort *](https://en.wikipedia.org/wiki/External_sorting)
   - Searching
     - Binary search
-  - [String](algorithms-and-data-structures/algorithms/string.md):
+  - [String *](algorithms-and-data-structures/algorithms/string.md):
     - String matching:
-      - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
+      - [Rabin-Karp *](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
       - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
       - [KMP (Knuth-Morris-Pratt) *](algorithms-and-data-structures/algorithms/kmp.cpp)
@@ -63,7 +63,7 @@
     - [Factorization in O(sqrt(N)) *](https://sites.google.com/site/indy256/algo/factorization)
     - [Sieve Eratosthenes *](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD) *](algorithms-and-data-structures/algorithms/euclid-gcd.cpp)
-    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse *](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
+    - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
     - [Primality testing](algorithms-and-data-structures/algorithms/primality-testing.cpp)
     - [The Tortoise and Hare algorithm *](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
   - Tree:
