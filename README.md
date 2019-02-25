@@ -166,6 +166,7 @@
     - [Dutch national flag algorithm *](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
     - [Maximum sum increasing subsequence](https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0): [solution](https://e2718281828459045.wordpress.com/2013/09/06/maximum-sum-increasing-subsequence/).
     - [Spirally traversing a matrix](https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix/0)
+    - [Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/)
   - Linked list:
     - [Reverse a linked list in O(N) time, O(1) space *](https://leetcode.com/problems/reverse-linked-list/)
     - [Middle element of linked list in O(N) time, O(1) space](https://practice.geeksforgeeks.org/problems/finding-middle-element-in-a-linked-list/1): see the use of `next` function there.
