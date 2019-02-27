@@ -82,7 +82,7 @@ If this index was small enough to be kept entirely in the main memory, the searc
 
 If we use binary search to locate an entry, it would require up to `log(1e6)` blocks to be read, this can be costly.
 
-To deal with this problem, we construct a sparse outer index on the original index (it's dense w.r.t the original index), which we now call the inner index. In our example, an inner index with 1e6 blocks would require 1e6 entries in the outer index, which would occupy just 1e4 blocks ~ 40Mb. We can keep outer index in main memory and inner index on disk.
+To deal with this problem, we construct a sparse outer index on the original index (it's dense w.r.t the original index), which we now call the inner index. In our example, an inner index with 1e6 blocks would require 1e4 entries in the outer index, which would occupy just 1e4 blocks ~ 40Mb. We can keep outer index in main memory and inner index on disk.
 
 Now to find a record in the relation, we binary search on the outer index first to locate the inner index block that contains the record's search key. Eventually it requires only 1 block read operation (on disk).
 
