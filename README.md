@@ -1,3 +1,7 @@
+# Updates
+
+- March 10, 2019: no longer update solved problems for online judges.
+
 # Content
 
 - [Algorithms and Data Structures](#algorithms-and-data-structures)
