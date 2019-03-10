@@ -1,6 +1,6 @@
 # Updates
 
-- March 10, 2019: no longer update solved problems for online judges.
+- March 10, 2019: _no longer update solved problems for online judges._
 
 # Content
 
