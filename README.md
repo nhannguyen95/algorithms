@@ -170,7 +170,7 @@
     - [Dutch national flag algorithm *](algorithms-and-data-structures/classic-problems/dutch-national-flag.md): [2-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-2-ways.cpp), [3-ways.cpp](algorithms-and-data-structures/handy-algorithms/dnf-3-ways.cpp).
     - [Maximum sum increasing subsequence](https://practice.geeksforgeeks.org/problems/maximum-sum-increasing-subsequence/0): [solution](https://e2718281828459045.wordpress.com/2013/09/06/maximum-sum-increasing-subsequence/).
     - [Spirally traversing a matrix](https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix/0)
-    - [Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/)
+    - [Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/), [with duplicates](https://leetcode.com/problems/search-in-rotated-sorted-array-ii)
     - [Next lexicographical permutation](https://leetcode.com/problems/next-permutation/): [solution](https://nhannguyen95.wordpress.com/2016/03/07/thuat-toan-liet-ke-hoan-vi-theo-thu-tu-tu-dien/)
     - [Longest valid parentheses](https://leetcode.com/problems/longest-valid-parentheses/): O(N) in time, O(1) in space.
   - Stack:
