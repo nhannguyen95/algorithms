@@ -125,6 +125,7 @@
   - Matrix Power (Nhân ma trận) *
   - Lowest Common Ancestor
   - [Partial Sum *](algorithms-and-data-structures/algorithms/partial-sum.cpp)
+  - [Valid Parentheses](algorithms-and-data-structures/algorithms/valid-parentheses.cpp)
 
 ## Data structures
   - Array
@@ -163,7 +164,7 @@
   - [Disjoint-Set Forest *](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 
-## Classic/Handy problems (compiled from [GFGs](https://www.geeksforgeeks.org/must-coding-questions-company-wise/))
+## Classic/Handy problems (compiled from [GFGs](https://www.geeksforgeeks.org/must-coding-questions-company-wise/)) and Leetcode
   - Array
     - [Maximum subarray problem *](algorithms-and-data-structures/classic-problems/maximum-subarray.cpp)
     - [Missing number in array](https://leetcode.com/problems/missing-number/)
@@ -172,6 +173,7 @@
     - [Spirally traversing a matrix](https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix/0)
     - [Search in rotated sorted array](https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/)
     - [Next lexicographical permutation](https://leetcode.com/problems/next-permutation/): [solution](https://nhannguyen95.wordpress.com/2016/03/07/thuat-toan-liet-ke-hoan-vi-theo-thu-tu-tu-dien/)
+    - [Longest valid parentheses](https://leetcode.com/problems/longest-valid-parentheses/): O(N) in time, O(1) in space.
   - Stack:
     - [Valid parenthesis, multiple types](https://leetcode.com/problems/valid-parentheses/): O(N) in time and space.
   - Linked list:
