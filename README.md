@@ -125,7 +125,6 @@
   - Matrix Power (Nhân ma trận) *
   - Lowest Common Ancestor
   - [Partial Sum *](algorithms-and-data-structures/algorithms/partial-sum.cpp)
-  - [Valid Parentheses](algorithms-and-data-structures/algorithms/valid-parentheses.cpp)
 
 ## Data structures
   - Array
