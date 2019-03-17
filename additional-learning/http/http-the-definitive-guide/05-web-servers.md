@@ -1,3 +1,17 @@
+In this chapter:
+- What are web servers?
+- Some forms of web servers
+- Web servers' tasks:
+  - 1/ Accepting clients' TCP connection
+  - 2/ Receiving request message
+  - 3/ Processing the request
+  - 4/ Mapping and accessing the resource
+  - 5/ Building the response
+  - 6/ Sending the response
+  - 7/ Logging
+
+---
+
 **The term "web server" can refer either to web server software or to the particular device or computer dedicated to serving the web pages.**
 
 Web servers comes in all flavors, shapes, and sizes. There are trivial 10-line Perl script web servers, 50-MB secure commerce engines, and tiny servers-on-a-card. But whatever the functional differences, all web servers receive HTTP requests for resources and serve content back to the clients
