@@ -20,7 +20,7 @@
   
   **Right triangle**: tam giác vuông.
   
-  **Primeter** */pəˈrɪmɪtə/, n*: chu vi.
+  **Perimeter** */pəˈrɪmɪtə/, n*: chu vi.
   
   **Trapezium** */trəˈpiːziəm/, n*: hình thang.
   
