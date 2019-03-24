@@ -363,4 +363,5 @@
 - [C++ STD Containers](miscellaneous/c++-std-containers.md)
 - [Limited memory interview questions](miscellaneous/limited-memory.md)
 - [Questions](miscellaneous/questions.md)
+- [Common complexity pattern](miscellaneous/common-complexity-pattern.md)
 
