@@ -83,7 +83,7 @@
     - [Binary Tree Iterator *](https://nhannguyen95.github.io/bt-iterator/)
   - [Graph *](algorithms-and-data-structures/algorithms/graph.md):
     - [BFS *](algorithms-and-data-structures/algorithms/bfs.cpp)
-    - [Two ways BFS](https://leetcode.com/problems/word-ladder-ii/)
+    - Bidirectional BFS: [1](https://leetcode.com/problems/word-ladder-ii/), [2](https://leetcode.com/problems/word-ladder/solution/)
     - [DFS *](algorithms-and-data-structures/algorithms/dfs.cpp)
     - [Flood fill *](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
     - [Topological sort *](algorithms-and-data-structures/algorithms/topo-sort.cpp)
