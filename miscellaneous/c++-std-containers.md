@@ -1,5 +1,6 @@
 |C++ Containers|Implementation|
 |-|-|
+|forward list|singly-linked list|
 |list|doubly-linked list|
 |stack|stack|
 |queue|queue|
