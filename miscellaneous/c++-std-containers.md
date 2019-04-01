@@ -1,6 +1,6 @@
 |C++ Containers|Implementation|
 |-|-|
-|list|linked list|
+|list|doubly-linked list|
 |stack|stack|
 |queue|queue|
 |deque|double-ended queue|
