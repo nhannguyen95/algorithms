@@ -1,3 +1,5 @@
+- **Proof by contradiction**: chứng minh bằng phản chứng.
+
 - **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn.
 
 - **Recursion Depth**.
