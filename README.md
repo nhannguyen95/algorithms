@@ -50,7 +50,7 @@
     - Bucket sort
     - [External sort *](https://en.wikipedia.org/wiki/External_sorting)
   - Searching
-    - [Binary search](algorithms-and-data-structures/algorithms/binary-search.md)
+    - [Binary search](algorithms-and-data-structures/binary-search.md)
   - [String *](algorithms-and-data-structures/algorithms/string.md):
     - String matching:
       - [Rabin-Karp *](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
