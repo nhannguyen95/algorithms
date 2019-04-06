@@ -61,8 +61,7 @@ using namespace std;
 
 // ---------------RADIX SORT---------------
 
-void countingSort(  // pow = base^it
-  vector<int> & A, int base, int it, int pow) {
+void countingSort(vector<int> & A, int base, int pow) {
   // List to buckets.
   vector< vector< int > > buckets(base, vector<int>());
   for(int num : A) {
@@ -83,12 +82,9 @@ void radixSort(vector<int> & A, int base = 10) {
   if (A.size() == 0) return;
 
   int maxValue = *max_element(A.begin(), A.end());
-  int it = 0;  // it = [0..number of digits)
-               // or the position of digit.
   int pow = 1;
   while(pow <= maxValue) {
-    countingSort(A, base, it, pow);
-    it++;
+    countingSort(A, base, pow);
     pow *= base;
   }
 }
