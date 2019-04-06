@@ -5,7 +5,7 @@ Time complexity and Space complexity: read more
 
   - Θ(NlogN) time (in worst case)
   T(n) = C (if right == left => n = 1)
-        = 2 T(n/2)
+        = 2 T(n/2) + n
    T(n) = 2 T(n/2) + n = 2(2 T(n/4) + n/2) + n = 2^2 T (n / 2^2) + 2n
         = 2^2 (2 T(n / 2^3) + n / 2^2 ) + 2n
         = 2^3 T(n / 2^3) + 3n  ...
