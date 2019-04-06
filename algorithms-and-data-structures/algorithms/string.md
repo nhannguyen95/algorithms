@@ -1,6 +1,7 @@
 ## Preprocessing and matching times of some string-matching algorithms
 
 n = |T| = Length of text
+
 m = |P| = Length of pattern
 
 |Algorithm|Preprocessing time|Matching time|
