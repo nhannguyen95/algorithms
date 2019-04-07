@@ -65,7 +65,7 @@ When use `git reset b`:
 
 If we invoke git `reset --hard a1e8fb5` the commit history is reset to that specified commit. Any previously pending changes to the Staging Index and the Working Directory gets reset to match the state of the Commit Tree. This means any pending work that was hanging out in the Staging Index and Working Directory will be lost (this cannot be undone).
 
-### `git reset --mixed <hash_commit, default=HEAD>`, scoped to Staging Index
+### `git reset --mixed <hash_commit, default=HEAD>`, scoped to Working Directory
 
 `git reset --mixed HEAD` is default to `git reset`.
 
@@ -77,9 +77,11 @@ Just a side note: to remove the specified file from the staging area, but leave 
 git reset <file>
 ```
 
-### `git reset --soft <hash_commit, default=HEAD>`, scoped to Working Directory
+### `git reset --soft <hash_commit, default=HEAD>`, scoped to Staging Index
 
 Let's say we want to reset back to the commit `abc`, doing `git reset --soft abc` will move the HEAD ref to that commit. The changes that are lying in the subsequence commits from `abc` (that are the commits that we are about to remove) will be **moved to Staging Index**.
+
+<img src="https://i.stack.imgur.com/qRAte.jpg" />
 
 ---
 
