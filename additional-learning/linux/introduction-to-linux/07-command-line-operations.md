@@ -1,4 +1,4 @@
-sudo allows users to run programs using the security privileges of another user, generally root (superuser).
+**`sudo`** allows users to run programs using the security privileges of another user, generally root (superuser).
 
 ---
 
@@ -12,9 +12,9 @@ Unlike hard links, soft links can point to objects even on different filesystems
 
 ---
 
-`cat`: Used for viewing files that are not very long; it does not provide any scroll-back.
+**`cat`**: Used for viewing files that are not very long; it does not provide any scroll-back.
 
-`less`: Used to view larger files because it is a paging program. It pauses at each screen full of text, provides scroll-back capabilities, and lets you search and navigate within the file. Note: Use / to search for a pattern in the forward direction and ? for a pattern in the backward direction.
+**`less`**: Used to view larger files because it is a paging program. It pauses at each screen full of text, provides scroll-back capabilities, and lets you search and navigate within the file. Note: Use / to search for a pattern in the forward direction and ? for a pattern in the backward direction.
 
 ---
 
