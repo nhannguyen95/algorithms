@@ -46,3 +46,8 @@
 - **forward-slash**: /
 
   **backslash**: \
+  
+- Signs:
+ - `^`: caret
+ - `~`: tilde
+ - `#!`: shebang
