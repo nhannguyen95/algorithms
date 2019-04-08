@@ -224,7 +224,6 @@
   - OOP Concepts
   - Databases - SQL, NoSQL, Writing simple Queries, Transactions, ACID
   - (Scaleable) Distributed Systems and Cloud Computing
-  - Design Pattern
   - [RSA public-key cryptosystem](algorithms-and-data-structures/rsa.md)
 
 ## Resources
@@ -286,6 +285,8 @@
 - [Introduction to Linux](additional-learning/linux/introduction-to-linux)
 
 ## Design Patterns
+
+- [Design patterns](additional-learning/design-patterns)
 
 ## Clean Code
 
