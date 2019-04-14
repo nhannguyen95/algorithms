@@ -17,7 +17,7 @@ An ‘Access-Control-Allow-Origin’ header will be included the the response he
 
 ```
 ▼ Response Headers
-   Access-Control-Allow-Origin: *
+   Access-Control-Allow-Origin: *  # controlled by CORS (Cross Origin Resource Sharing)
    Allow: GET, POST, HEAD, OPTIONS
    Content-Length: 156
 ```
