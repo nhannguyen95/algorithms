@@ -1,3 +1,7 @@
+<img src="./pics/observer.png" />
+
+---
+
 Publishers + Subscribers = Observer Pattern.
 
 We call the publisher as the **subject**, subscribers as the **observer**.
