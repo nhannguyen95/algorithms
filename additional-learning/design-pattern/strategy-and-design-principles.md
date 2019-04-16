@@ -1,3 +1,7 @@
+<img src="./pics/strategy.png" />
+
+---
+
 Use case:
 - `Duck` base class (an abstract or normal class), there are many types of duck (subclasses) inherit from `Duck`.
 - Some types of duck can fly, some types of duck can quack. There are also different types of fly behavior and quack behavior too.
