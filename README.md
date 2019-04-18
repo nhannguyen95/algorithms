@@ -4,6 +4,9 @@
 
 # Content
 
+- [Languages](#languages)
+  - C++
+  - Python
 - [Algorithms and Data Structures](#algorithms-and-data-structures)
 - [System Design](#system-design)
 - [Computer Architecture](#computer-architecture)
@@ -23,6 +26,10 @@
 - [Interview strategies](#interview-strategies)
 - [Advices](#advices)
 - [Miscellaneous](#miscellaneous)
+
+# Languages
+- [C++](languages/c++)
+- [Python](languages/python)
 
 # Algorithms and Data Structures
 
