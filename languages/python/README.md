@@ -1,6 +1,6 @@
 Content:
 - [Python is an interpreter language](#python-is-an-interpreter-language)
-- [Python implementations](#python-implementation)
+- [Python implementations](#python-implementations)
 - [Python installation](#python-installation)
 - [Import in Python](#import-in-python)
 - [Python data types](#python-data-types)
@@ -271,6 +271,7 @@ Sets can only contain immutable (a.k.a hashable) object types:
 >>> s.add([1,2,3])  # TypeError: unhashable type: 'list'
 >>> s.add({1,2,3})  # TypeError: unhashable type: 'set'
 >>> s.add(frozenset([1,2,3]))  # If you need to store a set inside another set, use fronzenset
+```
 
 ## Dict
 
