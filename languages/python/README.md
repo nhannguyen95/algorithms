@@ -174,6 +174,29 @@ A single _starred name_, `*X` is assigned a list which collects all items in the
 ['p', 'a', 'm']
 ```
 
+Loop syntax:
+```
+while test:
+  statements
+else:  # Run if didn't exit loop with break
+  statements
+  
+for target in object:
+  statements
+else:
+  statements  # As above
+```
+
+In Python 2.X, `xrange` can be used in place of `range` for space optimization since `range` build the result list in memory all at once. In Python 3.X, `range` behaves like `xrange`.
+
+`zip`: takes 1 or more sequences as arguments and returns a series of tuples that pair up parrallel items taken from those sequences:
+```
+>>> list(zip([1, 2], [3, 4, 5]))
+[(1, 3), (2, 4)]  # zip truncates result tuples at the length of the shortest sequence
+```
+
+`enumerate` function returns a generator object that generate (index, value) tuple each time through the loop, allows us to loop through both offsets and items.
+
 ## Python naming convention
 
 - `_X` are not imported by `from module import *`
