@@ -1,0 +1,324 @@
+Content:
+- [Python is an interpreter language](#python-is-an-interpreter-language)
+- [Python implementations](#python-implementation)
+- [Python installation](#python-installation)
+- [Import in Python](#import-in-python)
+- [Python data types](#python-data-types)
+- [Python's dynamic typing model](#pythons-dynamic-typing-model)
+- [Boolean](#boolean)
+- [String](#string)
+- [Set](#set)
+- [Dict](#dict)
+- [Iterator](#iterator)
+- [Generator](#generator) TODO
+- [Operation](#operation)
+- [Comprehension](#comprehension)
+
+---
+
+## Python is an interpreter language
+
+Python code runs immediately after it is written. There is no compile-time phase: no creation of functions, classes; no linkage of modules.
+
+```
+source   ->  byte code  ->  runtime
+m.py         m.pyc          PVM (execute byte code)
+```
+
+We can also standalone binary executables from Python programs.
+
+## Import in Python
+
+- `modules`: files imported from another file.
+- `scripts`: main file.
+
+Because `import`s are expensive, `import`s of the same module are only imported once, unless you use `reload`.
+
+Whether you use `import` or `from..import`, statements in the imported modules are executed.
+
+Python searches for imported modules in directory listed in `sys.path` (initialized from a `PYTHONPATH` environment variable), plus a set of standard directories.
+
+If you want to import from another directory, that directory must be listed in your `PYTHONPATH` setting.
+
+## Python implementations
+
+CPython is the standard implementation of Python, it is written in ANSI C.
+
+Pypy is an reimplementation of CPython that runs much quicker, space is also optimized.
+
+## Python installation
+
+The system path should include Python's install directory. On MAC it's at `/usr/local/bin/python` or `/usr/bin/python3`.
+
+Turn Python files into executable scripts, instead of hardcoding the path to the Python interpreter `#!/usr/local/bin/python`, use Unix env lookup: `#!/usr/bin/env python`.
+
+Names with the form *__X__* are built-in names that are always defined by Python and have special meaning to the interpreter
+
+## Python data types
+
+Python built-in objects:
+- Numbers (including `3 + 3j`)
+- Strings (including `b'a\x01c`, `u'sp\xc4m'`
+- Tuples
+- Lists
+- Dicts
+- Files
+- Sets
+- Other core types: boolean, types, None
+- Program unit types: Functions, modules, classes
+- Implementation-related types: compiled code, stack tracebacks
+
+Categorized by mutability:
+
+Immutable:
+- Boolean
+- Number
+- Tuple: List that cannot be changed.
+- String
+- Frozenset
+
+Mutable:
+- List
+- Set
+- Dict
+- Bytearray
+- etc.
+
+Categorized by categories:
+
+Numbers:
+- integer
+- floating-point
+- decimal
+- fraction
+- etc.
+
+_Sequences_: are positionally ordered collection of objects that support sequence operations such as indexing, slicing.
+- string
+- list
+- tuple
+
+_Mappings_ denotes objects that map keys to associated values.
+- dict
+
+For example: strings are immutable sequences - they cannot be changed in place (immutable), and they are positionally ordered collections that are accessed by offset (sequence).
+
+## Python's dynamic typing model
+
+3 terms:
+- _variables_: entries in system table, with spaces for links to objects.
+- _objects_: pieces of allocated memory.
+- _references_: automatically followed pointers from variables to objects (the bridge).
+
+When you assign `a = 3`, Python performs these steps:
+- Create an object to represent the value 3 (to optimize, Python internally caches and reuses certain kinds of unchangeble objects such as intergers and strings):
+  ```
+  x = 1, y = 1
+  x is y  # True, since 1 is cached
+  
+  x = [], y = []
+  x is y  # False, list is not cached
+  ```
+- Create the variable `a` if it does not exist.
+- Link `a` to `3`.
+
+When you reassign `a = 'spam'`, if the `3` object is garbage-collected if it is not referenced by any other variable or object (actually, as mentioned above, Python caches small intergers and strings, so `3` is not literally reclaimed here; most other kinds of objects are though) .
+
+When you assign `b = a`, `a` and `b` act like pointers, they will now refer to the same object `'spam'`. This is called _shared reference_ or _shared object_.
+
+The type of variables is determined at run time.
+
+## Boolean
+
+Since `bool` is just a subclass of `int`, `True` and `False` behave exactly like integers `1` and `0`, except that they have customized printing logic.
+
+## String
+
+Non-printables are displayed as `\xNN` hex escapes:
+```
+>>> S = 'A\0`
+>>> S
+'A\x00'
+```
+
+**raw**: Python supports a _raw_ string literal that turns off the backslash escape mechanism.
+```
+>>> r'\\'
+'\\\\'
+```
+
+Despite its role, even a raw string cannot end in a single backslash (or more generally, an odd number of blachslashes), because the backslash escapes the following quote characters (quote characters needs to be escaped to embed it in the string):
+```
+>>> r'\'  # SyntaxError
+```
+
+Automatic concatenation of adjacent strings:
+```
+>>> name = 'Nhan\n''Nguyen'
+>>> print(name)
+Nhan
+Nguyen
+```
+
+Use with parenthesis to allow line spans:
+```
+name = (
+    'Nhan\n'
+    'Nguyen'
+)
+```
+
+**Python string representation, Python 3 perspective**
+
+In Python 3, string literals (or the normal `str` string) handles Unicode text by default, this means `u''` is `''`.
+
+```
+>>> len(‘😀’) (*)
+1
+```
+
+When stored in a file, an Unicode string needs to be translated into a _sequence of bytes_, this process is called *encoding*. In order to do that, each character in the Unicode standard are represented by a *code points*, which is an integer in the range 0 to 0x10FFFF.
+
+The indication for the start of a code point is specified by 3 escape sequences:
+- `\x`: 8-bit (2-digit) unicode escape.
+- `\u`: 16-bit (4-digit) unicode escape.
+- `\U`: 32-bit (8-digit) unicode escape.
+- Some characters even use single-letter escapes: `\n` for newline, `\t` for a tab.
+
+```
+>>> 'a' === '\x61'
+True
+>>> 'a' === '\u0061'
+True
+>>> 'a' == '\U00000061'
+True
+>>> len('\U00000061')  # string content and length both reflect code points in Unicode-speak
+1
+```
+
+You can use this syntax to define Unicode string in your code if you want the code is still readable in an ASCII editor:
+
+```
+>>> x = '😀'       # instead of this
+>>> x = '\u1F600'  # you can use this
+>>> print(x)
+😀
+```
+
+When Unicode characters are read back from files into memory, it is *decoded* into characters (code points). Once it is loaded, we usually process text as strings in decoded form only (the reason why we've got (*).
+
+```
+>>> '😀'.encode('utf8')  # utf8 is Python's default encoding
+b'\xf0\x9f\x98\x80'
+>>> 
+```
+
+- `chr(o)`: get the *ch*a*r*acter whose ordinal number (Unicode code point) is `i`.
+- `ord(c)`: get the *ord*inal number of the character `c`.
+
+**To encoding a string**: Use `string.encode()`, this returns a byte stream. In a byte string you can only creates bytes in the range of 0 - 255, so a byte stream uses the `\x` notation even when you can't use the full range available to that notation.
+
+```
+>>> '\u1F600'.encode()  # utf8 by default
+b'\xe1\xbd\xa00'
+```
+
+```
+>>> 'spam'  # Characters can be 1, 2, or 4 bytes in memory; not necessarily map directly to a single byte.
+            # This depends on both external encoding type (see below) and the internal storage scheme used.
+>>> 'spam'.encode('utf8')
+b'spam'  # 4 bytes
+>>> 'spam'.encode('utf16')
+b'\xff\xfes\x00p\x00a\x00m\x00'  # 10 bytes
+```
+
+**To decode a byte stream**: Use `bytestream.decode()`
+
+One needs to notice that the notion of bytes doesn't apply to Unicode, since some encodings include character code point too large for a byte. So think _characters_ instead of _bytes_ for Python string.
+
+In Python, a zero (null) character (`\0`) does not terminate a string the way a null byte in C does. In fact, no character terminates a string in Python.
+
+
+An object can have both `str` for general use and `repr` with extra details.
+- `repr`: produces results that look as though they were code.
+- `str`: produces a more user-friendly format if available.
+
+```
+>>> repr('spam')
+>>> "'spam'"
+>>> print(x)  # we're using print, which uses str(s) instead
+>>> 'spam'
+>>>
+>>> path = r'C:\new\text.dat'
+>>> path
+>>> 'C:\\new\\text.dat'  # repr
+>>> print(path)
+>>> C:\new\text.dat      # str, more user-frienly
+```
+
+## Set
+
+Some operations on set X and Y:
+- `X & Y`: intersection
+- `X | Y`: union
+- `X - Y`: difference
+- `X > Y`: checking if X is superset of Y
+
+
+Sets can only contain immutable (a.k.a hashable) object types:
+```
+>>> s = {}
+>>> s.add([1,2,3])  # TypeError: unhashable type: 'list'
+>>> s.add({1,2,3})  # TypeError: unhashable type: 'set'
+>>> s.add(frozenset([1,2,3]))  # If you need to store a set inside another set, use fronzenset
+
+## Dict
+
+Fetching a missing key in a dict is not allowed:
+
+```
+>>> D = {'a': 1}
+>>> D['b']  # KeyError
+>>> D['b'] = 2  # It's ok if we assign
+```
+
+To avoid this, we use `get` method:
+
+```
+>>> D.get('b', 2)
+```
+
+## Iterator
+
+An object is _iterable_ if:
+- either it is physically stored sequentially in memory - physical sequence.
+- or it generates one item - virtual sequence.
+
+An iterable object supports the _iteration protocol_: they respond to the `iter` call with an object that advances in response to `next` calls and raises an exception when finished producing values.
+
+List, set, dict, _generator_, etc. are iterable object.
+
+## Comprehension
+
+Lists, sets, dicts, generators can all be built with comprehensions:
+
+```
+>>> [x for x in [1,2,3]]
+>>> {x for x in [1,2,3]}
+>>> {x: x for x in [1,2,3]}
+>>> (x for x in [1,2,3])
+```
+
+## Operation
+
+`a == b` checks if a and b have same value.
+
+`a is b` checks if a and b refer to same object.
+
+Comparisions operators can be changed: `X < Y < Z`.
+
+**Extended slicing**: `X[I:J:K]`: with a negative K, I must > J.
+```
+# special case when reverse the string
+str[::-1]
+```
