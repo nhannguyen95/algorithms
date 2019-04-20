@@ -7,6 +7,7 @@ Content:
 - [Python's dynamic typing model](#pythons-dynamic-typing-model)
 - [Boolean](#boolean)
 - [String](#string)
+- [List](#list)
 - [Set](#set)
 - [Dict](#dict)
 - [Iterator](#iterator)
@@ -254,6 +255,19 @@ An object can have both `str` for general use and `repr` with extra details.
 >>> 'C:\\new\\text.dat'  # repr
 >>> print(path)
 >>> C:\new\text.dat      # str, more user-frienly
+```
+
+## List
+
+We can insert and delete list in-place with *slice assignment*: it performs 2 steps - delete the slice to the left of `=` and the insert the object to the right of `=`.
+```
+>>> L = [1, 2, 3, 7]
+>>> L[1:3] = [4, 5, 6]  # Replacement
+[1, 4, 5, 6, 7]
+>>> L[1:1] = [2, 3]     # Insertion after index 1
+[1, 2, 3, 4, 5, 6, 7]
+>>> L[3:] = []          # Deletion
+[1, 2, 3]
 ```
 
 ## Set
