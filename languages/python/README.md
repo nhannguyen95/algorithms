@@ -5,8 +5,10 @@ Content:
 - [Import in Python](#import-in-python)
 - [Python data types](#python-data-types)
 - [Python's dynamic typing model](#pythons-dynamic-typing-model)
+- [Type](#type)
 - [Boolean](#boolean)
 - [String](#string)
+- [Tuple](#tuple)
 - [List](#list)
 - [Set](#set)
 - [Dict](#dict)
@@ -57,7 +59,7 @@ Names with the form *__X__* are built-in names that are always defined by Python
 
 ## Python data types
 
-Python built-in objects:
+**Python built-in objects**:
 - Numbers (including `3 + 3j`)
 - Strings (including `b'a\x01c`, `u'sp\xc4m'`
 - Tuples
@@ -69,25 +71,25 @@ Python built-in objects:
 - Program unit types: Functions, modules, classes
 - Implementation-related types: compiled code, stack tracebacks
 
-Categorized by mutability:
+**Categorized by mutability**:
 
-Immutable:
+Immutable (hashable):
 - Boolean
 - Number
 - Tuple: List that cannot be changed.
 - String
 - Frozenset
 
-Mutable:
+Mutable (unhashable):
 - List
 - Set
 - Dict
 - Bytearray
 - etc.
 
-Categorized by categories:
+**Categorized by categories**:
 
-Numbers:
+Numbers (numeric):
 - integer
 - floating-point
 - decimal
@@ -98,9 +100,29 @@ _Sequences_: are positionally ordered collection of objects that support sequenc
 - string
 - list
 - tuple
+- bytearray
 
 _Mappings_ denotes objects that map keys to associated values.
 - dict
+
+Callables:
+- Function
+- Generator
+- Class
+- Method: Bound, Unbound
+
+Internals:
+- Type
+- Code
+- Frame
+- Traceback
+
+Other:
+- Module
+- Instance
+- File
+- None
+- View
 
 For example: strings are immutable sequences - they cannot be changed in place (immutable), and they are positionally ordered collections that are accessed by offset (sequence).
 
@@ -129,9 +151,19 @@ When you assign `b = a`, `a` and `b` act like pointers, they will now refer to t
 
 The type of variables is determined at run time.
 
+## Type
+
+The type of an object is an object of type `type`: a call to `type(X)` returns a type object of object `X`.
+
+Because types can be subclassed in nowadays Python, it is recommended to use `isinstance` to check type of object.
+
 ## Boolean
 
 Since `bool` is just a subclass of `int`, `True` and `False` behave exactly like integers `1` and `0`, except that they have customized printing logic.
+
+More generally, every objects in Python are either `True` or `False`:
+- Numbers are `False` if 0, `True` otherwise
+- Other objects are `False` if empty, `True` otherwise
 
 ## String
 
@@ -257,6 +289,12 @@ An object can have both `str` for general use and `repr` with extra details.
 >>> C:\new\text.dat      # str, more user-frienly
 ```
 
+## Tuple
+
+Differentiate: `(4)` is an integer, `(4,)` is a tuple containing an integer.
+
+The immutability of tuples provide some integrity, you can be sure a tuple won't be changed through another reference elsewhere in a program.
+
 ## List
 
 We can insert and delete list in-place with *slice assignment*: it performs 2 steps - delete the slice to the left of `=` and the insert the object to the right of `=`.
@@ -290,7 +328,6 @@ Sets can only contain immutable (a.k.a hashable) object types:
 ## Dict
 
 Fetching a missing key in a dict is not allowed:
-
 ```
 >>> D = {'a': 1}
 >>> D['b']  # KeyError
@@ -298,10 +335,11 @@ Fetching a missing key in a dict is not allowed:
 ```
 
 To avoid this, we use `get` method:
-
 ```
 >>> D.get('b', 2)
 ```
+
+Any immutable objects can be keys of dictionary, not only string.
 
 ## Iterator
 
