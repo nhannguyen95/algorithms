@@ -5,6 +5,7 @@ Content:
 - [Import in Python](#import-in-python)
 - [Python data types](#python-data-types)
 - [Python's dynamic typing model](#pythons-dynamic-typing-model)
+- [Python syntax](#python-syntax)
 - [Type](#type)
 - [Boolean](#boolean)
 - [String](#string)
@@ -150,6 +151,18 @@ When you reassign `a = 'spam'`, if the `3` object is garbage-collected if it is 
 When you assign `b = a`, `a` and `b` act like pointers, they will now refer to the same object `'spam'`. This is called _shared reference_ or _shared object_.
 
 The type of variables is determined at run time.
+
+## Python syntax
+
+Multiple statements in one line:
+```
+a = 1; b = 2
+```
+
+Single line if statement:
+```
+if x > y: print(x)
+```
 
 ## Type
 
