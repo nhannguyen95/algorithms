@@ -64,7 +64,7 @@ True
 True
 >>> 'a' == '\U00000061'
 True
->>> len('\U00000061')
+>>> len('\U00000061')  # string content and length both reflect code points in Unicode-speak
 1
 ```
 
@@ -96,7 +96,8 @@ b'\xe1\xbd\xa00'
 ```
 
 ```
->>> 'spam'  # Characters can be 1, 2, or 4 bytes in memory
+>>> 'spam'  # Characters can be 1, 2, or 4 bytes in memory; not necessarily map directly to a single byte.
+            # This depends on both external encoding type (see below) and the internal storage scheme used.
 >>> 'spam'.encode('utf8')
 b'spam'  # 4 bytes
 >>> 'spam'.encode('utf16')
@@ -105,7 +106,9 @@ b'\xff\xfes\x00p\x00a\x00m\x00'  # 10 bytes
 
 **To decode a byte stream**: Use `bytestream.decode()`
 
-One needs to notice that the notion of bytes doesn't apply to Unicode, since some encodings include character code point too large for a byte:
+One needs to notice that the notion of bytes doesn't apply to Unicode, since some encodings include character code point too large for a byte. So think _characters_ instead of _bytes_ for Python string.
+
+In Python, a zero (null) character (`\0`) does not terminate a string the way a null byte in C does. In fact, no character terminates a string in Python.
 
 ---
 
