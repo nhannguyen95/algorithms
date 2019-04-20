@@ -10,7 +10,7 @@ Python built-in objects:
 - Program unit types: Functions, modules, classes
 - Implementation-related types: compiled code, stack tracebacks
 
----
+Categorized by mutability:
 
 Immutable:
 - Boolean
@@ -18,6 +18,33 @@ Immutable:
 - Tuple: List that cannot be changed.
 - String
 - Frozenset
+
+Mutable:
+- List
+- Set
+- Dict
+- Bytearray
+- etc.
+
+Categorized by categories:
+
+Numbers:
+- integer
+- floating-point
+- decimal
+- fraction
+- etc.
+
+
+_Sequences_: are positionally ordered collection of objects that support sequence operations such as indexing, slicing.
+- string
+- list
+- tuple
+
+_Mappings_ denotes objects that map keys to associated values.
+- dict
+
+For example: strings are immutable sequences - they cannot be changed in place (immutable), and they are positionally ordered collections that are accessed by offset (sequence).
 
 ---
 
@@ -164,10 +191,6 @@ To avoid this, we use `get` method:
 ```
 
 ---
-
-_Sequences_ are positionally ordered collection of objects that support sequence operations such as indexing, slicing.
-
-_Mappings_ denotes objects that map keys to associated values like dict.
 
 An object is _iterable_ if:
 - either it is physically stored sequentially in memory - physical sequence.
