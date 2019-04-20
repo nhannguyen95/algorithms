@@ -38,6 +38,30 @@ Python supports a _raw_ string literal that turns off the backslash escape mecha
 '\\\\'
 ```
 
+Despite its role, even a raw string cannot end in a single backslash (or more generally, an odd number of blachslashes), because the backslash escapes the following quote characters (quote characters needs to be escaped to embed it in the string):
+
+```
+>>> r'\'  # SyntaxError
+```
+
+Automatic concatenation of adjacent strings:
+
+```
+>>> name = 'Nhan\n''Nguyen'
+>>> print(name)
+Nhan
+Nguyen
+```
+
+Use with parenthesis to allow line spans:
+
+```
+name = (
+    'Nhan\n'
+    'Nguyen'
+)
+```
+
 ---
 
 **Python string representation, Python 3 perspective**
@@ -179,6 +203,12 @@ An object can have both `str` for general use and `repr` with extra details.
 >>> "'spam'"
 >>> print(x)  # we're using print, which uses str(s) instead
 >>> 'spam'
+>>>
+>>> path = r'C:\new\text.dat'
+>>> path
+>>> 'C:\\new\\text.dat'  # repr
+>>> print(path)
+>>> C:\new\text.dat      # str, more user-frienly
 ```
 
 ---
