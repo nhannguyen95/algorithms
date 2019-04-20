@@ -6,6 +6,7 @@ Content:
 - [Python data types](#python-data-types)
 - [Python's dynamic typing model](#pythons-dynamic-typing-model)
 - [Python syntax](#python-syntax)
+- [Python naming convention](#python-naming-convention)
 - [Type](#type)
 - [Boolean](#boolean)
 - [String](#string)
@@ -164,6 +165,22 @@ Single line if statement:
 if x > y: print(x)
 ```
 
+**Extended Sequence Unpacking in Python3**
+
+A single _starred name_, `*X` is assigned a list which collects all items in the sequence not assigned to other names:
+```
+>>> a, *b = 'spam'
+>>> b
+['p', 'a', 'm']
+```
+
+## Python naming convention
+
+- `_X` are not imported by `from module import *`
+- `__X__` are system-defined names that have special meaning
+- `__X` are localized to enclosing classes
+- `_` retains the last result when you're working interactively
+
 ## Type
 
 The type of an object is an object of type `type`: a call to `type(X)` returns a type object of object `X`.
@@ -319,6 +336,12 @@ We can insert and delete list in-place with *slice assignment*: it performs 2 st
 [1, 2, 3, 4, 5, 6, 7]
 >>> L[3:] = []          # Deletion
 [1, 2, 3]
+```
+
+```
+>>> L = L + [1, 2]    # Concatenation, slow
+>>> L.extend([1, 2])  # Faster, inplace
+>>> L += [1, 2]       # Use extend
 ```
 
 ## Set
