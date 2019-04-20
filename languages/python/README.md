@@ -11,8 +11,8 @@ Content:
 - [Dict](#dict)
 - [Iterator](#iterator)
 - [Generator](#generator) TODO
-- [Operation](#operation)
 - [Comprehension](#comprehension)
+- [Operation](#operation)
 
 ---
 
