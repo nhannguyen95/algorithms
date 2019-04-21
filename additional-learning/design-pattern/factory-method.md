@@ -1,5 +1,6 @@
 ## What it's used for?
 - Define an interface (interface or abstract class) for creating an object, but let subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
+- use it to decouple your client code (the code in `orderPizza`) from the concrete classes you need to instantiate (the if else part to creata Pizza).
 
 ## How to use?
 - UML class:
