@@ -4,7 +4,6 @@
 - Gắn kết thêm một số tính năng cho đối tượng một cách linh động. Mẫu này cung cấp một phương pháp linh hoạt hơn là sử dụng lớp con để mở rộng chức năng cho đối tượng
 - Dùng để mở rộng hoặc thay đổi chức năng của các đối tượng lúc run-time bằng việc bọc chúng trong một đối tượng của một lớp decorator. Điều này cung cấp một giải pháp linh hoạt thay thế cho việc sử dụng kế thừa để sửa đổi hành vi.
 
-
 ## How to use?
 - UML class:
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/W3sDesign_Decorator_Design_Pattern_UML.jpg" />
