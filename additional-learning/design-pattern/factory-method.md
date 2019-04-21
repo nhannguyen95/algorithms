@@ -6,7 +6,7 @@
 <img src="./pics/factory-method.png" />
 
 - Example:
-<img src="./pics/factory-method-example" />
+<img src="./pics/factory-method-example.png" />
 
 The method `orderPizza` uses `createPizza`, the PizzaStore abstract class defers the instantiation of pizza in the method `createPizza` for its subclasses (like NYPizzaStore).
 
