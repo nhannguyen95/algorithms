@@ -17,6 +17,8 @@
   pizza.box()
   ```
   it only cares about what the `pizza` object can do, not which concrete type it is.
+  
+  If you have additional types of Pizza, it doesn't affect the PizzaStore, because the PizzaStore is not tightly coupled with any concrete type of Pizza
 
 ## Downsides
 - Hard to extend if you want to have multiple kinds of SimplePizzaFactory. Abstract Factory could address this in a flexible way.
