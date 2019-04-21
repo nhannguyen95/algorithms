@@ -22,5 +22,7 @@
   
 - Encapsuate what varies: encapsulate the code that creates objects.
 
+- Dependency Inversion.
+
 ## Downsides
 - Hard to extend if you want to have multiple kinds of SimplePizzaFactory. Abstract Factory could address this in a flexible way.
