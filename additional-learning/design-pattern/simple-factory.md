@@ -6,5 +6,17 @@
 - UML:
 <img src="./pics/simple-factory.png" />
 
+## Which principles it derives?
+- Programming to an supertype, not an implementation:
+  In the PizzaStore.orderPizza method:
+  ```
+  Pizza pizza = createPizza(type)
+  pizza.prepare()
+  pizza.bake()
+  pizza.cut()
+  pizza.box()
+  ```
+  it only cares about what the `pizza` object can do, not which concrete type it is.
+
 ## Downsides
 - Hard to extend if you want to have multiple kinds of SimplePizzaFactory. Abstract Factory could address this in a flexible way.
