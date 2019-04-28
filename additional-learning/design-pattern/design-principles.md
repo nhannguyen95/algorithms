@@ -25,4 +25,29 @@ Apply to areas that are most likely to change, not everywhere.
   - No class should derive from a concrete class. (derive from an abstraction instead)
   - No method should override an implemented method of any of its base classes.
   
+---
+
+**Least Knowledge**: talk only to your immediate friends.
+  - When you are designing a system, for any object, be careful of the number of classes it interacts with and also how it comes to interact with those classes.
+  - This principle prevents us from having a large number of classes coupled together so that changes in one part of the system cascade to other parts.
   
+The guidelines to help you follow this principle: take any object; from any method in that object, we should invoke methods that belong to:
+  - The object it self.
+  - Object passed in a parameter to the method.
+  - Any object the method creates or instantiates.
+  - Any components of the object.
+  
+  Note that we shouldn't call methods on objects that were returned from calling other methods:
+  
+  Without principle:
+  ```
+  getTemp()
+    Thermometer thermometer = station.getThermometer();
+    return thermometer.getTemperature();
+  ```
+  
+  With principle, ask the station object to make request for us:
+  ```
+  getTemp()
+    return station.getTemperature();
+  ```
