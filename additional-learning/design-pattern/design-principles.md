@@ -63,3 +63,5 @@ We allow low-level components to hook themselves into a system, but the high-lev
 Appear in Template Method, Factory, Observer.
 
 ---
+
+**A class should have only 1 reason to change**. The principle guides us to assign each responsibility to 1 class, and only 1 class.
