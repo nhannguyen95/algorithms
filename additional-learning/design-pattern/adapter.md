@@ -22,4 +22,4 @@
 - Program to interface, not to implementation: Adapter can work with any subclasses of Adaptee, and the pattern binds the client to the Target (Duck) interface as well.
 
 ## Compare to Decorator Pattern
-- Decorator is about adding new behaviors, responsibilities. Adapter is about converting interfaces (it changes the interface of what it wraps - change Turkey interface to Duck).  
+- Decorator is about adding new behaviors, responsibilities (doesn't alter the interface). Adapter is about converting interfaces (it changes the interface of what it wraps - change Turkey interface to Duck).  
