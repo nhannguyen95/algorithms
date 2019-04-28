@@ -51,3 +51,15 @@ The guidelines to help you follow this principle: take any object; from any meth
   getTemp()
     return station.getTemperature();
   ```
+
+Read more in Facade Pattern.
+
+---
+
+**Hollywood**: Don't call us, we'll call you.
+
+We allow low-level components to hook themselves into a system, but the high-level components determine when they are needed, and how. In other words, the high-level components give the low-level ones a "don't call us, we'll call you" treatment.
+
+Appear in Template Method, Factory, Observer.
+
+---
