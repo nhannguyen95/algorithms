@@ -5,8 +5,8 @@
   - [Factory Method](factory-method.md)
   - [Abstract Factory](abstract-factory.md)
   - [Singleton](singleton.md)
-  - Builder
-  - Prototype
+  - [Builder](builder.md)
+  - [Prototype](prototype.md)
   
 - Structural Patterns:
   - [Adapter](adapter.md)
@@ -15,7 +15,7 @@
   - [Facade](facade.md)
   - [Proxy](proxy.md)
   - [Bridge](bridge.md)
-  - Flyweight
+  - [Flyweight](flyweight.md)
   
 - Behavioral Patterns:
   - [Command](command.md)
@@ -24,11 +24,11 @@
   - [State](state.md)
   - [Strategy](strategy.md)
   - [Template Method](template-method.md)
-  - Interpreter
-  - Mediator
-  - Memento
-  - Visitor
-  - Chain of Responsibility
+  - [Interpreter](interpreter.md)
+  - [Mediator](mediator.md)
+  - [Memento](memento.md)
+  - [Visitor](visitor.md)
+  - [Chain of Responsibility](chain-of-responsibility.md)
 
 ## Exercise
 - Chapter 12: compound method.
