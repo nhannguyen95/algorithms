@@ -28,6 +28,7 @@
   - Mediator
   - Memento
   - Visitor
+  - Chain of Responsibility
 
 ## Exercise
 - Chapter 12: compound method.
