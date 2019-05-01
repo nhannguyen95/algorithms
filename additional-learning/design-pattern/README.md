@@ -15,7 +15,7 @@
   - [Facade](facade.md)
   - [Proxy](proxy.md)
   - [Bridge](bridge.md)
-  - [Flyweight](flyweight.md)
+  - Flyweight
   
 - Behavioral Patterns:
   - [Command](command.md)
@@ -24,9 +24,9 @@
   - [State](state.md)
   - [Strategy](strategy.md)
   - [Template Method](template-method.md)
-  - [Interpreter](interpreter.md)
+  - Interpreter
   - [Mediator](mediator.md)
-  - [Memento](memento.md)
+  - Memento
   - [Visitor](visitor.md)
   - [Chain of Responsibility](chain-of-responsibility.md)
 
