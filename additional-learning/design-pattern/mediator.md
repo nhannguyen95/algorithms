@@ -7,3 +7,6 @@
 
 - Example:
 <img src="./pics/mediator-example.png" />
+
+## Drawbacks
+- With bad design, mediator object can become complicated.
