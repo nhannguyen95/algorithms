@@ -138,6 +138,7 @@
   - [Infix, Prefix, Postfix Expressions](http://interactivepython.org/lpomz/courselib/static/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html#tbl-parexample):
     - [Infix to Postfix](https://practice.geeksforgeeks.org/problems/infix-to-postfix/0)
     - Postfix Evalucation: [1](https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression/0/?ref=self), [2](https://leetcode.com/problems/evaluate-reverse-polish-notation/).
+    - [Evaluate Expression](https://www.hackerrank.com/contests/cs1300-odd-2014/challenges/evaluate-expression)
 
 ## Data structures
   - Array
