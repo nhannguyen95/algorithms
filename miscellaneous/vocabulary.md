@@ -1,3 +1,5 @@
+-  **Precedence level**: độ ưu tiên
+
 - **Proof by contradiction**: chứng minh bằng phản chứng.
 
 - **parenthesis** */pəˈrenθɪsɪs/, n*: dấu ngoặc đơn.
