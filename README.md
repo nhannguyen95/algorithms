@@ -238,6 +238,7 @@
   - Writing simple Queries.
   - (Scaleable) Distributed Systems and Cloud Computing
   - [RSA public-key cryptosystem](algorithms-and-data-structures/rsa.md)
+  - [Encoding vs. Encryption vs. Hashing vs. Obfuscation](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/)
 
 ## Resources
   - Book: Cracking the coding interview - Gayle Laakmann McDowell.
