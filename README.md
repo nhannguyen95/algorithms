@@ -235,7 +235,7 @@
   - Concurrency
   - API Design
   - OOP Concepts
-  - Databases - SQL, NoSQL, Writing simple Queries, Transactions, ACID
+  - Writing simple Queries.
   - (Scaleable) Distributed Systems and Cloud Computing
   - [RSA public-key cryptosystem](algorithms-and-data-structures/rsa.md)
 
@@ -269,6 +269,7 @@
 
 - [SQL](https://github.com/nhannguyen95/sql-in-10-mins-4th-edition)
 - [SQL and NoSQL Database](database/sql-and-nosql-database.md)
+- [Visual Guide to NoSQL Systems](http://blog.nahurst.com/visual-guide-to-nosql-systems)
 
 ## Resources
 - [Book: Database System Concepts 6th Edition](https://www.amazon.com/Database-Concepts-Abraham-Silberschatz-Professor/dp/0073523321)
