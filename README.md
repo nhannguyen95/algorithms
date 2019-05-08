@@ -18,6 +18,7 @@
   - [Git](#git)
   - [Unix, Linux](#unix-linux)
   - [Design Patterns](#design-patterns)
+  - [Object-oriented design](#object-oriented-design)
   - [Clean Code](#clean-code)
   - [Web Dev](#web-dev)
   - [Web Security](#web-security)
@@ -303,6 +304,10 @@
 ## Design Patterns
 
 - [Design patterns](additional-learning/design-patterns)
+
+## Object-oriented Design
+
+- [Object-oriented Design](additional-learning/ood.md)
 
 ## Clean Code
 
