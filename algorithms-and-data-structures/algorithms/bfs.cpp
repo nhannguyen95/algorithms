@@ -13,5 +13,7 @@ Time complexity:
   - All neighbors of a vertex is examined when it is about
     to be popped out => O(E) on all vertices
   => O(V + E)
+  
+  This takes O(V^2) if use adjacency matrix.
 
 */
