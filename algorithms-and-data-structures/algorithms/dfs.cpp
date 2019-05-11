@@ -21,6 +21,8 @@ Time complexity:
     in total
   => O(V + E)
 
+  In case of adjacency matrix, it takes O(V^2)
+
 -----
 
 Parenthesis theorem: In any DFS of a (directed or undirected)
