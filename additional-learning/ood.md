@@ -49,3 +49,15 @@ OOAD Activities:
 ---
 
 If you need to know what a system does, but don't want ot get into all the detail that use cases require, a use case diagram could be what you need. (Since use cases are much more detail-oriented, and don't help you figure out the big picture).
+
+---
+
+**Domain Analysis**: the process of putting together things about the system in a way the customers understand.
+
+---
+
+Solving big problems:
+- Gather requirements.
+- Draw up blueprints for the system: use case diagram, class diagram.
+- Break the big system into smaller pieces of functionality.
+- Use OOAD principles and design patterns to solve those small problems.
