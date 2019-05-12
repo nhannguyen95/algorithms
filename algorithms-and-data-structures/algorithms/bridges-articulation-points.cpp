@@ -30,7 +30,8 @@ low array here is defined with a slight difference with the one used in Tarjan p
 - In Tarjan: low[u] = the lowest visit_time of a vertex to which u can reach (since
 we don't care how u (directly/indirectly) reaches that vertex, as long as u can reach it).
 - In this: low[u] = the lowest visit_time of a vertex to which u can reach DIRECTLY
-via its back edges.
+via its back edges. Or, more correctly: low[u] stores the lowest num reachable from
+the current DFS spanning subtree of u.
 
 */
 
