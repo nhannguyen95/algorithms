@@ -22,7 +22,12 @@ while Q is not empty:
   if such removal causes vertex v to have 0 incoming edge
     enqueue v
 
-We can use Kahn's algorithm to find all topo orders:
+We can use Kahn's algorithm to find all topo orders
+(source code below)
+
+OR we can use the idea of backtracking:
+https://nhannguyen95.wordpress.com/2017/04/06/uva-124-following-orders/
+
 */
 
 #include <iostream>
