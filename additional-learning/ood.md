@@ -61,3 +61,35 @@ Solving big problems:
 - Draw up blueprints for the system: use case diagram, class diagram.
 - Break the big system into smaller pieces of functionality.
 - Use OOAD principles and design patterns to solve those small problems.
+
+---
+
+Where to start from smaller problems in a big one? The most architecturely important features.
+
+How to know a feature is architecturely important? 3 Qs of architecture:
+- Can you imagine the system without that feature? (essence at the most basic level).
+- If you're now sure what the feature's description really means.
+- If it's hard to implement / new programming task.
+
+---
+
+While you have a set of important features; you can start with any of them, as long as you're working towards reducing the RISKs. (each feature introduces risks to your project, they can cause you problems, or delay you getting the project done).
+
+---
+
+When use cases are too formal, or developers don't have the time to write one, you can come up with a scenario (a path in a use case) and make sure the system handle the case.
+
+A scenario is used to avoid getting into lots of unneccessary details of writing a full use case at the early design stage => reduce risks.
+
+---
+
+To develop a feature:
+- Ask customers for clarifications.
+- Use commonality analysis to build flexible software solutions.
+- Implementation plan.
+
+---
+
+Great software > great code.
+
+Customers don't pay you for great code, they pay you for great software (and on time).
