@@ -12,6 +12,10 @@
 
 **Open-Closed**: Classes should be open for extension, but closed for modification => the goal is to allow classes to be easily extended to incorporate new behaviour without modyfing existing code.
 
+Can be understood as:
+- close for modification: not allow anyone to touch your working code.
+- open for extension: allow classes to be subclasses and extended.
+
 Apply to areas that are most likely to change, not everywhere.
 
 ---
