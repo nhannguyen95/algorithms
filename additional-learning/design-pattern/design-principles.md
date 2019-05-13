@@ -71,10 +71,24 @@ Appear in Template Method, Factory, Observer.
 
 ---
 
-**A class should have only 1 reason to change**. The principle guides us to assign each responsibility to 1 class, and only 1 class.
+**Single Responsibility Principle / A class should have only 1 reason to change**. The principle guides us to assign each responsibility to 1 class, and only 1 class (do 1 thing and do it well).
+
+You can spot classes that aren't using the SRP with a simple test:
+```
+For every method in a class, write down these lines:
+
+The <CLASS_NAME>, <METHOD_NAME> (the <METHOD_PARAMS>) it self
+
+and read them out loud. If what you've just said doesn't make sense,
+the method might belong to a different class => think about moving it.
+```
 
 ---
 
 **Don't Repeat Yourself**: avoid duplicate code by abstracting out things that are common and placing those things in a *single, sensible place*.
 
 DRY is a lot more than just code: a requirement should be implemented one time, use cases shouldn't have overlap, etc.
+
+---
+
+**Liskov Substitution Principle (LSP)**: Subtypes must be substitutable for their base types.
