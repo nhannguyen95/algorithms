@@ -15,6 +15,9 @@
 Can be understood as:
 - close for modification: not allow anyone to touch your working code.
 - open for extension: allow classes to be subclasses and extended.
+- of course change is a constant factor in software development, but OCP encourages change through extension rather than going back and modifying your existing code.
+
+Inheritance is often the easiest way to implement OCP (superclass is close and subclasses are extensible), but OCP goes beyond that: rather than let one dive into your code and make a bunch of changes, he should be able to extend your code without changing that.
 
 Apply to areas that are most likely to change, not everywhere.
 
@@ -69,3 +72,9 @@ Appear in Template Method, Factory, Observer.
 ---
 
 **A class should have only 1 reason to change**. The principle guides us to assign each responsibility to 1 class, and only 1 class.
+
+---
+
+**Don't Repeat Yourself**: avoid duplicate code by abstracting out things that are common and placing those things in a *single, sensible place*.
+
+DRY is a lot more than just code: a requirement should be implemented one time, use cases shouldn't have overlap, etc.
