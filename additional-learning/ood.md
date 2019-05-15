@@ -1,14 +1,16 @@
 Duplication code? Aim for **encapsulation**.
 
+Encapsulation is when you separate or hide one part of your code from the rest of your code.
+
+The simplest form of encapsulation is when you make the variables of your classes private, and only expose that data through methods.
+
+You can also encapsulate groups of data, or even behavior, to control how they are accessed.
+
 ---
 
 When making changes, think of how many components/classes are affected? How to reduce that numbers? Aim for **delegation**.
 
 Delegation helps the application become **loosely coupled**, it shields your objects from implementation changes to other objects.
-
----
-
-**Textual analysis**: Looking at the nouns (and verbs) in the use cases to figure out classes and methods.
 
 ---
 
@@ -52,15 +54,18 @@ If you need to know what a system does, but don't want ot get into all the detai
 
 ---
 
-**Domain Analysis**: the process of putting together things about the system in a way the customers understand.
-
----
-
 Solving big problems:
+- Gather feature lists: they are about understanding what your software is supposed to do (reflect functionality).
+- Use cases diagrams: they let you start thinking about how your software will be used, without getting into a bunch of unnecessary details (reflect usage), one use case can match to multiple features.
 - Gather requirements.
-- Draw up blueprints for the system: use case diagram, class diagram.
-- Break the big system into smaller pieces of functionality.
-- Use OOAD principles and design patterns to solve those small problems.
+  > Use case is a requirement for how people and things (actors) interact with your system.
+  >
+  > Feature is a requirement about things that your system must do.
+- Break the big system into smaller pieces of functionality (understand the problem).
+- Iterate through each problem:
+  - Textual Analysis: looking at the nouns (and verbs) in the use cases to figure out classes and methods.
+  - Preliminary Design: use the nouns and verbs and draw use case diagrams.
+  - Implementation: use OOAD principles and design patterns to solve those small problems.
 
 ---
 
