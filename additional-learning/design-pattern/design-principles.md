@@ -92,3 +92,15 @@ DRY is a lot more than just code: a requirement should be implemented one time, 
 ---
 
 **Liskov Substitution Principle (LSP)**: Subtypes must be substitutable for their base types.
+
+```
+2DBoard <|---- 3DBoard: Violate
+2DBoard <*---- 3DBoard: OK
+```
+
+To reuse behavior from other classes, besides inheritance, (or when you violate LSP) you can use (favor these over inheritance, your software will usually be more flexible, easier to maintain, extend and reuse):
+- delegate
+- composition
+- aggregation
+
+Inheritance is still usefull, the key is know WHEN to subclass.
