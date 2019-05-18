@@ -64,6 +64,9 @@ of such those vertices, until we reach a back edge(u, v)
 such that d.u + w(u, v) - d.v < 0, this is the weight of
 the cycle. To print out the vertices on this cycle.
 
+Highly recommend checking modified version of this algo:
+https://tinyurl.com/y5s5ngn5
+
 */
 
 #include <iostream>
