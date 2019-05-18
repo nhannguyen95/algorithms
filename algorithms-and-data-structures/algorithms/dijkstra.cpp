@@ -84,8 +84,9 @@ V = 4, E = 5
 2 -> 3 = 1
 4 -> 2 = -300
 
-Dijkstra doesn't work with negative-cycle graphs, except for when
-the destination is not reachable from a negative cycle.
+Dijkstra doesn't work with negative-cycle graphs (it will be trapped
+in infinite loop), except for when the destination is not reachable
+from a negative cycle.
 
 Illustration: CLRS, 3rd, p.659, Figure 24.6
 */
