@@ -2,9 +2,6 @@
     shortest path
 (untested)
 
-Dijkstra algorithm works with graphs whose edges weight
-is non-negative.
-
 Idea: the min queue Q maintains a set of vertices
 to extract the vertex u whose d is minimum, then
 relax all outgoing edge of u. All relaxed edges are
@@ -41,11 +38,12 @@ efficiently (log|V|). Otherwise, if we let vertex index
 'v' be the key, we cannot EXTRACT-MIN and DECREASE-KEY
 efficiently (since the key for those 2 operations is 'd').
 
-Regardless of the above analysis, this pseudo code is still
-used in CLRS, 3rd book; which is something I haven't been
-able to explain yet and that might be the reason why most
-implementations on internet adopt an other implementation
-like the one below.
+Of course we can achieve this by using a self-implemented
+data structure but that's gonna be complicated.
+
+In order to avoid hassle, we can use a std data structure
+in C++ - priority queue - to implement a variant of Dijkstra
+algorithm.
 
 The idea is that we use 'd' as the key for the min priority
 queue Q, but instead of pushing all vertices in Q in the first
@@ -61,10 +59,33 @@ we can remove them by checking that previous value of u.d
 in the Q with the current value of u[d]. If u.d > u[d],
 that is an old version and needs to be removed.
 
+This variant is implemented as below.
+
 Time complexity: O((V+E)logV) = O(ElogV)
 
-Notice that if the weight of outgoing edge of the source
-s is negative, the algorithm still correct.
+------------------------------------------------------------
+
+The pseudo code is the original Dijkstra algorithm, it is very
+different by nature from the variant that we mentioned above.
+
+The Dijkstra algorithm explores the path by nodes, thus it may
+fail if graphs have negative-weight edges (it's an greedy
+algorithm anyway).
+
+The variant implementation explores the path by edges, it keep
+pushing new edges in the queue every time it perform a relaxation.
+Thus THIS VARIANT WORKS EVEN WHEN THERE ARE NEGATIVE-WEIGHT EDGES.
+
+Example:
+V = 4, E = 5
+1 -> 2 = 1
+1 -> 3 = 0
+1 -> 4 = 99
+2 -> 3 = 1
+4 -> 2 = -300
+
+Dijkstra doesn't work with negative-cycle graphs, except for when
+the destination is not reachable from a negative cycle.
 
 Illustration: CLRS, 3rd, p.659, Figure 24.6
 */
