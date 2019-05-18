@@ -22,3 +22,6 @@ A **bipartite graph** is an undirected graph G = (V, E) in which V can be partit
 
 A **biconnected graph**: if any vertex were to be removed, the graph will remain connected.
 
+---
+
+The **diameter of a graph** is the maximum shortest path distance between any pair of vertices of that graph.
