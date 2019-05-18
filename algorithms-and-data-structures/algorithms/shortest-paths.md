@@ -60,7 +60,7 @@ Suppose we're finding the shortest path from source s to all remaining vertices.
 
 **No-path property**: If there's no path from s to v, then v.d = 𝛿(s, v) = ∞.
 
-**Convergence property**: When we call RELAX(u, v, w), if u.d = 𝛿(s, u) at any time prior to the call, then v.d = 𝛿(s, v) at all times after the call.
+**Convergence property**: If s ~> u -> v is the shortest path in G, when we call RELAX(u, v, w), if u.d = 𝛿(s, u) at any time prior to the call, then v.d = 𝛿(s, v) at all times after the call.
 
 **Path-relaxation property** *(This can be derived from convergence property)*: If p = <v<sub>0</sub>,..,v<sub>k</sub>> is the shortest path from v<sub>0</sub> to v<sub>k</sub>, and we relax the edges of p in the order (v<sub>0</sub>, v<sub>1</sub>), (v<sub>1</sub>, v<sub>2</sub>), then v<sub>k</sub>.d = 𝛿(s, v). This holds true regardless of any other relaxation steps that occur, even if they are intermixed with relaxations of the edges of p.
 
