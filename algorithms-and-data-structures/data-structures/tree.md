@@ -40,3 +40,10 @@ A[2*i] = left child
 A[2*i + 1] = right child
 ```
 
+---
+
+In a tree, all edges are bridges and all internal vertices (degree > 1) are articulation points.
+
+---
+
+There in only ONE UNIQUE PATH between any two vertices in a tree.
