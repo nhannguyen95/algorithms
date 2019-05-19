@@ -47,3 +47,7 @@ In a tree, all edges are bridges and all internal vertices (degree > 1) are arti
 ---
 
 There in only ONE UNIQUE PATH between any two vertices in a tree.
+
+---
+
+Tree is a Bipartie graph.
