@@ -29,3 +29,19 @@ To organize records in files:
 - **Hashing file organization**: A hash function is computed on some attribute of each record. The result of the hash function specifies in which block of the file the record should be placed.
 
 Since data are transferred between disk storage and main memory in units of a block, it is worthwhile to assign file records to blocks in such a way that a single block contains related records. If we can access several of the records we want with only one block access, we save disk accesses. Since disk accesses are usually the bottleneck in the performance of a database system, careful assignment of records to blocks can pay significant performance dividends.
+
+---
+
+**Data-Dictionary Storage**
+
+A relational database system needs to maintain data about the relations, such as:
+- names of the relations.
+- names of the attributes of each relation.
+- domains and lengths of attributes.
+- names of views defined on db, and definitions of those views.
+- integrity constraints, etc.
+- name of index.
+
+Such "data about data" is referred to as **metadata**.
+
+Relational schemas and metadata about relations are stored in a structure called the **data dictionary** or **system catalog**.

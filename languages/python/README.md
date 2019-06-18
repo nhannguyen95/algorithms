@@ -14,10 +14,12 @@ Content:
 - [List](#list)
 - [Set](#set)
 - [Dict](#dict)
-- [Iterator](#iterator)
+- [Iteration](#iteration)
 - [Generator](#generator) TODO
 - [Comprehension](#comprehension)
 - [Operation](#operation)
+- [Function](#function)
+- [Scope](#scope)
 
 ---
 
@@ -128,6 +130,22 @@ Other:
 
 For example: strings are immutable sequences - they cannot be changed in place (immutable), and they are positionally ordered collections that are accessed by offset (sequence).
 
+Immutable objects don't allow modification after creation:
+```python
+L = [1, 2, 3]
+for x in L:
+  x += 1  # Won't update L, since Number is immutable
+          # When x is assigned with an integer in L, it's
+          # creating a copy of that integer.
+```
+
+The bindings (pointers) in an immutable object are unchangable, not the objects they are bound to:
+```python
+t = ('abc', [1, 2, 3])
+t[1].append(4)
+# Now t = ('abc', [1, 2, 3, 4])
+```
+
 ## Python's dynamic typing model
 
 3 terms:
@@ -174,7 +192,7 @@ A single _starred name_, `*X` is assigned a list which collects all items in the
 ['p', 'a', 'm']
 ```
 
-Loop syntax:
+**Loop syntax**:
 ```
 while test:
   statements
@@ -187,15 +205,19 @@ else:
   statements  # As above
 ```
 
-In Python 2.X, `xrange` can be used in place of `range` for space optimization since `range` build the result list in memory all at once. In Python 3.X, `range` behaves like `xrange`.
+Built-ins that allow you to specialize the iteration in a `for`:
+- `range`: an iterable that generates items on demand
+  > In Python 2.X, `xrange` can be used in place of `range` for space optimization since `range` build the result list in memory all at once. In Python 3.X, `range` behaves like `xrange`.
 
-`zip`: takes 1 or more sequences as arguments and returns a series of tuples that pair up parrallel items taken from those sequences:
-```
->>> list(zip([1, 2], [3, 4, 5]))
-[(1, 3), (2, 4)]  # zip truncates result tuples at the length of the shortest sequence
-```
+- `zip`: takes 1 or more sequences as arguments and returns a series of tuples that pair up parrallel items taken from those sequences:
+  ```
+  >>> list(zip([1, 2], [3, 4, 5]))
+  [(1, 3), (2, 4)]  # zip truncates result tuples at the length of the shortest sequence
+  ```
 
-`enumerate` function returns a generator object that generate (index, value) tuple each time through the loop, allows us to loop through both offsets and items.
+- `enumerate` function returns a generator object that generate (index, value) tuple each time through the loop, allows us to loop through both offsets and items.
+
+`for` loops may run quicker than `while`-based counter loops.
 
 ## Python naming convention
 
@@ -217,6 +239,27 @@ Since `bool` is just a subclass of `int`, `True` and `False` behave exactly like
 More generally, every objects in Python are either `True` or `False`:
 - Numbers are `False` if 0, `True` otherwise
 - Other objects are `False` if empty, `True` otherwise
+- `None` object is `False`
+
+Magnitude comparisions return the value `True` or `False`:
+```
+2 < 3
+>>> True
+```
+
+But `and` and `or` operators always return an object:
+- `or`: returns the first operand that is true.
+- `and`: stops as soon as the result is known and return the last operand on the right.
+  ```
+  [] and {}
+  >>> []
+
+  2 and []
+  >>> []
+
+  [] and {}
+  >>> []
+  ```
 
 ## String
 
@@ -400,7 +443,7 @@ To avoid this, we use `get` method:
 
 Any immutable objects can be keys of dictionary, not only string.
 
-## Iterator
+## Iteration
 
 An object is _iterable_ if:
 - either it is physically stored sequentially in memory - physical sequence.
@@ -408,7 +451,37 @@ An object is _iterable_ if:
 
 An iterable object supports the _iteration protocol_: they respond to the `iter` call with an object that advances in response to `next` calls and raises an exception when finished producing values.
 
-List, set, dict, _generator_, etc. are iterable object.
+List, set, dict, _generator_, enumerate, zip, range, etc. are iterable object.
+> Note: only range supports multiple active iterators on the same result.
+> Dictionary keys, values and items method return iterable view objects that regenerate items one at a time instead of producing result lists all at once in memory. This means its iterator does not support len() and index.
+
+The iteration protocol based on 2 objects:
+- _The iterable object_ you request iteration for, whose `__iter__` is run by `iter`
+- _The iterator object_ returned by the iterable that actually produces values during the iteration, supports `__next__` (run by `next`) and raises `StopIteration` exeption when finished producing results.
+
+Behind the scene:
+```python
+# Top level syntax
+for x in L:
+  print(x)
+
+# Corresponding underscore method
+I = iter(L)
+while True:
+  try:
+    x = next(I)
+  except StopIteration:
+    break
+  print(x)
+```
+
+Some built-ins that support the iteration protocol:
+- `sum` 
+- `max`
+- `min`
+- `any`: any items of the iterable are true
+- `all`: all items of the iterable are true
+
 
 ## Comprehension
 
@@ -420,6 +493,8 @@ Lists, sets, dicts, generators can all be built with comprehensions:
 >>> {x: x for x in [1,2,3]}
 >>> (x for x in [1,2,3])
 ```
+
+List comprehension might run faster than manual `for` loop statement (roughly twice as fast) because their iterations are performed at C language speed inside the interpreter
 
 ## Operation
 
@@ -433,4 +508,29 @@ Comparisions operators can be changed: `X < Y < Z`.
 ```
 special case when reverse the string
 str[::-1]
+```
+
+## Function
+
+When Python reaches and runs a `def` statement, it generates a new function object and assigns it to the function's name.
+
+**Enclosing functions**:
+
+
+## Scope
+
+LEGB rule: when you use an unqualified name inside a function, Python searches up to 4 scopes:
+- Local (L) scope
+- Enclosing (E) scope: function that contains other functions
+- Global (G) scope
+- Built-in (B) scope: `import builtins; dir(builtins)`
+
+_global_: refer to variables at the top level of the enclosing module file
+```python
+y, z = 1, 2
+def func():
+  global x
+  x = y + z
+func()
+print(x)  # 3
 ```

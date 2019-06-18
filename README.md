@@ -300,6 +300,7 @@
 ## Unix, [Linux](additional-learning/linux)
 
 - [Introduction to Linux](additional-learning/linux/introduction-to-linux)
+- [The Linux programming interface](additional-learning/linux/the-linux-programming-interface)
 
 ## Design Patterns
 

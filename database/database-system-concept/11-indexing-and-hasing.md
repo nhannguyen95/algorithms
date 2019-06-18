@@ -94,6 +94,8 @@ Regardless of what form of index is used, every index must be updated whenever a
 
 The aforementioned ordered-indexing scheme apply for **sequential file organizations** (index-sequential organization), the disadvantage is that performance degrades as the file grows. To overcome this deficiency, we can use a *B<sup>+</sup>-tree*, which requires fewer disk accesses to locate records.
 
+Beside B+-tree, we also have R-tree and Bitmap data structure for ordered index.
+
 ### Automatic creation of Indices
 
 If a relation is declared to have a primary key, most database implementations automatically create an index on the primary key. Whenever a tuple is inserted into the relation, the index can be used to check that the primary key constraint is not violated (that is, there are no duplicates on the primary key value). Without the index on the primary key, whenever a tuple is inserted, the entire relation would have to be read to ensure that the primary-key constraint is satisfied.
@@ -132,5 +134,68 @@ where Ai <= c1 and Ai >= c2;
 ```
 
 Usually the designer will choose ordered indexing unless it is known in advance that range queries will be infrequent, in which case hashing would be chosen.
+
+## Index Definition in SQL
+
+The `attribute_list` is the list of attributes of the relations that form the search key for the index.
+```
+create index <index_name> on <relation_name> (<attribute_list>);
+```
+
+If we wish to declare that the search key is a candidate key, we add the attribute **unique** to the index definition:
+```
+create unique index <index_name> on <relation_name> (<attribute_list>);
+```
+
+If `attribute_list` is not a candidate key, the system will display an error message.
+
+Many db system also provide a way to specify the type of index to be used (B+-tree or hashing).
+
+---
+
+## SUMMARY
+
+2 basic kinds of indices:
+- **Ordered Index**
+- **Hash Index**
+
+**Ordered Index**:
+
+With a **clustered index / primary index** the rows are stored physically on the disk in the same order as the index. Therefore, there can be only one clustered index.
+
+With a **non clustered index / secondary index** there is a second list that has pointers to the physical rows, the rows order might be different from the index order. You can have many non clustered indices.
+
+An **index entry** consists of a search-key value (the columns that are indexed on) and pointers to one or more records with that value as their search-key value.
+
+2 types of ordered indices:
+- **Dense Index**: an index entry appears for every search-key value in the file. Secondary index must be a dense one.
+- **Sparse Index**: an index entry appears for only some of the search-key values. Therefore, sparse index can only be used only if it is a clustering index.
+
+Dense Index is faster to locate records. But Sparse Index requires less space and imposes less maintenance overhead for insertions and deletions.
+
+**Multilevel Indices**: Sparse Index on Dense Index, and so on.
+
+A search key on an index that contains more than one columns/attributes is referred to as a **composite search key**, and such an index is called **composite index**.
+
+**B Tree and/or B+ Tree** is most widely used to implement single/composite index, it's a balanced tree.
+
+Why we use B Tree / B+ Tree rather: we use them when when data has to be stored on disk and access to disk is really slow and every single read causes a whole disk block to be loaded from the drive. If we compare B Tree / B+ Tree to other Balanced Binary Search Tree (BBST), their nodes are larger - typically have the size of a disk block (this allows each node to be read in with a single disk operation); so the path for look up will be shorter for B Tree / B+ Tree than for BBSTs; thus the number of accesses to nodes will less those in BBSTs. And since accessing to a node in both kind of trees requires expensively fetching same amount of data from disk anyway, it would be more benificial for the case of B Tree / B+ Tree to have shorter path which leads to fewer disk acceses. The trade off is modifying a N-ary tree is trickier than a binary one.
+
+Difference between B Tree and B+ Tree:
+- A B-tree allows search-key values to appear only once (if they are unique), unlike a B+-tree, where a value may appear in a nonleaf node, in addition to appearing in a leaf node => less space used.
+- Deletion in a B-tree is more complicated.
+- Insertion in a B-tree is only slightly more complicated.
+- The space advantages of B-trees are marginal for large indices, and usually do not outweigh the disadvantages that we have noted. Thus, pretty much all database-system implementations use the B+-tree data structure, even if (as we discussed earlier) they refer to the data structure as a B-tree.
+
+Other implementations:
+- MySQL supports R-tree indexes, which are used to query spatial data, e.g., "Show me all cities within ten miles of San Francisco, CA."
+- bitmap indexes, which allow for almost instantaneous read operations but are expensive to change and take up a lot of space.
+
+To make a choice for indexing techinques, consider:
+- Is the cost of periodic reorganization of the index or hash organization acceptable?
+- What is the relative frequency of insertion and deletion?
+- What types of queries are users likely to use?
+
+
 
 
