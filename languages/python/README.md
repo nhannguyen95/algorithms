@@ -443,6 +443,15 @@ To avoid this, we use `get` method:
 
 Any immutable objects can be keys of dictionary, not only string.
 
+Default dict for a common pattern when we access the key for the first time:
+
+```
+from collection import defaultdict
+
+d = defaultdict(int)
+d['a'] += 1
+```
+
 ## Iteration
 
 An object is _iterable_ if:
