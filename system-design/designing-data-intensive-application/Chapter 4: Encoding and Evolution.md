@@ -30,6 +30,12 @@ Data schema inevitably need to change over time (**schema evolution**, including
 
 **Avro** is another binary encoding format and was started in 2009 as a subproject of Hadoop. Avro also uses a schema to specify the structure of data being encoded. The schema has no tag number for each field (like Thrift and Protocol), and the byte sequence simply consists of values concatenated together (even with no specification on data type). This means that byte sequence can only be decoded correctly if the code reading the data is using the _exact same order_ as the code that wrote the data. Question: how does Avro support schema evolution?
 
+When the application wants to encode some data (to write it to a file or to send over network), it uses whatever version of the schema it knows about (the schema may be compiled into the applicaton), this is known as **writer's schema**.
 
+In the opposite, when the application wants to encode the data, it is expecting the data to be in some schema, known as **reader's schema**.
 
+The key idea with Avro is that the writer's schema and the reader's schema don't have to be the same, they only need to be compatible. When the data is decoded, the Avro library resolves the differenes by looking at the writer's schema and the reader's schema side by side and translating the data from the writer's schema into the reader's schema. The Avro specification defines exactly how the resolution works.
 
+Many data systems also implement some kind of proprietary binary encoding for their data. For example, most relational databases have a network protocol over which you can send queries to the database and get back responses. Those protocols are generally specific to a particular database, and the database vendor provides a driver (e.g., using the ODBC or JDBC APIs) that decodes responses from the data‐ base’s network protocol into in-memory data structures.
+
+So, we can see that although textual data formats such as JSON, XML, and CSV are widespread, binary encodings based on schemas are also a viable option
