@@ -38,4 +38,25 @@ The key idea with Avro is that the writer's schema and the reader's schema don't
 
 Many data systems also implement some kind of proprietary binary encoding for their data. For example, most relational databases have a network protocol over which you can send queries to the database and get back responses. Those protocols are generally specific to a particular database, and the database vendor provides a driver (e.g., using the ODBC or JDBC APIs) that decodes responses from the data‐ base’s network protocol into in-memory data structures.
 
-So, we can see that although textual data formats such as JSON, XML, and CSV are widespread, binary encodings based on schemas are also a viable option
+So, we can see that although textual data formats such as JSON, XML, and CSV are widespread, binary encodings based on schemas are also a viable option.
+
+There are many ways data can flow from one process to another:
+- Via databases
+- Via service calls (REST, RPC)
+- Via asynchronous message passing
+
+**Via databases**
+
+The process that write to the database encodes the data, the process that read from the database decodes it.
+
+You can think of storing something in the database as sending a message to your future self.
+
+It's common for several different processes to be accessing a database at the same time, some can run new code, some can run old code (for example in a rolling update). Developers might need to be aware of this and sometimes need to take care at application level.
+
+For database evolution, rewriting (or **migrating**) data into a new schema is certainly possible.
+
+**Via services: REST and RPC**
+
+The most common arrangement of processes' communication over a network is have 2 roles: clients and servers.
+
+Enterprise JavaBeans, Java's RMI, DCOM, CORBA are based on the idea a remote procedure call (RPC). RPC model tries to make a request to a remote network service look the same as calling a function or method in your programming language, within the same process. RPC is fundementally flawed since a local function call is predictable (either succeed for fails) while a net work request is not, also it takes longer time to execute; also due to parameter serialization for non-primitive data type, etc.
