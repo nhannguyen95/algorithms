@@ -60,3 +60,12 @@ For database evolution, rewriting (or **migrating**) data into a new schema is c
 The most common arrangement of processes' communication over a network is have 2 roles: clients and servers.
 
 Enterprise JavaBeans, Java's RMI, DCOM, CORBA are based on the idea a remote procedure call (RPC). RPC model tries to make a request to a remote network service look the same as calling a function or method in your programming language, within the same process. RPC is fundementally flawed since a local function call is predictable (either succeed for fails) while a net work request is not, also it takes longer time to execute; also due to parameter serialization for non-primitive data type, etc.
+
+Despite those problems, RPC isn't going away. Various RPC frameworks have been built on top of all the mentioned encodings, e.g. Thrift and Avro come with RPC support included, etc.
+
+Custom RPC protocols with a binary encoding format can achieve better performance than something generic like JSON over REST. however, RESTful APIs have other significant advantanges:
+- good for experimentation and coding (just use curl or web browser, no extra software installation).
+- supported by all main-stream languages and platforms.
+- vast ecosystem of tools available.
+
+That's the reason REST seems to be the predominant style for public APIs.
