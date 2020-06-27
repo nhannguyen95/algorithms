@@ -1,3 +1,5 @@
+## Data encoding formats
+
 **rolling upgrade**: deploying new code to a few nodes first, if it's running smoothly then gradually integrating to all the nodes.
 
 Programs work with data in at least 2 different formats:
@@ -40,6 +42,8 @@ Many data systems also implement some kind of proprietary binary encoding for th
 
 So, we can see that although textual data formats such as JSON, XML, and CSV are widespread, binary encodings based on schemas are also a viable option.
 
+## Dataflow models
+
 There are many ways data can flow from one process to another:
 - Via databases
 - Via service calls (REST, RPC)
@@ -69,3 +73,21 @@ Custom RPC protocols with a binary encoding format can achieve better performanc
 - vast ecosystem of tools available.
 
 That's the reason REST seems to be the predominant style for public APIs.
+
+There is no agreement on how API versioning should work. For RESTful APIs, common approaches are to use a version number in the URL or in the HTTP Accept header.
+
+**Message-Passing Dataflow**
+
+_Asynchronous message-passing_ is one of ways encoded data flows from one process to another, which is somewhere between RPC and databases:
+- RPC: client's request (message) is delivered to another process with low latency.
+- Databases: messages are not sent via a direct-network connection, but via an intermediary called message broker, which stores the messages temporarily.
+
+Advantages of using a message broker:
+- it acts as a buffer if the receiver is unavailable or overloaded.
+- automatically redeliver the message if the receiver is crashed.
+- decouple sender and receiver.
+- allows one message to be sent to multiple receivers.
+
+Message broker examples: RabbitMQ, Apache Kafka.
+
+
