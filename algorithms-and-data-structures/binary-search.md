@@ -1,9 +1,9 @@
-Shift `mi` to the left: `mi = (lo + hi) / 2 = lo + (hi - lo) / 2`.
+Shift `mi` to the left (flooring): `mi = (lo + hi) / 2 = lo + (hi - lo) / 2`.
 
-Shift `mi` to the right: `mi = (lo + hi + 1) / 2 = lo + (hi - lo) / 2 + ((hi - lo) % 2)`.
+Shift `mi` to the right (ceiling): `mi = (lo + hi + 1) / 2 = lo + (hi - lo) / 2 + ((hi - lo) % 2)`.
 
 ---
 
-It's crutial to determine the value range of `mi`. If we have `lo = a`, `hi = b` and `while(lo < hi)`:
-- If `mi` is shifted to the left, `mi` is in `[a, b)`.
-- If `mi` is shifted to the right, `mi` is in `(a, b]`.
+- Ceiling and flooring work fine with `lo = mi + 1` and `hi = mi - 1`.
+- Ceiling works fine with `lo = mi` and `hi = mi - 1`.
+- Flooring works fine with `lo = mi + 1` and `hi = mi`.
