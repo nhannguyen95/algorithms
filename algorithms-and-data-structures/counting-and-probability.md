@@ -28,3 +28,17 @@ This number is also known as **binomial coefficients**, due to their appearance 
 Special case when x = y = 1:
 
 2<sup>n</sup> = Σ<sub>k=0..n</sub>(n, k)
+
+```c++
+int bicoef(int n, int k) {
+    if (k > n - k) {  // optimize a bit
+        k = n - k;
+    }
+    long long int res = 1;
+    for(int i = 0; i < k; i++) {
+        res *= (n - i);
+        res /= (i + 1);
+    }
+    return res;
+}
+```
