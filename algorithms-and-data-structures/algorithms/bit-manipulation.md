@@ -51,7 +51,7 @@ To obtain the remainder of x when it is divided my N (N is a power of 2)
 x & (N - 1)
 ```
 
-To determine if x is a power of 2:
+To determine if x is a power of 2 (x > 0):
 
 ```
 (x & (x − 1)) == 0
