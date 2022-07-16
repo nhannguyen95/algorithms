@@ -390,4 +390,5 @@
 - [Limited memory interview questions](miscellaneous/limited-memory.md)
 - [Questions](miscellaneous/questions.md)
 - [Common complexity pattern](miscellaneous/common-complexity-pattern.md)
+- [Online vs Offline algorithm](https://en.wikipedia.org/wiki/Online_algorithm)
 
