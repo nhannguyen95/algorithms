@@ -5,7 +5,9 @@ Shift `mi` to the right (ceiling): `mi = (lo + hi + 1) / 2 = lo + (hi - lo) / 2 
 ---
 
 Ceiling and flooring work fine with `lo = mi + 1` and `hi = mi - 1`.
+
 Flooring works fine with `hi = mi` and `lo = mi + 1` (to avoid an otherwise infinite loop where `lo = mi = lo`).
+
 Ceiling works fine with `lo = mi` and `hi = mi - 1` (to avoid and othoerwise infitnte lopp where `hi = mi = hi`).
 
 ---
