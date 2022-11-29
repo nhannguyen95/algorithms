@@ -12,9 +12,9 @@ Ceiling works fine with `lo = mi` and `hi = mi - 1` (to avoid and otherwise infi
 
 ---
 
-When using ceiling with `while(lo < hi)`, `lo = a`, `lo = b`, `lo = mi` and `hi = mi - 1`: `mi` is in `(a, b]`, `lo` (and `hi`) is in `[a, b]`.
+When using ceiling with `while(lo < hi)`, `lo = a`, `hi = b`, `lo = mi` and `hi = mi - 1`: `mi` is in `(a, b]`, `lo` (and `hi`) is in `[a, b]`.
 
-When using flooring with `while(lo < hi)`, `lo = a`, `lo = b`, `lo = mi + 1` and `hi = mi`: `mi` is in `[a, b)`, `hi` (and `lo`) is in `[a, b]`.
+When using flooring with `while(lo < hi)`, `lo = a`, `hi = b`, `lo = mi + 1` and `hi = mi`: `mi` is in `[a, b)`, `hi` (and `lo`) is in `[a, b]`.
 
 ---
 
