@@ -5,7 +5,7 @@ Use 1-based for intuition.
 We define a set (here is 3) of edit operations that
 we can perform on a string:
 - Insertion: insert an arbitrary character to the string.
-- Deletion: delete a character to the string.
+- Deletion: delete a character from the string.
 - Substitution: replace a character in the string with another characther.
 
 The Edit Distance states that given 2 strings A and B, find the
