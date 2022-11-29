@@ -6,7 +6,7 @@ _Note: For simplicity, we use binary max heap for analytics without saying expli
 
 There are 2 important functions in heap implementation that one needs to be extremely well aware of (and be careful as well):
 
-  - `sifUp(e)`: Float up the element `e` by comparing its key value to parent in order to maintain heap property.
+  - `siftUp(e)`: Float up the element `e` by comparing its key value to parent in order to maintain heap property.
 
   - `siftDown(e)`: Float down the element `e` by comparing its key value to children in order to maintain heap property.
 
