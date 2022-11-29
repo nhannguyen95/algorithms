@@ -63,7 +63,7 @@ KMP-MATCHER(T, P)
     π = COMPUTE-PREFIX-FUNCTION(P)
     q = 0  // Number of characters matched
     for i = 1 to n  // Scan T from left to right
-        while p > 0 and P[q+1] ≠ T[i]
+        while q > 0 and P[q+1] ≠ T[i]
             q = π[q]  // next character does not match
         if P[q+1] == T[i]
             q = q + 1
