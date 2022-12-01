@@ -1,7 +1,7 @@
 /* Finding Transitive closure of a directed graph
 
 Given directed graph G = (V, E), the transitive closure of
-G is the graph G* = (V, E*), E = {(i, j): there is a path 
+G is the graph G* = (V, E*), E* = {(i, j): there is a path 
 from i to j in G}.
 
 We wish to construct the Adjency Matrix T of G*, that is:
