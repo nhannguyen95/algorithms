@@ -126,9 +126,7 @@ public:
   int extractMax() {
     int mx = max();
     if (mx != -1) {
-      A[0] = A.back();
-      A.pop_back();
-      heapify(0);
+        remove(0);
     }
     return mx;
   }
