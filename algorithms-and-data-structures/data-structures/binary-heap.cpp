@@ -62,23 +62,19 @@ private:
     return (i - 1) / 2;
   }
 
-  // O(lgn)
-  // Condition: current A[i] <= key, since we are
-  // 'bubble' this element up.
-  // Kind of opposite of `heapify`
-  void increaseKey(int i, int key) {
-    while(i > 0 && A[parent(i)] < key) {
-      A[i] = A[parent(i)];
+  // SiftUp: O(lgn)
+  void increaseKey(int i) {
+    while(i > 0 && A[parent(i)] < A[i]) {
+      swap(A[i], A[parent(i)]);
       i = parent(i);
     }
-    A[i] = key;
   }
 
   bool valid(int i) {
     return 0 <= i && i < size();
   }
 
-  // O(lgn)
+  // SiftDown: O(lgn)
   // Float down element A[i]
   void heapify(int i) {
     while(valid(i)) {
@@ -101,9 +97,9 @@ private:
   }
 
 public:
-  // SiftUp: O(nlogn)
+  // Build heap: O(nlogn)
   // We can speed up to O(n) by copying the list l
-  // to the heap's internal array and then siftUp
+  // to the heap's internal array and then siftDown
   MaxHeap(initializer_list<int> l) {
     for(int e : l) insert(e);
   }
@@ -117,7 +113,7 @@ public:
     // I.e. the new slot is not created anywhere else
     // rather than next to the extreme node
     A.push_back(INT_MIN);
-    increaseKey(size() - 1, key);
+    increaseKey(size() - 1);
   }
 
   // O(1)
