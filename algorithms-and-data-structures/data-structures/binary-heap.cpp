@@ -112,7 +112,7 @@ public:
     //
     // I.e. the new slot is not created anywhere else
     // rather than next to the extreme node
-    A.push_back(INT_MIN);
+    A.push_back(key);
     increaseKey(size() - 1);
   }
 
