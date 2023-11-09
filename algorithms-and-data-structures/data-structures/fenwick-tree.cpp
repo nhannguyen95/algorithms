@@ -46,6 +46,11 @@ update ft[b'' = b' + LSOne(b')]
 In summary, Fenwick Tree takes:
 - O(N) in space
 - O(logN) for update, query 
+
+Besides summation, BIT can also be used to support other types of
+operations, e.g. range minimum query, while maintaining the same
+time complexity of O(logN):
+https://ioinformatics.org/journal/v9_2015_39_44.pdf
 */
 
 #include <iostream>
