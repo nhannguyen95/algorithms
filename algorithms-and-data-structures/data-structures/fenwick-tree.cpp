@@ -4,7 +4,7 @@ Fenwick Tree is a useful data structure for implementing
 dynamic cumulative frequency tables.
 
 First we need to understand what (x & (-x)) mean, since
-negative numbers are in C++ are represented by 2's complement:
+negative numbers in C++ are represented by 2's complement:
 x & (-x) = x & (~x + 1)
 For example:
         x = 1011010100
