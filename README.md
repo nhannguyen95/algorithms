@@ -155,7 +155,7 @@
     - [Mergeable heap](https://sites.google.com/site/indy256/algo/mergeable_heap)
     - Fibonacci Heap
   - String:
-    - [Trie *](algorithms-and-data-structures/data-structures/trie.cpp)
+    - Trie *: [cpp](algorithms-and-data-structures/data-structures/trie.cpp), [java](algorithms-and-data-structures/data-structures/trie.java).
     - [Suffix Tree *](algorithms-and-data-structures/data-structures/suffix-tree.md)
     - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
   - [Stack *](algorithms-and-data-structures/data-structures/stack-array.cpp)

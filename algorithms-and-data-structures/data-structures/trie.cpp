@@ -1,18 +1,20 @@
 /*  Trie
 
-2 status of a vertex: isWord = true - this vertex marks
-the end of a word in the dictionary.
+What string should be inserted into the Trie depends on problems:
+- Trie: given a set of strings S, we insert to the Trie full strings (not the
+suffixes).
+- Suffix Trie / Prefix Trie: given a set of strings S (or a single string S), we
+insert to the Trie all possible suffixes of strings in S (or of S).
+
+The information in the Node also depends on problems:
+- isWord: if this node marks the end of a string.
+- isSuffix/isPrefix: if this node marks the end of a suffix.
+- When build Suffix Trie or Prefix Trie, the node which has isSuffix/isPrefix as
+True saves the index of the suffix or the prefix.
 
 Space complexity: If the dictionary has N words, and each word
 has M characters in average, then Trie will have N*M nodes, and
 building the Trie obviously takes O(N*M).
-
-The information in the Node depends on problems.
-
-You can implement Suffix Trie or Prefix Trie on a string.
-
-When build Suffix Trie or Prefix Trie, the node which has isWord=True
-saves the index of the suffix or the prefix.
 
 Suppose we already built the Suffix Trie of a given string T (n = len(T)),
 some applications:
