@@ -2,6 +2,8 @@
 
 **Depth, Height, Level in binary tree**: https://www.youtube.com/watch?v=TKQe_mvLRaI
 
+**Balanced Tree**: cây cân bằng là cây mà tại mọi nút, chiều cao cây con phải và chiều cao cây con trái khác nhau không quá 1.
+
 **Complete Binary Tree**: Every level of the tree is fully filled, except perhaps for the last level, it is filled from left to right.
 
 **Full Binary Tree**: Every node has either 0 or 2 children.
