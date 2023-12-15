@@ -160,7 +160,7 @@
     - [Suffix Array](algorithms-and-data-structures/data-structures/suffix-array.cpp)
   - [Stack *](algorithms-and-data-structures/data-structures/stack-array.cpp)
   - [Queue *](algorithms-and-data-structures/data-structures/queue-array.cpp):
-    - Priority Queue
+    - Priority Queue: [java](algorithms-and-data-structures/data-structures/priority-queue.java).
     - Circular queue
   - [Deque *](algorithms-and-data-structures/data-structures/deque-array.cpp)
   - [Tree *](algorithms-and-data-structures/data-structures/tree.md):

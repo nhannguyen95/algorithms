@@ -6,7 +6,9 @@ structure that satisfies the heap property:
   - Key(Parent) <= Key(Children) if Min Heap
 
 A common implementation of a heap is the binary heap
-(the tree is a binary tree)
+(the tree is a binary tree).
+
+Binary heaps are a common way of implementing priority queues.
 
 Since majority operations of a heap is O(lgN),
 any operation that affects the tree structure must
