@@ -55,6 +55,8 @@ An **ordered tree** is a rooted tree in which the children of each node are orde
 
 ---
 
-Preorder, inorder, postorder; given 2, we can reconstruct a Binary Tree from them. Given 1, we can't (there's an infinite number of trees).
+Preorder, inorder, postorder that don't contain null values; [given 2, we can reconstruct a Binary Tree from them](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/). Given 1, we can't (there's an infinite number of trees).
 
-Given a preorder or postorder, we can reconstruct a Binary Search Tree from it.
+Preorder, post order that contain null values; [given 1, we can reconstruct a Binary Tree from it](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/).
+
+Given a preorder or postorder that don't contain null values, we can reconstruct a Binary Search Tree from it.
