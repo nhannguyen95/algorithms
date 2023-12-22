@@ -1,6 +1,7 @@
-/*  Dijkstra's algorithm for finding single-source
-    shortest path
+/* Dijkstra's algorithm for finding single-source shortest path
 (untested)
+
+1. ORIGINAL DIJKSTRA's ALGORITHM ON NON-NEGATIVE WEIGHTED GRAPHS.
 
 Idea: the min queue Q maintains a set of vertices
 to extract the vertex u whose d is minimum, then
@@ -20,6 +21,8 @@ DIJKSTRA(G, w, s)
     S += u
     for v in G.adj[u]
       RELAX(u, v, w)
+      if the call of RELAX decreased v.d
+        DECREASE-KEY(Q, v, v.d)
 
 The key to show the correctness of Disjktra's algorithm
 is that when a vertex u is added to S (or is removed from
@@ -41,12 +44,29 @@ efficiently (since the key for those 2 operations is 'd').
 Of course we can achieve this by using a self-implemented
 data structure but that's gonna be complicated.
 
-In order to avoid hassle, we can use a std data structure
-in C++ - priority queue - to implement a variant of Dijkstra
-algorithm.
+But in case the weights are integer, we can quickly locate
+the pair (v, v.d) using a balanced BST data structure such
+as C++ STL set or Java TreeSet.
+
+The original Dijkstra algorithm explores the path by nodes,
+it stops after processing all V nodes (each node and thus
+each edge is processed just once).
+- If the graph has no negative-weight edges, all edges should
+have already relaxed by then.
+- But if the graph has negative-weight edges, it's possible
+that there are still relaxable edges after V loops.
+
+This means the original Dijkstra algorithm only works on
+non-negative weighted graphs.
+
+2. MODIFIED DIJKSTRA's ALGORITHM ON NON-NEGATIVE CYCLE GRAPHS.
+
+We can use a Binary Heap based data structure such as C++ STL
+priority_queue or Java PriorityQueue - to implement a variant
+of Dijkstra algorithm.
 
 The idea is that we use 'd' as the key for the min priority
-queue Q, but instead of pushing all vertices in Q in the first
+queue Q, but instead of pushing all vertices to Q in the first
 place and then cannot DECREASE-KEY(new v.d) efficiently
 since the only way to alter u.d value is to iterate through
 Q in O(|V|), we only push (v.d, v) into Q only when v
@@ -59,32 +79,22 @@ we can remove them by checking that previous value of u.d
 in the Q with the current value of u[d]. If u.d > u[d],
 that is an old version and needs to be removed.
 
-This variant is implemented as below.
+This variant is implemented as below with O((V+E)logV) = O(ElogV).
 
-Time complexity: O((V+E)logV) = O(ElogV)
-
-------------------------------------------------------------
-
-The pseudo code is the original Dijkstra algorithm, it is very
-different by nature from the variant that we mentioned above.
-
-The Dijkstra algorithm explores the path by nodes, thus it may
-fail if graphs have negative-weight edges (it's an greedy
-algorithm anyway).
-
-The variant implementation explores the path by edges, it keep
-pushing new edges in the queue every time it perform a relaxation.
-Thus THIS VARIANT WORKS EVEN WHEN THERE ARE NEGATIVE-WEIGHT EDGES.
+This variant explores the path by edges, it keep pushing new
+edges in the queue every time it perform a relaxation. It loops
+until all edges are relaxed, thus THIS VARIANT WORKS EVEN WHEN
+THERE ARE NEGATIVE-WEIGHT EDGES.
 
 Example:
-V = 4, E = 5
+V = 4, E = 5, src = 1
 1 -> 2 = 1
 1 -> 3 = 0
 1 -> 4 = 99
 2 -> 3 = 1
 4 -> 2 = -300
 
-Dijkstra doesn't work with negative-cycle graphs (it will be trapped
+This variant doesn't work with negative-cycle graphs (it will be trapped
 in infinite loop), except for when the destination is not reachable
 from a negative cycle.
 
