@@ -46,7 +46,7 @@ data structure but that's gonna be complicated.
 
 But in case the weights are integer, we can quickly locate
 the pair (v, v.d) using a balanced BST data structure such
-as C++ STL set or Java TreeSet.
+as C++ STL set or Java TreeSet (see dijkstra-original.java)
 
 The original Dijkstra algorithm explores the path by nodes,
 it stops after processing all V nodes (each node and thus
