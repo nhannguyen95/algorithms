@@ -107,7 +107,7 @@
       - [Transitive closure of a directed graph *](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
     - [Bridges and Articulation Points of a undirected graph *](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
     - [Biconnected Components *](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
-    - [Euler tour *](algorithms-and-data-structures/algorithms/euler-tour.cpp)
+    - [Eulerian graph *](algorithms-and-data-structures/algorithms/eulerian-graph.md)
     - [Graph coloring *](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
     - [Bipartite graph checking *](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
   - Network flow
@@ -208,7 +208,7 @@
     - [Longest Common Substring](https://practice.geeksforgeeks.org/problems/longest-common-substring/0): this can be solved using DP, Trie or Suffix Array.
     - [Implement Atoi *](https://www.interviewbit.com/problems/atoi/)
   - Heap:
-    - [Find median in a stream](https://practice.geeksforgeeks.org/problems/find-median-in-a-stream/0)
+    - [Find median in a stream](https://leetcode.com/problems/find-median-from-data-stream)
     - k-way merge *: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
   - Binary tree:
     - [Construct BST from preorder traversal *](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
@@ -217,6 +217,8 @@
   - Recursion:
     - [Generate permutations (no duplications) *](https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0)
     - [Generate permutations (duplications possible) *](https://leetcode.com/problems/permutations-ii)
+    - [Subsets](https://leetcode.com/problems/subsets/)
+    - [Subsets II](https://leetcode.com/problems/subsets-ii/)
   - Dynamic Programming:
     - [Knapsack problem *](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Graph:
