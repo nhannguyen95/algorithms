@@ -1,26 +1,63 @@
 /*  Bellman Ford's algorithm for finding shortest paths
-from a single source.
+from a single source (directed and undirected).
 (untested)
 
-Bellman Ford algorithm allows negative-weight edge.
+Idea:
+- Assume that the shortest path from src to des contains M edges,
+according to the path-relaxation property, if we can just relax all
+edges M times, eventually d.des = 𝛿(src, des):
+  Relax all edges 1 time  => find the shortest path from src to all nodes,
+    containing 1 edge.
+  Relax all edges 2 times => find the shortest path from src to all nodes,
+    containing 2 edges.
+  ...
+  Relax all edges M times => find the shortest path from src to all nodes,
+    containing M edges.
+- Since we don't know M in advance, we can just relax al edges |V| - 1 times
+(because shortest path is a single path => number of edge <= |V| - 1).
 
-Bellman Ford returns a boolean value indicate if there
-is a negative-weight cycle that is reachable from the
-source. If there is no such cycle, it returns the
-shortest paths and their weights.
+INIT-SINGLE-SOURCE(G, s)
+  for v in G.V
+    v.d = (v == s) ? 0 : ∞
+
+RELAX(u, v, w, temp_d)
+  if u.d + w < temp_d[v]
+    temp_d[v] = u.d + w
+
+BELLMAN-FORD(G, w, s)
+  INIT-SINGLE-SOURCE(G, s)
+
+  // Relax all edges |V| - 1 times.
+  for i = 1 to |G.V| - 1
+    temp_d = copy(G.d)
+
+    for edge=(u, v) in G.E
+      RELAX(u, v, w, temp_d)
+
+    G.d = temp_d
 
 Bellman Ford algorithm relaxes each edge |V| - 1 times.
-
-Look at the code to know what the algorithm does.
-
-To understand why the algorithm works, notice 2 properties:
-- Shortest path is a single path, i.e. number of edge
-  <= |V| - 1
-- Path-relaxation property (shortest-paths.md)
 
 After the |V| - 1 loop, if there's no negative-weight
 cycle, we have d.v = 𝛿(s, v) <= 𝛿(s, u) + w(u, v)
 = d.u + w(u, v) for all v in V and (u, v) in E.
+
+Improvement 1: We don't necessarily iterate up to |V| - 1 times. At the inner
+for loop we can detect if RELAX makes a change in temp_d. If it doesn't change,
+it won't never change in the next iterations. We can stop there.
+
+Improvement 2: if we are not interested in relaxing the shortest path in
+strictly number of edges increasing order (after each loop), we can remove
+temp_d and perform the relaxation directly on G.d. But note that after x loops,
+the values in G.d no longer indicates the shortest cost from src to all nodes
+containing x edges (but maybe more).
+
+Bellman Ford algorithm allows negative-weight edge.
+
+In case graph has negative-weight cycle, Bellman Ford can detect its presence
+by returning a boolean value indicate if there is a negative-weight cycle that
+is reachable from the src. If there is no such cycle, it returns the shortest
+paths and their weights.
 
 So now we prove if there exists some edge (u, v) such
 that d.v > d.u + w(u, v) => graph has negative-weight
@@ -29,18 +66,13 @@ cycle that reachable from the source.
 
 Analyzing running time is simple: O(VE)
 
-For later follow up problems, let us describe the pseudo
-code of the Bellman Ford algorithm:
-
-INIT-SINGLE-SOURCE(G, s)
-  for v in G.V
-    v.d = (v == s) ? 0 : ∞
+Pseudo code:
 
 BELLMAN-FORD(G, w, s)
   INIT-SINGLE-SOURCE(G, s)
 
   // Relax all edges |V| - 1 times.
-  for i = 1 to |G.V| - 1 (*)
+  for i = 1 to |G.V| - 1
     for edge=(u, v) in G.E
       RELAX(u, v, w)
   
@@ -51,11 +83,6 @@ BELLMAN-FORD(G, w, s)
       return FALSE  // Negative-weight cycle present that
                     // reachable from source vertex s.
   return TRUE  // No negative-weight cycle, and v.d = 𝛿(s, v)
-
-We not necessarily iterate up to |V| - 1 times. At the line
-(*) we can have a copy of u.d and detect if RELAX makes a change
-in it. If it doesn't change, it won't never change in the
-next iterations. We can stop there.
 
 From (**), we can know the vertices v such that there is
 negative-weight cycle from the unique path from s to v.
