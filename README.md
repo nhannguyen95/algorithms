@@ -64,8 +64,9 @@
       - [Rabin-Karp *](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
       - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
-      - [KMP (Knuth-Morris-Pratt) *](algorithms-and-data-structures/algorithms/kmp.cpp)
+      - KMP (Knuth-Morris-Pratt) *: [c++](algorithms-and-data-structures/algorithms/kmp.cpp), [java](algorithms-and-data-structures/algorithms/kmp.java)
       - String matching with gap characters.
+      - Split string *: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp)
     - [Edit Distance *](algorithms-and-data-structures/algorithms/edit-distance.cpp)
   - Probability
   - Math:
@@ -229,7 +230,6 @@
   - Least Common Ancestors (LCA)
   - Scheduling with profits and deadlines
   - [Exponential search *](https://en.wikipedia.org/wiki/Exponential_search).
-  - Split string *: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp).
 
 ## Others
   - [Big O Notation *](algorithms-and-data-structures/big-o-notation.md)

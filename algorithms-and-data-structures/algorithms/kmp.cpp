@@ -35,7 +35,7 @@ Finding maximum k < q such that:
 P[..k] is a suffix of P[..q]
 
 This tells us that to find P in any text T, it's sufficient
-to find this information on P, we defind the Prefix
+to find this information on P, we define the Prefix
 Function for pattern P:
 π[q] = max(k) | k < q, P[..k] is suffix of P[..q]
 
@@ -45,7 +45,7 @@ And the procedure for finding π is straight-forward:
 COMPUTE-PREFIX-FUNCTION(P)
     m = P.length
     π[1] = 0
-    k = 0  // π[previous q]
+    k = π[1]  // π[previous q]
     for q = 2 to m
         while k > 0 and P[k+1] ≠ P[q]
             k = π[k]
