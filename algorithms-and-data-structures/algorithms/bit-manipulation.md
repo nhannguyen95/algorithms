@@ -85,3 +85,16 @@ To set the least significant consecutive run of 0s in x (starting from 0):
 ```
 x |= (x - 1)
 ```
+
+To turn on all bits in a set of size n:
+
+```
+(1 << n) - 1
+```
+
+To enumerate all proper subsets of a given bitmask (e.g. proper subsets of `10010` are {`10010`, `10000`, `00010`}):
+
+```
+for(int subset = bitmask; subset; subset = (bitmask & (subset - 1)))
+    cout << subset
+```
