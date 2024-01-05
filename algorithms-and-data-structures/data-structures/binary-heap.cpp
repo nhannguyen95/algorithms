@@ -138,6 +138,8 @@ public:
   }
 
   // O(lgn)
+  // This is a Priority Queue operation that is not directly supported by
+  // C++ priority_queue and Java PriorityQueue
   void remove(int i) {
     if (!valid(i)) return;
     A[i] = A.back();
