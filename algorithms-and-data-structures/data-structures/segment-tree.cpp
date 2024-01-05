@@ -1,5 +1,7 @@
 // This is submitted on https://bit.ly/2zm7iH0
 // Segment Tree solving RMQ (Range Minimum Query) problem
+// TODO: Segment Tree to support range_update(l, r, v) in
+// O(logN) with Lazy Propagation, CP4.1.
 
 #include <iostream>
 #include <vector>
