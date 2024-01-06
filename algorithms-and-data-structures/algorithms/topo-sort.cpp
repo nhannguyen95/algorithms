@@ -14,7 +14,7 @@ Another algorithm for finding topological sort: Kahn's algorithm.
 It looks like a "modified BFS":
 
 TOPO-SORT:
-enqueue vertices with 0 incoming degree into a queue Q
+enqueue vertices with 0 incoming degree into a min priority queue Q
 while Q is not empty:
   u = Q.dequeue()
   put u in a topo sort list

@@ -36,16 +36,16 @@
 
 ## Algorithms
   - [Bit manipulation *](algorithms-and-data-structures/algorithms/bit-manipulation.md)
-  - Recursion
+  - [Complete Search Paradigms](algorithms-and-data-structures/algorithms/complete-search.md)
+    - Iterative
+    - Recursive
+      - Backtracking
+      - Branch and Bound
   - Divide and Conquer
-  - [Dynamic Programming *](algorithms-and-data-structures/algorithms/dynamic-programming.md):
-    - [Longest common subsequence (LCS) *](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
-    - [Longest increasing subsequence (LIC) *](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
-    - Optimal binary search tree
+  - [Dynamic Programming *](algorithms-and-data-structures/algorithms/dynamic-programming.md)
   - [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
     - [Activity selection problem](algorithms-and-data-structures/algorithms/activity-selection.cpp)
     - [Huffman codes *](algorithms-and-data-structures/algorithms/huffman-codes.cpp)
-    - [Coin changing *](algorithms-and-data-structures/algorithms/coin-changing.cpp)
   - [Sorting *](algorithms-and-data-structures/algorithms/sorting.md):
     - [Bubble sort *](algorithms-and-data-structures/algorithms/bubble-sort.cpp)
     - [Insertion sort *](algorithms-and-data-structures/algorithms/insertion-sort.cpp)
@@ -57,8 +57,11 @@
     - [Radix sort *](algorithms-and-data-structures/algorithms/radix-sort.cpp)
     - Bucket sort
     - [External sort *](https://en.wikipedia.org/wiki/External_sorting)
-  - Searching
+  - Element searching
+    - Lineary search
     - [Binary search](algorithms-and-data-structures/binary-search.md)
+      - Binary search the answer
+    - Search with hashing (O(1) amortized)
   - [String *](algorithms-and-data-structures/algorithms/string.md):
     - String matching:
       - [Rabin-Karp *](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
@@ -66,7 +69,7 @@
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
       - KMP (Knuth-Morris-Pratt) *: [c++](algorithms-and-data-structures/algorithms/kmp.cpp), [java](algorithms-and-data-structures/algorithms/kmp.java)
       - String matching with gap characters.
-      - Split string *: [code](algorithms-and-data-structures/handy-algorithms/split-string.cpp)
+      - Split string *: [c++](algorithms-and-data-structures/handy-algorithms/split-string.cpp), [java](algorithms-and-data-structures/handy-algorithms/split-string.java)
     - [Edit Distance *](algorithms-and-data-structures/algorithms/edit-distance.cpp)
   - Probability
   - Math:
@@ -93,12 +96,11 @@
     - [Morris Postorder Tree Traversal *](http://www.cnblogs.com/AnnieKim/archive/2013/06/15/MorrisTraversal.html)
     - [Binary Tree Iterator *](https://nhannguyen95.github.io/bt-iterator/)
   - [Graph *](algorithms-and-data-structures/algorithms/graph.md):
-    - [BFS *](algorithms-and-data-structures/algorithms/bfs.cpp)
-    - Bidirectional BFS: [1](https://leetcode.com/problems/word-ladder-ii/), [2](https://leetcode.com/problems/word-ladder/solution/)
+    - [BFS *](algorithms-and-data-structures/algorithms/bfs.md)
     - [DFS *](algorithms-and-data-structures/algorithms/dfs.cpp)
     - [Flood fill *](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
     - [Topological sort *](algorithms-and-data-structures/algorithms/topo-sort.cpp)
-    - [Strongly connected components *](algorithms-and-data-structures/algorithms/strongly-connected-components.cpp)
+    - [Strongly connected components *](algorithms-and-data-structures/algorithms/strongly-connected-components.md)
     - [Shortest-paths *](algorithms-and-data-structures/algorithms/shortest-paths.md)
       - [Single-source shortest-paths - Bellman Ford *](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
       - [Single-source shortest-paths on DAG *](algorithms-and-data-structures/algorithms/sssp-dag.cpp)
@@ -106,7 +108,7 @@
       - [All pairs shortest-paths - Floyd *](algorithms-and-data-structures/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
       - [Transitive closure of a directed graph *](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
-    - [Bridges and Articulation Points of a undirected graph *](https://github.com/nhannguyen95/stuffs/blob/master/algorithms-and-data-structures/algorithms/bridges-articulation-points.cpp)
+    - [Bridges and Articulation Points of a undirected graph *](algorithms-and-data-structures/algorithms/bridges-articulation-points.md)
     - [Biconnected Components *](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
     - [Eulerian graph *](algorithms-and-data-structures/algorithms/eulerian-graph.md)
     - [Graph coloring *](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
@@ -143,8 +145,8 @@
     - [Evaluate Expression](https://www.hackerrank.com/contests/cs1300-odd-2014/challenges/evaluate-expression)
 
 ## Data structures
-  - Array
-  - Vector (Dynamic Array)
+  - Array: static and dynamic size.
+    - BitSet: useful when size of an array of booleans is small (not more than 62 booleans).
   - Linked list:
     - [Singly Linked List *](algorithms-and-data-structures/data-structures/singly-linked-list.cpp)
     - [Doubly Linked List *](algorithms-and-data-structures/data-structures/doubly-linked-list.cpp)
@@ -170,7 +172,7 @@
     - [Segment Tree (IT - Interval Tree) *](algorithms-and-data-structures/data-structures/segment-tree.cpp)
     - [Binary Indexed Tree (BIT - Fenwick Tree) *](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
     - Radix Tree
-    - Balanced Search Tree:
+    - [Balanced Search Tree](algorithms-and-data-structures/data-structures/binary-search-tree.md) (Java's TreeSet/TreeMap):
       - AVL Tree
       - Splay Tree
       - Red Black Tree
@@ -220,8 +222,6 @@
     - [Generate permutations (duplications possible) *](https://leetcode.com/problems/permutations-ii)
     - [Subsets](https://leetcode.com/problems/subsets/)
     - [Subsets II](https://leetcode.com/problems/subsets-ii/)
-  - Dynamic Programming:
-    - [Knapsack problem *](algorithms-and-data-structures/classic-problems/knapsack-problem.cpp)
   - Graph:
     - [Minimum Swaps to Sort](https://practice.geeksforgeeks.org/problems/minimum-swaps/1)
   - Optimal binary search tree

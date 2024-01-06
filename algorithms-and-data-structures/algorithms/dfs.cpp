@@ -48,10 +48,11 @@ vertices.
 Classification of edges: (CLRS, 3rd edition, Figure 22.5 p.607
 best illustrates this)
   - Tree edge (u, v): v is first discovered by exploring edge (u,v)
+    with u = GRAY and v = WHITE.
   - Back edge (u, v): this edge connects u to an ancestor v in a
-    depth-first tree (DFT)
+    depth-first tree (DFT) with u = GRAY and v = GRAY.
   - Forward edges (u, v) are thoses nontree edges connecting a
-    vertex u to a descendent v in a DFT
+    vertex u to a descendent v in a DFT (u = GRAY, v = BLACK).
   - Cross edges: all other edges
 
 When we first explore an edge (u, v), the color of v tells us
