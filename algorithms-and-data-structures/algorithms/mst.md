@@ -1,3 +1,12 @@
+## Problems
+- [Second-best minimum spanning tree](/algorithms-and-data-structures/algorithms/2nd-mst.cpp)
+- [Maximum spanning tree](/algorithms-and-data-structures/algorithms/maximum-spanning-tree.md)
+- [Minimum spanning subgraph](/algorithms-and-data-structures/algorithms/minimum-spanning-subgraph.md)
+- [Minimum spanning forest](/algorithms-and-data-structures/algorithms/minimum-spanning-forest.md)
+- [Minimax (maximin)](/algorithms-and-data-structures/algorithms/minimax.md)
+
+## Theory
+
 There are 2 greedy algorithms to solve MST: Kruskal's algorithm and Prim's algorithm.
 
 Given undirected graph G = (V, E), the common pattern of 2 algorithms is from a set of edge `A` that is a subset of some minimum spanning tree, we pick a *safe edge* for `A` (i.e. the edge that doesn't form a cycle in `A`, and `A ⋃ (u, v)` is a subset of some MST), repeat until `A` = some MST:
@@ -33,9 +42,3 @@ w(T') = w(T) - w(x, y) + w(u, v) <= w(T)
 ```
 
 Since T is MST, `w(T') = w(T)`, thus T' also a MST. Finally we have `A ⋃ (u, v) ⊆ T'` and (u, v) is a safe edge for A since (u, v) crosses the cut of A.
-
----
-
-**Minimax problem**: Given an weighted undirected Graph G; for a pair of vertices (u, v), the cost of a path from u to v is the maximum edge weight along that path. Among all possible paths from u to v, pick the one with the minimum max-edge-weight.
-
-Solution: the max edge weight along the unique path between u and v in the MST.
