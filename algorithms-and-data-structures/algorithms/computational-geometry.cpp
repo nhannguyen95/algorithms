@@ -8,6 +8,7 @@ using namespace std;
 #define PI acos(-1.0)
 
 double DEG_to_RAD(double d) { return d * PI / 180.0; }
+double RAD_to_DEG(double r) { return r * 180.0 / PI; }
 
 /* -------------- DATA STRUCTURES -------------- */
 
