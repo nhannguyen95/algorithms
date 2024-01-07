@@ -12,6 +12,7 @@
 - [0-∞ coin changing ways](/algorithms-and-data-structures/algorithms/unbounded-coin-changing-ways.md)
   - https://leetcode.com/problems/coin-change-ii/
 - [Longest common subsequence (LCS) *](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
+- DP with Bitmask.
 
 ## Theory
 
@@ -41,3 +42,45 @@ Divide & conquer (D&C) and DP difference:
 
 It's easier to keep track of the solution during doing the dp than tracing back for the solution after computing dp. Trade off: memory complexity.
 
+### DP Parameters
+
+#### Common DP Parameters
+
+```
+1.
+Parameter: Index i in an array.
+Transition: Extend subarray [0..i] (or [i..n-1]), process i, take item i or not, etc.
+Example: 1D Max Sum, LIS, part of 0-1 Knapsack, TSP, etc.
+
+2.
+Parameter: Indices (i, j) in 2 arrays.
+Transition: Extend i, j or both, etc.
+Example: Edit Distance, LCS, etc.
+
+3.
+Parameter: Subarray (i, j) of an array.
+Transition: Split (i, j) into (i, k) + (k + 1, j) or (i, i + k) + (i + k + 1, j), etc.
+Example: Matrix Chain Multiplication, etc.
+
+4.
+Parameter: A vertex (position) in a (usually implicit) DAG.
+Transition: Process the neighbors of this vertex, etc.
+Example: Shortest/Longest/Counting Paths in/on DAG, etc.
+
+5.
+Parameter: Knapsack-style parameter.
+Transition: Decrease (or increase) current value until zero/threshold, etc.
+Example: 0-1 Knapsack, Subset Sum, Coin Change variants, etc.
+Note: this parameter is not DP friendly if its range is high.
+
+6.
+Parameter: Small set (usually using bitmask technique).
+Transition: Flag one (or more) item(s) in the set to on/off, etc.
+Example: DP-TSP, DP with bitmask, etc.
+```
+
+Harder DP problems usually combine two or more parameters to represent distinct states.
+
+#### Negative Parameters with Offset
+
+This issue can be dealt easily by using offset technique to make all indices become non negative again.
