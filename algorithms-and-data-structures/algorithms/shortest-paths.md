@@ -22,7 +22,9 @@ Other algorithms like Bellman Ford's allow negative-weight edges and produce cor
 
 ---
 
-A shortest path has no cycle, it's a simple path.
+Simple path is a path that has no repeated vertices, thus no cycle.
+
+A shortest path is a simple path.
 
 Thus, **a shortest path contains at most V distince vertices, or V - 1 edges**.
 

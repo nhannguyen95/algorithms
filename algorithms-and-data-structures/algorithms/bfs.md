@@ -1,5 +1,5 @@
 ## Problems
-- Bidirectional BFS:
+- Bidirectional BFS (Meet in the Middle):
   - https://leetcode.com/problems/word-ladder
   - https://leetcode.com/problems/word-ladder-ii
 
