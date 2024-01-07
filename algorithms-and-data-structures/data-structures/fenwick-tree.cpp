@@ -52,8 +52,8 @@ In summary, Fenwick Tree takes:
 - O(NlogN) for build
 
 Besides summation, BIT can also be used to support other types of
-operations, e.g. range minimum query, while maintaining the same
-time complexity of O(logN):
+operations, e.g. dynamic range minimum query (RMQ), while
+maintaining the same time complexity of O(logN):
 https://ioinformatics.org/journal/v9_2015_39_44.pdf
 
 ------------------------------------------------------------------

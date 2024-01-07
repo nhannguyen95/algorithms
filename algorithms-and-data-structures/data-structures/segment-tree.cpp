@@ -1,5 +1,14 @@
 // This is submitted on https://bit.ly/2zm7iH0
-// Segment Tree solving RMQ (Range Minimum Query) problem
+//
+// Below implementation: Segment Tree solving dynamic RMQ
+// (Range Minimum Query) problem
+//
+// Segment Tree is essentially a binary tree where the leaf vertices
+// are the original array and the internal vertices are the
+// "segment" vertices. E.g., 2 leaf vertices a and b are connected
+// to the same parent vertex c implies that vertex c represents a
+// segment containing both a and b.
+//
 // TODO: Segment Tree to support range_update(l, r, v) in
 // O(logN) with Lazy Propagation, CP4.1.
 
