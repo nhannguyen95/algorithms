@@ -26,10 +26,18 @@ d | b and d | (a mod b). Since a = kb + (a mod b) => d | a
 
 So we have the pseudo-code for the Euclid's algorithm:
 
-EUCLID(a, b)
+EUCLID(a, b) = GCD(a, b)
     if b == 0 return a
     return EUCLID(b, a mod b)
 
 Time complexity: O(logb)
+
+Finding Least Common Multiple (LCM) is simple:
+
+LCM(a, b)
+    return a / GCD(a, b) * b
+
+The GCD/LCM of more than 2 numbers can be found via multiple calls
+of GCD/LCM of 2 numbers e.g. GCD(a, b, c) = GCD(a, GCD(b, c)).
 
 */

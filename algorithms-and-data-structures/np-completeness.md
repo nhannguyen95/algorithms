@@ -62,6 +62,8 @@ There are many problems that are NP-complete (with the natural statement) but no
 
 Every problem satisfies (2) condition is NP-hard problem, it doesn't matter if it belongs to NP or not (polynomial-time verifiable or not).
 
+0-1 knapsack, subset sum, general coin changing are actually NP-hard optimization problems and the DP solution can only work if the size of the memoization tables are small enough to avoid Memory Limit Exceed; otherwise we will have to resort to other exponential-based solutions.
+
 ### NP-Completeness proofs
 
 Given an NP-complete problem P, then we can prove some other problem S is NP-complete (or NP-hard) by showing that P ≤<sub>P</sub> S.
