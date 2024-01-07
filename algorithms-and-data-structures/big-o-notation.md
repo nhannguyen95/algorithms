@@ -45,7 +45,7 @@ And notice: the running time of insertion sort is not Ω(n<sup>2</sup>), try to 
 
 ---
 
-
 References:
-  - [Big O notation - Wikipedia](https://en.wikipedia.org/wiki/Big_O_notation).
-  - Introduction to Algorithms book.
+  - [Big O notation - Wikipedia](https://en.wikipedia.org/wiki/Big_O_notation)
+  - [Big O cheatsheet](http://bigocheatsheet.com/)
+  - Book: Introduction to Algorithms

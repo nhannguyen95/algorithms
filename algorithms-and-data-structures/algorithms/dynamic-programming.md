@@ -12,6 +12,8 @@
 - [0-∞ coin changing ways](/algorithms-and-data-structures/algorithms/unbounded-coin-changing-ways.md)
   - https://leetcode.com/problems/coin-change-ii/
 - [Longest common subsequence (LCS) *](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
+- [Edit Distance *](/algorithms-and-data-structures/algorithms/edit-distance.cpp)
+- [Partial Sum *](/algorithms-and-data-structures/algorithms/partial-sum.cpp)
 - DP with Bitmask.
 
 ## Theory

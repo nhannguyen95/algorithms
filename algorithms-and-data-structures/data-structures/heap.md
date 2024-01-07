@@ -1,6 +1,10 @@
-_Note: For simplicity, we use binary max heap for analytics without saying explicitly, min-heap is very similar. And of course the heap tree is always a complete one._
+## Problems
+- [Find median in a stream](https://leetcode.com/problems/find-median-from-data-stream)
+- K-way merge: merge k sorted lists of total n elements into 1 sorted list in O(nlgk)
 
----
+## Theory
+
+_Note: For simplicity, we use binary max heap for analytics without saying explicitly, min-heap is very similar. And of course the heap tree is always a complete one._
 
 ### Sift Up and Sift Down in Heap Implementation
 
@@ -19,8 +23,6 @@ But the important thing is if we apply these functions for _every element in the
   - In `siftUp(e)`, the worst case happens when `e` is the leaf node, and guess what? there are n/2 leaf nodes!
 
 This affects the time complexity of building max heap function that is about to be mentioned below:
-
----
 
 ### Sift Up and Sift Down in Building Max Heap
 
@@ -72,8 +74,6 @@ At first sight, one could easily derive an asymptotic upper bound of T(n) is O(n
 ```
 
 So the latter method is optimal.
-
----
 
 ### Applying Sift Up and Sift Down
 

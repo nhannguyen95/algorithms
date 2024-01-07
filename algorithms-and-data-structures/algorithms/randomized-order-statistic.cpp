@@ -6,9 +6,7 @@ Solution: utilize quicksort
 Expected running time: E[T(n)] = O(n)
 
 Worst case running time: Θ(n^2)
-(There's a algorithm which can run linearly in worst case
-running time)
-
+(There's a algorithm which can run linearly in worst case running time)
 
 */
 

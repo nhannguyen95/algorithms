@@ -1,3 +1,13 @@
+## Problems
+- [Construct BST from preorder traversal *](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
+- [Serialize and Deserialize a BT *](https://leetcode.com/problems/serialize-and-deserialize-binary-tree).
+  - Preorder, post order that contain null values; given 1, we can reconstruct a Binary Tree from it.
+  - We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
+- [Construct binary tree from inorder and preorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/): [iterative solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34555/The-iterative-solution-is-easier-than-you-think!/117721)
+  - Preorder, inorder, postorder that don't contain null values; given 2, we can reconstruct a Binary Tree from them. Given 1, we can't (there's an infinite number of trees).
+
+## Theory
+
 ### Types of binary tree:
 
 **Depth, Height, Level in binary tree**: https://www.youtube.com/watch?v=TKQe_mvLRaI
@@ -10,15 +20,11 @@
 
 **Perfect Binary Tree**: both complete and full.
 
----
-
 ### Operations on a binary tree
 
 - PREDECESSOR, O(h)
 
 - SUCCESSOR, O(h)
-
----
 
 ### Properties
 
@@ -39,13 +45,11 @@ Notations:
 
   - n = 2<sup>h+1</sup> - 1 nodes
 
----
+A **free tree** is a connected, acyclic, undirected graph.
 
- A **free tree** is a connected, acyclic, undirected graph.
+If an undirected graph is acyclic but possibly disconnected, it is a **forest**.
 
- If an undirected graph is acyclic but possibly disconnected, it is a **forest**.
-
- A **rooted tree** (T) is a free tree in which one of the vertices is distinguished from the others. We call the distinguished vertex the root (r) of the tree. We often refer to a vertex of a rooted tree as a node (x) of the tree.
+A **rooted tree** (T) is a free tree in which one of the vertices is distinguished from the others. We call the distinguished vertex the root (r) of the tree. We often refer to a vertex of a rooted tree as a node (x) of the tree.
 
 We call any node y on the unique simple path from r to x an **ancestor** of x. If y is an ancestor of x, then x is a **descendant** of y. Every node is both an ancestor and a descendant of itself.
 
@@ -54,11 +58,3 @@ If y is an ancestor of x and x != y, then y is a **proper ancestor** of x and x 
 If the last edge on the simple path from the root r of a tree T to a node x is (y, x), then y is the **parent** of x, and x is a **child** of y. The root is the only node in T with no parent. If two nodes have the same parent, they are **siblings**. A node with no children is a **leaf** or **external node**. A nonleaf node is an **internal node**.
 
 An **ordered tree** is a rooted tree in which the children of each node are ordered
-
----
-
-Preorder, inorder, postorder that don't contain null values; [given 2, we can reconstruct a Binary Tree from them](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/). Given 1, we can't (there's an infinite number of trees).
-
-Preorder, post order that contain null values; [given 1, we can reconstruct a Binary Tree from it](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/).
-
-Given a preorder or postorder that don't contain null values, we can reconstruct a Binary Search Tree from it.
