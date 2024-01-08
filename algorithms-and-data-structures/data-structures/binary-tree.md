@@ -1,6 +1,6 @@
 ## Problems
-- [Construct BST from preorder traversal *](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
-- [Serialize and Deserialize a BT *](https://leetcode.com/problems/serialize-and-deserialize-binary-tree).
+- [Construct BST from preorder traversal](https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0): [solution](https://www.geeksforgeeks.org/construct-bst-from-given-preorder-traversal-set-2/)
+- [Serialize and Deserialize a BT](https://leetcode.com/problems/serialize-and-deserialize-binary-tree).
   - Preorder, post order that contain null values; given 1, we can reconstruct a Binary Tree from it.
   - We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
 - [Construct binary tree from inorder and preorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/): [iterative solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34555/The-iterative-solution-is-easier-than-you-think!/117721)

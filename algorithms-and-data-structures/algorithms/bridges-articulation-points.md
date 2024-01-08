@@ -4,8 +4,8 @@ Finding Bridges and Articulation Points of an undirected graph
 (tested).
 
 In an undirected graph G:
-- An articulation Point is a vertex whose removal disconnects G.
-- A bridge is an edge whose removal diconnects G.
+- An Articulation Point is a vertex whose removal disconnects G.
+- A Bridge is an edge whose removal diconnects G.
 
 ### Solution
 
@@ -52,6 +52,7 @@ only when (u, v) is a back edge.
 
 Consider the back edge C, A as follows:
 
+```
    |
    |
  _ A (num=4; low=1)
@@ -61,6 +62,7 @@ Consider the back edge C, A as follows:
 |  |
 |  |
  --C (num=6; low=4, not 1 like in Tarjan)
+```
  
 In this problem, you will only want to minimize C's low with the num of the other
 vertice (in this case A) of its back edge (think about it). In other words, the

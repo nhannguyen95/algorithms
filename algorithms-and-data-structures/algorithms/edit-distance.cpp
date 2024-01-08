@@ -2,7 +2,7 @@
 
 Use 1-based for intuition.
 
-We define a set (here is 3) of edit operations that
+We define a set (here is of size 3) of edit operations that
 we can perform on a string:
 - Insertion: insert an arbitrary character to the string.
 - Deletion: delete a character from the string.

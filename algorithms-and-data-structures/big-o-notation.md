@@ -1,4 +1,4 @@
-To describe the running times or space complexity (complexity in general) of algorithms, we use 3 **Asymptotic notations (Big-O Notation)**:
+To describe the running time or space complexity (complexity in general) of algorithms, we use 3 **Asymptotic notations (Big-O Notation)**:
 
   - Θ-notation.
   - O-notation.

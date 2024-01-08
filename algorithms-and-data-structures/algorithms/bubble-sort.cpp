@@ -2,7 +2,7 @@
 
 Time complexity:
   - In all cases, we can say O(N^2), since this provides a upper bound.
-  - Best case: already sorted array O(N), Θ(N) for more exactly
+  - Best case: already sorted array O(N), Θ(N) to be more exactly
   - Average & Worst case: Θ(N^2),
 
 Space complexity: O(1)

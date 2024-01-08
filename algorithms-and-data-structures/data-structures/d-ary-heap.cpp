@@ -1,6 +1,6 @@
 /* D-ary max heap implementation (tested)
 
-In D-ary performs faster SiftUp operation than binary heap,
+D-ary performs faster SiftUp operation than binary heap,
 at the expense of slower SiftDown operation.
 
 This tradeoff leads to better running times for algorithms

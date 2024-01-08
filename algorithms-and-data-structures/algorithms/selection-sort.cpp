@@ -23,8 +23,6 @@ Compare to Insertion sort:
 
 Compare to Bubble sort and Gnome sort: always faster.
 
-
-
 Read more: https://nhannguyen95.github.io/selection-sort/
 
 */

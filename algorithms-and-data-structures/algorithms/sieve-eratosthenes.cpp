@@ -9,10 +9,13 @@ vector<bool> sieve(const int n) {
   vector<bool> isPrime(n+1, true);
   int sqrtN = (int)sqrt(n);
   isPrime[0] = isPrime[1] = false;
-  for(int i = 2; i <= sqrtN; i++)
-    if (isPrime[i])
-      for(int j = i*i; j <= n; j += i)
+  for(int i = 2; i <= sqrtN; i++) {
+    if (isPrime[i]) {
+      for(int j = i*i; j <= n; j += i) {
         isPrime[j] = false;
+      }
+    }
+  }
   return isPrime;
 }
 

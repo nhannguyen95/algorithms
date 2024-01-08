@@ -1,7 +1,7 @@
 ## Problems
 - [Fractional knapsack](/algorithms-and-data-structures/algorithms/fractional-knapsack.md)
-- [Coin changing *](/algorithms-and-data-structures/algorithms/coin-changing.md)
-- [Longest increasing subsequence (LIS) *](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
+- [0-∞ coin changing](/algorithms-and-data-structures/algorithms/unbounded-coin-changing.md)
+- [Longest increasing subsequence (LIS)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
 
 ## Theory
 

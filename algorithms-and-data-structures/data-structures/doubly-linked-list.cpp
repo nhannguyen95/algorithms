@@ -27,7 +27,7 @@ using namespace std;
 
 class Node {
 public:
-  int key;  // Satelite data can be stored in somewhere else
+  int key;  // Satelite data can be stored somewhere else
   Node * next;
   Node * prev;
 

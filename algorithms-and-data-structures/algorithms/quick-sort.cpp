@@ -13,7 +13,7 @@ If unbalanced (p bias to left or right):
     array is already sort, p is always bias to right.
 
 Therefore, the partition affects heavily to the time
-complexity. You need to distinguish two kinds of
+complexity. One needs to distinguish two kinds of
 partition:
   - n -> (n - c) and c
     => T(n) = T(n-c) + Θ(n)

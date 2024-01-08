@@ -28,7 +28,7 @@ hk = h(k)
 T[hk] = object{k, a pointer to satellite data}
 ```
 
-Hash tables are used to implement _unordered_set_ in C++.
+Hash tables are used to implement _unordered_set_, _unordered_map_ in C++; _HashSet_, _HashMap_ in Java.
 
 ---
 
@@ -120,7 +120,7 @@ h(k,i) = (h1(k) + ih2(k)) mod m
 
 ### What makes a good hash function?
 
-**Simple uniform hashing**: each key is equally to hash to any of the slots in the hash table.
+**Simple uniform hashing**: each key is equally to be hashed to any of the slots in the hash table.
 
 A good hash function satisfies (approximately) the assumption of simple uniform hashing.
 

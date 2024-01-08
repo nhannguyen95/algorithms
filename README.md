@@ -54,11 +54,8 @@
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
     - [Primality testing](algorithms-and-data-structures/algorithms/primality-testing.cpp)
     - [The Tortoise and Hare algorithm](https://nhannguyen95.github.io/the-tortoise-and-hare-algorithm/)
-    - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.cpp)
-      - [Infix, Prefix, Postfix Expressions](https://runestone.academy/ns/books/published/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html):
-        - [Infix to Postfix](https://practice.geeksforgeeks.org/problems/infix-to-postfix/0)
-        - Postfix Evalucation: [1](https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression/0/?ref=self), [2](https://leetcode.com/problems/evaluate-reverse-polish-notation/).
-        - [Evaluate Expression](https://www.hackerrank.com/contests/cs1300-odd-2014/challenges/evaluate-expression)
+    - [Algebraic Expressions](algorithms-and-data-structures/algorithms/algebraic-expressions.md)
+      - [Infix, Prefix, Postfix Expressions](https://runestone.academy/ns/books/published/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html)
   - Probability
     - Medians and Order Statistics
       - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
@@ -79,7 +76,13 @@
     - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
     - [Flood fill](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
     - [Topological sort](algorithms-and-data-structures/algorithms/topo-sort.cpp)
+    - [Bridges and Articulation Points of a undirected graph](algorithms-and-data-structures/algorithms/bridges-articulation-points.md)
     - [Strongly connected components](algorithms-and-data-structures/algorithms/strongly-connected-components.md)
+    - [Biconnected Components](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
+    - [Eulerian graph](algorithms-and-data-structures/algorithms/eulerian-graph.md)
+    - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
+      - Interval-graph coloring problem
+    - [Bipartite graph checking](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
     - [Shortest-paths](algorithms-and-data-structures/algorithms/shortest-paths.md)
       - [Single-source shortest-paths - Bellman Ford](algorithms-and-data-structures/algorithms/bellman-ford.cpp)
       - [Single-source shortest-paths on DAG](algorithms-and-data-structures/algorithms/sssp-dag.cpp)
@@ -87,13 +90,7 @@
       - [All pairs shortest-paths - Floyd](algorithms-and-data-structures/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
       - [Transitive closure of a directed graph](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
-    - [Bridges and Articulation Points of a undirected graph](algorithms-and-data-structures/algorithms/bridges-articulation-points.md)
-    - [Biconnected Components](algorithms-and-data-structures/algorithms/biconnected-components.cpp)
-    - [Eulerian graph](algorithms-and-data-structures/algorithms/eulerian-graph.md)
-    - [Graph coloring](algorithms-and-data-structures/algorithms/graph-coloring.cpp)
-      - Interval-graph coloring problem
-    - [Bipartite graph checking](algorithms-and-data-structures/algorithms/bipartite-checking.cpp)
-  - Network flow
+    - Network flow
   - [Computational Geometry](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
     - Determine if there exists any 3 points in a set of n points that are colinear
     - Determine if a point lies inside a simple polygon (not neccessary convex)
@@ -136,21 +133,20 @@
   - [Tree](algorithms-and-data-structures/data-structures/tree.md):
     - [Binary Tree](algorithms-and-data-structures/data-structures/binary-tree.md)
     - [Binary Search Tree](algorithms-and-data-structures/data-structures/binary-search-tree.md)
-    - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
-    - [Fenwick Tree (BIT - Binary Indexed Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
-    - Radix Tree
     - [Balanced Search Tree](algorithms-and-data-structures/data-structures/balanced-search-tree.md) (Java's TreeSet/TreeMap):
       - AVL Tree: balanced binary search tree.
       - Splay Tree: balanced binary search tree.
       - Red Black Tree: balanced binary search tree.
       - B-Trees: balanced binary search tree generalization.
+    - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
+    - [Fenwick Tree (BIT - Binary Indexed Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
+    - Radix Tree
   - [Disjoint-Set Forest](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
   - [Sparse Table](algorithms-and-data-structures/data-structures/sparse-table.md)
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 
 ## Resources
 
-- Book: Cracking the coding interview - Gayle Laakmann McDowell.
 - Book: Introduction to Algorithms, 3rd - CLRS. (Chapter 5, 26, 27, 35; ~~Chapter 14, 17, 18, 19, 20, 28, 29, 30~~)
 - Book: Competitive Programming 3, 4.1, 4.2
 - Book: Clean Code - Robert C Martin
@@ -167,7 +163,6 @@
 - _"Try to compare relevant data structures/algorithms and understand their pros and cons. A good example is BFS and DFS."_
 
 - Which algorithm is better in what case?
-
 
 ## Miscellaneous
 

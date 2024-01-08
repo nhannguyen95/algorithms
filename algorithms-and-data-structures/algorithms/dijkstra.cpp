@@ -34,15 +34,16 @@ v in V \ S with minimum v.d.
 
 There is some problem with the current pseudo code:
 - There 2 information in the queue Q, u and its u.d
-- To extract u whose u.d is minimum, we want the key is u.d
+- To extract u whose u.d is minimum, we want the key to be u.d
 - To RELAX(u, v, w), we need to call DECREASE-KEY(v, new v.d)
 on Q. But since the 'd' is the k, we cannot find v
 efficiently (log|V|). Otherwise, if we let vertex index
 'v' be the key, we cannot EXTRACT-MIN and DECREASE-KEY
 efficiently (since the key for those 2 operations is 'd').
 
-Of course we can achieve this by using a self-implemented
-data structure but that's gonna be complicated.
+Of course we can achieve logarithmic running time for
+both operations by using a self-implemented data structure
+but that's gonna be complicated.
 
 But in case the weights are integer, we can quickly locate
 the pair (v, v.d) using a balanced BST data structure such

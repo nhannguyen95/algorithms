@@ -21,9 +21,9 @@ Heaps are usually implemented in an array, we will
 implement a max-heap using an array.
 
 If we use an array to imply a tree, so:
-  - left(i) = 2i + 1        (if 1-based)
-  - right(i) = 2i + 2       (if 1-based)
-  - parent(i) = (i - 1) / 2 (if 1-based)
+  - left(i) = 2i + 1        (if 0-based)
+  - right(i) = 2i + 2       (if 0-based)
+  - parent(i) = (i - 1) / 2 (if 0-based)
   - Important: so the last element of the array
     (the element with highest index) is the
     extreme node of the tree.

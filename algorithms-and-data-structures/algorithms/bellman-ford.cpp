@@ -36,8 +36,6 @@ BELLMAN-FORD(G, w, s)
 
     G.d = temp_d
 
-Bellman Ford algorithm relaxes each edge |V| - 1 times.
-
 After the |V| - 1 loop, if there's no negative-weight
 cycle, we have d.v = 𝛿(s, v) <= 𝛿(s, u) + w(u, v)
 = d.u + w(u, v) for all v in V and (u, v) in E.
@@ -47,10 +45,10 @@ for loop we can detect if RELAX makes a change in temp_d. If it doesn't change,
 it won't never change in the next iterations. We can stop there.
 
 Improvement 2: if we are not interested in relaxing the shortest path in
-strictly number of edges increasing order (after each loop), we can remove
+strictly increasing order of number of edges (after each loop), we can remove
 temp_d and perform the relaxation directly on G.d. But note that after x loops,
 the values in G.d no longer indicates the shortest cost from src to all nodes
-containing x edges (but maybe more).
+containing x edges (but maybe > x).
 
 Bellman Ford algorithm allows negative-weight edge.
 

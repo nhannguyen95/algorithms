@@ -36,7 +36,7 @@ The running time of a dynamic programming algorithm is roughly equal the number 
 
 ### Comparing with Divide & Conquer
 
-Divide & conquer (D&C) and DP difference:
+Divide & conquer (D&C) and DP differences:
   - D&C divides the problem into _disjoint_ subproblems, solve the subproblems recursively, then combine their solutions to solve the original problem.
   - In contract, DP applies when subproblems share subproblems (i.e. when subproblems overlap), each subproblem is solved just once and the result is saved into a table for later use, therefore avoid the work of recomputing the answer every time it solves a subproblem.
 

@@ -102,8 +102,8 @@ void maxHeapify(
 This subprocedure convert an array A into a max heap,
 with:
   - Root at A[0]
-  - A[i]->left = A[2*i]
-  - A[i]->right = A[2*i + 1]
+  - A[i]->left = A[2*i + 1]
+  - A[i]->right = A[2*i + 2]
 
 This subprocedure utilies the property that:
 Leaf nodes is (if 1-based):

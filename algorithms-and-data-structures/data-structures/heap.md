@@ -8,7 +8,7 @@ _Note: For simplicity, we use binary max heap for analytics without saying expli
 
 ### Sift Up and Sift Down in Heap Implementation
 
-There are 2 important functions in heap implementation that one needs to be extremely well aware of (and be careful as well):
+There are 2 important helper functions in heap implementation that one needs to be extremely well aware of (and be careful as well):
 
   - `siftUp(e)`: Float up the element `e` by comparing its key value to parent in order to maintain heap property.
 

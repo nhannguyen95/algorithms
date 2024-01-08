@@ -1,3 +1,8 @@
+## Problems
+- Compute (n, k) in O(k) time, O(1) space.
+
+## Theory
+
 A **k-permutation** of S is an ordered sequence of k elements of S, with no element appearing more than once in the sequence. (i.e. 2-permutations of the set {a, b, c, d} are ab, ac, ad, ba, bc, bd, ca, cb, cd, da, db, dc). The number of k-permutations of an n-set is:
 
 ```

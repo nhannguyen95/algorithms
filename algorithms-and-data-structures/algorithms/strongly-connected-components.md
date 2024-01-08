@@ -48,16 +48,20 @@ start with the component C whose f(C) is largest.
 
 Now if we look at the SCCs graph of G, C has no incoming edges:
 
+```
  C ----> C'
  \
   -----> C''
+```
 
 So how we obtain C by DFS? We will work on the reversed
 version of G, that is GT (this is safe since SCCs of G
 is same as SCCs of GT):
 
+```
 C <----- C'
   <----- C''
+```
 
 After disjointing C (thus obtain the first SCC), we continue
 searching second one starting with the component C' whose

@@ -14,5 +14,4 @@ the nonbridge edges of G. (*)
 From (*), to find biconnected component of G, we can use DFS in O(V+E)
 to find bridges of E, then remove all bridges from G.
 
-
 */

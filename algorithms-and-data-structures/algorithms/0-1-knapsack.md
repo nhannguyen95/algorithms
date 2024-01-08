@@ -34,7 +34,7 @@ by using a 1-d memoization table:
             f[j] = max(f[j], v[i] + f[j-w[i]])
     ```
 
-Why we can't apply greedy algorithm to this problem?
+Why can't we apply greedy algorithm to this problem?
 - Because when we make "the best" choice at some moment (based on
 some knapsack criteria), we need to care about our next choice
 for the subproblem (i.e. the current choice creates the constraint
