@@ -35,6 +35,7 @@ range_query(b) which is the cumulative sum of A[1..b] by adding:
 + ft[b'' = b' - LSOne(b')]
 (.. until the index = 0)
 (Easily see this runs in O(logN))
+By doing this, f[i] is responsible for disjoint ranges of A.
 
 Having sum of A[1..b], we can query sum of A[l..r]
 
@@ -45,6 +46,18 @@ update ft[b'  = b + LSOne(b)]
 update ft[b'' = b' + LSOne(b')]
 (.. until the index > n)
 (Easily see this runs in O(logN))
+By doing this, f[i >= b] is responsible for parent ranges of ft[b].
+Proff: denote b' = b + LSOne(b), we prove 2 things:
+- Range represented by ft[b'] covers range represented by ft[b].
+  Proof: This can be easily to point out. For example:
+  ft[010010] covers [010001..010010]
+  ft[010100] covers [010001..010100]
+- Range represented by ft[b'-LSOne(b')] is disjoint with range represented by
+  ft[b].
+  Proof: By definition of ft, ft[b'] is disjoint with ft[b'-LSOne(b')], and
+  since ft[b] is within ft[b'] (proved above) => ft[b] is disjoint with
+  ft[b'-LSOne(b')].
+
 
 In summary, Fenwick Tree takes:
 - O(N) in space
