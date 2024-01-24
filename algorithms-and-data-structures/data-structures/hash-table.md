@@ -1,3 +1,10 @@
+## Problems
+- https://leetcode.com/problems/longest-well-performing-interval/
+- https://leetcode.com/problems/contiguous-array
+- https://leetcode.com/problems/sum-of-distances
+
+## Theory
+
 ### Introduction
 
 Dictionary operations:

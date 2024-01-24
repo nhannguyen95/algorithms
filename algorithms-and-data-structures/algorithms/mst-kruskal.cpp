@@ -7,19 +7,12 @@ Property: A at each time is a forest.
 
 The running time of the algorithm depends on the disjoint
 -set data structure:
-
-- Sort edges: O(ElgE)
-- V makeSet, E findSet and unionSet
-  => Amortized running time O((V + E)ɑ(V))
-  We have V - 1 <= E <= V^2
-        (G is connected)
-     and ɑ(V) = O(lgV)
-  So: O((V + E)ɑ(V))
-    = O(ElgV)
-    = O(ElgE)
-    = O(ElgV^2)
-    = O(2ElgV)
-    = O(ElgV)
+- O(sorting edges + trying to add each edge * cost of Union-Find ops)
+  = O(ElogE + E * (~1))
+  = O(ElgE)
+  = O(ElgV^2)
+  = O(2ElgV)
+  = O(ElgV)
 
 */
 

@@ -1,3 +1,9 @@
+## Problems
+- https://leetcode.com/problems/most-stones-removed-with-same-row-or-column
+
+## Theory
+
+```c++
 /* Disjoint-set Forest (DSF)
 
 3 supported operations for a disjoint-set data structure:
@@ -81,3 +87,5 @@ head is s.
 
 
 */
+
+```

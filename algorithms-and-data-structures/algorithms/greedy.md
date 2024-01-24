@@ -2,6 +2,9 @@
 - [Fractional knapsack](/algorithms-and-data-structures/algorithms/fractional-knapsack.md)
 - [0-∞ coin changing](/algorithms-and-data-structures/algorithms/unbounded-coin-changing.md)
 - [Longest increasing subsequence (LIS)](https://nhannguyen95.wordpress.com/2017/02/27/lis-day-con-tang-dai-nhat/)
+- https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/
+- https://leetcode.com/problems/maximum-number-of-occurrences-of-a-substring/
+- https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended
 
 ## Theory
 

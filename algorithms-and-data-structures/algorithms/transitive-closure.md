@@ -1,4 +1,9 @@
-/* Finding Transitive closure of a directed graph
+## Problems
+- https://leetcode.com/problems/course-schedule-iv
+
+## Theory
+
+Finding Transitive closure of a directed graph
 
 Given directed graph G = (V, E), the transitive closure of
 G is the graph G* = (V, E*), E* = {(i, j): there is a path 
@@ -57,6 +62,3 @@ TRANSITIVE-CLOSURE(G)
 
 Follow up: Transitive closure of a dynamic graph
 (CLRS, 3rd, Problem 25-1)
-
-
-*/

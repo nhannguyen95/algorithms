@@ -11,10 +11,16 @@
   - https://leetcode.com/problems/coin-change/
 - [0-∞ coin changing ways](/algorithms-and-data-structures/algorithms/unbounded-coin-changing-ways.md)
   - https://leetcode.com/problems/coin-change-ii/
-- [Longest common subsequence (LCS) *](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
-- [Edit Distance *](/algorithms-and-data-structures/algorithms/edit-distance.cpp)
-- [Partial Sum *](/algorithms-and-data-structures/algorithms/partial-sum.cpp)
+- [Longest common subsequence (LCS)](https://docs.google.com/document/d/10GzzyeoIHI21CbCfbZuIWZYFfyNUOMWjjlcuDmcvrdg/edit?usp=sharing)
+- [Edit Distance](/algorithms-and-data-structures/algorithms/edit-distance.cpp)
+- [Partial Sum](/algorithms-and-data-structures/algorithms/partial-sum.cpp)
+- https://leetcode.com/problems/unique-binary-search-trees
+- https://leetcode.com/problems/unique-paths/description/
+- https://leetcode.com/problems/maximum-length-of-repeated-subarray
+- https://leetcode.com/problems/stone-game-ii/
 - DP with Bitmask.
+  - https://leetcode.com/problems/matchsticks-to-square
+  - https://leetcode.com/problems/partition-to-k-equal-sum-subsets/
 
 ## Theory
 

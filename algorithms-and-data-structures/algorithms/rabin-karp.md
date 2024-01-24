@@ -1,3 +1,9 @@
+## Problems
+- https://leetcode.com/problems/maximum-length-of-repeated-subarray/
+
+## Theory
+
+```c++
 /* Rabin-Karp algorithm for string-matching problem
 https://nhannguyen95.github.io/rabin-karp-algorithm/
 
@@ -57,3 +63,4 @@ constant c of them. Running time in this case:
 O((n-m+1) + cm) = O(n+m)
 
 */
+```

@@ -4,6 +4,7 @@
 - [Minimum spanning subgraph](/algorithms-and-data-structures/algorithms/minimum-spanning-subgraph.md)
 - [Minimum spanning forest](/algorithms-and-data-structures/algorithms/minimum-spanning-forest.md)
 - [Minimax (maximin)](/algorithms-and-data-structures/algorithms/minimax.md)
+- https://leetcode.com/problems/min-cost-to-connect-all-points
 
 ## Theory
 

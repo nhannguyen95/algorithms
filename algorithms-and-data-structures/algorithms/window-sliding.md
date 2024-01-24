@@ -5,6 +5,8 @@ or equal to a certain constant.
 sub-array contains all integers in range [1..K].
 - Find the maximum sum of a certain sub-array with static size K.
 - Find the minimum of each possible sub-arrays with static size K.
+- https://leetcode.com/problems/get-equal-substrings-within-budget/
+- https://leetcode.com/problems/jump-game-vi/
 
 ## Theory
 

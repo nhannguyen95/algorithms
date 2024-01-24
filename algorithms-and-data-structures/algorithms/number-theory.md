@@ -1,3 +1,8 @@
+## Problems
+- https://leetcode.com/problems/subarray-sums-divisible-by-k
+
+## Theory
+
 If d | a (read d **divides** a) and d ≥ 1, d is a **divisor** of a.
 
 Every a > 0 has 2 **trivial divisors**: 1 and a.

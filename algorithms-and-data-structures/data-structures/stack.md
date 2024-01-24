@@ -6,6 +6,8 @@
 - Implement stack with 2 queues
 - Set of stacks with popAt(stackIndex) method: [code](/practices/data-structure-implementation/set-of-stacks-with-popat.cpp)
 - Stack with push, pop and min operate in O(1): [code](practices/data-structure-implementation/stack-min-o1.cpp)
+- https://leetcode.com/problems/online-stock-span/
+- https://leetcode.com/problems/remove-k-digits
 
 ## Theory
 

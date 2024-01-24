@@ -1,3 +1,8 @@
+## Problems
+- https://leetcode.com/problems/longest-palindromic-substring/
+
+## Theory
+
 Complete search tips:
 - Immediately prune invalid partial solutions (branch and bound). The earlier you prune, the better.
 - Utilize symmetries.

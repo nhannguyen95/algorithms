@@ -7,12 +7,13 @@
   - [NP-Completeness](algorithms-and-data-structures/np-completeness.md)
     - NP-Completeness Approximation Algorithms
   - [Bit manipulation](algorithms-and-data-structures/algorithms/bit-manipulation.md)
+    - [Gray code](algorithms-and-data-structures/algorithms/gray-code.md)
   - Algorithm Design Paradigms
     - [Complete Search](algorithms-and-data-structures/algorithms/complete-search.md)
       - Iterative
       - [Recursive](/algorithms-and-data-structures/algorithms/recursion.md)
         - Backtracking
-        - Branch and Bound
+        - [Branch and Bound](/algorithms-and-data-structures/algorithms/branch-and-bound.md)
     - [Divide and Conquer](/algorithms-and-data-structures/algorithms/divide-and-conquer.md)
     - [Dynamic Programming](algorithms-and-data-structures/algorithms/dynamic-programming.md)
     - [Greedy](algorithms-and-data-structures/algorithms/greedy.md):
@@ -32,14 +33,14 @@
   - Searching
     - Lineary search
     - [Binary search](algorithms-and-data-structures/binary-search.md)
-      - Binary search the answer
+      - [Binary search the answer](algorithms-and-data-structures/binary-search-the-answer.md)
       - [Exponential search](https://en.wikipedia.org/wiki/Exponential_search).
     - Search with hashing (O(1) amortized)
   - [String](algorithms-and-data-structures/algorithms/string.md)
     - String manipulation
       - Split string: [c++](algorithms-and-data-structures/handy-algorithms/split-string.cpp), [java](algorithms-and-data-structures/handy-algorithms/split-string.java)
     - String matching
-      - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.cpp)
+      - [Rabin-Karp](algorithms-and-data-structures/algorithms/rabin-karp.md)
       - [2D Rabin-Karp](algorithms-and-data-structures/algorithms/2d-rabin-karp.cpp)
       - [Finite automata](algorithms-and-data-structures/algorithms/finite-automata.cpp)
       - KMP (Knuth-Morris-Pratt): [c++](algorithms-and-data-structures/algorithms/kmp.cpp), [java](algorithms-and-data-structures/algorithms/kmp.java)
@@ -89,7 +90,7 @@
       - [Single-source shortest-paths - Dijkstra](algorithms-and-data-structures/algorithms/dijkstra.cpp)
       - [All pairs shortest-paths - Floyd](algorithms-and-data-structures/algorithms/floyd.cpp)
       - All pairs shortest-paths - Johnson
-      - [Transitive closure of a directed graph](algorithms-and-data-structures/algorithms/transitive-closure.cpp)
+      - [Transitive closure of a directed graph](algorithms-and-data-structures/algorithms/transitive-closure.md)
     - Network flow
   - [Computational Geometry](algorithms-and-data-structures/algorithms/computational-geometry.cpp):
     - Determine if there exists any 3 points in a set of n points that are colinear
@@ -104,6 +105,7 @@
     - Finding the farthest pair of points
     - Finding the closest pair of points (nlogn)
   - [Window Sliding](algorithms-and-data-structures/algorithms/window-sliding.md)
+  - [Two pointers](algorithms-and-data-structures/algorithms/two-pointers.md)
   - A*
   - Bloom Filter
   - Chvátal's greedy set-covering heuristic
@@ -139,9 +141,9 @@
       - Red Black Tree: balanced binary search tree.
       - B-Trees: balanced binary search tree generalization.
     - [Segment Tree (IT - Interval Tree)](algorithms-and-data-structures/data-structures/segment-tree.cpp)
-    - [Fenwick Tree (BIT - Binary Indexed Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.cpp)
+    - [Fenwick Tree (BIT - Binary Indexed Tree)](algorithms-and-data-structures/data-structures/fenwick-tree.md)
     - Radix Tree
-  - [Disjoint-Set Forest](algorithms-and-data-structures/data-structures/disjoint-set-forest.cpp)
+  - [Disjoint-Set Forest](algorithms-and-data-structures/data-structures/disjoint-set-forest.md)
   - [Sparse Table](algorithms-and-data-structures/data-structures/sparse-table.md)
   - [Treap](https://cp-algorithms.com/data_structures/treap.html) 
 

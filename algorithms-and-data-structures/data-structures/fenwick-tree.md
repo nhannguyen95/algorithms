@@ -1,3 +1,9 @@
+## Problems
+- https://leetcode.com/problems/range-sum-query-mutable
+
+## Theory
+
+```c++
 /* 
 
 Fenwick Tree is a useful data structure for implementing
@@ -146,3 +152,4 @@ int main() {
  
   return 0;
 }
+```
