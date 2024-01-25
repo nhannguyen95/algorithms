@@ -8,6 +8,9 @@
 - Stack with push, pop and min operate in O(1): [code](practices/data-structure-implementation/stack-min-o1.cpp)
 - https://leetcode.com/problems/online-stock-span/
 - https://leetcode.com/problems/remove-k-digits
+- https://leetcode.com/problems/next-greater-node-in-linked-list
+- https://leetcode.com/problems/next-greater-element-ii
+- https://leetcode.com/problems/find-the-most-competitive-subsequence/
 
 ## Theory
 

@@ -2,7 +2,9 @@
 - [Longest Common Substring (LCS)](https://practice.geeksforgeeks.org/problems/longest-common-substring/0): this can be solved using DP, Trie or Suffix Array.
 - [Implement Atoi](https://www.interviewbit.com/problems/atoi/)
 - https://leetcode.com/problems/compare-version-numbers
-- https://leetcode.com/problems/palindromic-substrings
+- Palindrome:
+    - https://leetcode.com/problems/palindromic-substrings
+    - https://leetcode.com/problems/find-palindrome-with-fixed-length
 
 ## Theory
 

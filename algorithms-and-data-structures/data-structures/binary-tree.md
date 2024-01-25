@@ -5,6 +5,7 @@
   - We can construct from level-order traversal or preorder traversal, both require n+1 null nodes.
 - [Construct binary tree from inorder and preorder](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/): [iterative solution](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/discuss/34555/The-iterative-solution-is-easier-than-you-think!/117721)
   - Preorder, inorder, postorder that don't contain null values; given 2, we can reconstruct a Binary Tree from them. Given 1, we can't (there's an infinite number of trees).
+- https://leetcode.com/problems/binary-tree-level-order-traversal/
 
 ## Theory
 
