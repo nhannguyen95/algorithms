@@ -1,3 +1,9 @@
+## Problems
+- https://leetcode.com/problems/kth-largest-element-in-an-array
+
+## Theory
+
+```c++
 /*  Order statistic: Find k-th smallest number in an array
 (tested)
 
@@ -70,3 +76,4 @@ int main() {
   cout << orderStatistic(A, 2);
   return 0;
 }
+```

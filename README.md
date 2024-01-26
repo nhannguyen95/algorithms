@@ -50,7 +50,7 @@
     - [Counting and Probability](algorithms-and-data-structures/counting-and-probability.md)
     - [Number theory](algorithms-and-data-structures/algorithms/number-theory.md)
     - [Factorization in O(sqrt(N))](https://github.com/indy256/codelibrary/blob/master/cpp/numbertheory/factorization.cpp)
-    - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.cpp)
+    - [Sieve Eratosthenes](algorithms-and-data-structures/algorithms/sieve-eratosthenes.md)
     - [Euclid's algorithm for finding Greatest Common Divisor (GCD)](algorithms-and-data-structures/algorithms/euclid-gcd.cpp)
     - [Extended Euclid's algorithm for finding Modular Multiplicative Inverse](algorithms-and-data-structures/algorithms/euclid-mmi.cpp)
     - [Primality testing](algorithms-and-data-structures/algorithms/primality-testing.cpp)
@@ -59,7 +59,7 @@
       - [Infix, Prefix, Postfix Expressions](https://runestone.academy/ns/books/published/pythonds/BasicDS/InfixPrefixandPostfixExpressions.html)
   - Probability
     - Medians and Order Statistics
-      - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.cpp)
+      - [Randomized order statistic / Quickselect](algorithms-and-data-structures/algorithms/randomized-order-statistic.md)
   - Tree
     - [Minimum spanning tree (MST)](algorithms-and-data-structures/algorithms/mst.md)
       - [Kruskal's algorihtm](algorithms-and-data-structures/algorithms/mst-kruskal.cpp)
@@ -75,7 +75,7 @@
   - [Graph](algorithms-and-data-structures/algorithms/graph.md)
     - [BFS](algorithms-and-data-structures/algorithms/bfs.md)
     - [DFS](algorithms-and-data-structures/algorithms/dfs.cpp)
-    - [Flood fill](https://docs.google.com/document/d/1IPRsAb1OnCercO2_O2A-Z2m0eI5I7yykQD2urKdrNIc/edit)
+    - [Flood fill](algorithms-and-data-structures/algorithms/flood-fill.md)
     - [Topological sort](algorithms-and-data-structures/algorithms/topo-sort.cpp)
     - [Bridges and Articulation Points of a undirected graph](algorithms-and-data-structures/algorithms/bridges-articulation-points.md)
     - [Strongly connected components](algorithms-and-data-structures/algorithms/strongly-connected-components.md)
